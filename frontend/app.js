@@ -1,10 +1,11 @@
 import { MarketChart } from './charts/market-chart.js';
 import { showDetails } from './controls/details.js';
+import { GanzhiStatistics } from './statistics/ganzhi-statistics.js';
 
 const $=id=>document.getElementById(id);
 const number = n=>Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 const descriptions={day:'UTC+8 自然日 · 00:00 至 23:59:59',week:'连续 7 个自然日 · 从配置锚点向前 / 向后划分',month:'十二节划月 · 当节当日零点至下节前一日',year:'立春划年 · 立春当日零点至下一立春前一日'};
-let config, chart, period='day', anchor=null, pinned=null, payload=null, requestId=0, dataVersion=null, statusBusy=false;
+let config, chart, statistics, period='day', anchor=null, pinned=null, payload=null, requestId=0, dataVersion=null, statusBusy=false;
 function message(text='') {$('message').textContent=text;$('message').hidden=!text;}
 function overlay(text) {$('chart-overlay').textContent=text??'';$('chart-overlay').hidden=!text;}
 async function api(url,options) {
@@ -45,6 +46,7 @@ async function load(nextPeriod=period,preserve=false) {
     for(const id of ['ganzhi-toggle','term-toggle']) $(id).disabled=period!=='day';
     $('label-hint').textContent=period==='day'?'干支随缩放自动抽稀；点击 K 线固定详情':'点击 K 线查看完整周期起止与 OHLCV';
     chart.setData(data.candles,period,preserve);
+    statistics?.setPeriod(period);
     if(data.candles.length){
       overlay(null);
       const selected=data.candles.find(c=>c.periodId===pinned)??data.candles.at(-1);
@@ -73,6 +75,7 @@ async function refreshStatus(){
     if(s.lastSync && dataVersion!==s.lastSync){
       dataVersion=s.lastSync;
       await load(period,Boolean(payload));
+      statistics?.refresh();
       if(period!=='day'){const daily=await api('/api/candles?period=day');updateQuote(daily.candles.at(-1));}
     }
   }catch(e){$('connection').textContent='本地服务连接中断';$('connection').className='status error';message(e.message);}
@@ -85,6 +88,17 @@ async function init(){
     if(anchor&&!/^\d{4}-\d{2}-\d{2}$/.test(anchor)) anchor=null;
     anchorNote();
     chart=new MarketChart($('chart'),select);
+    statistics=new GanzhiStatistics({
+      api,
+      onHighlight:dates=>chart.setHighlightDates(dates),
+      onLocate:date=>{
+        if(!['day','month'].includes(period)) return;
+        const candle=payload?.candles.find(c=>c.metadata.startDate===date);
+        if(!candle) return;
+        chart.focusDate(date);select(candle,true);
+        $('chart').scrollIntoView({behavior:'smooth',block:'center'});
+      },
+    });
     document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>load(b.dataset.period)));
     $('fit').addEventListener('click',()=>chart.fit());
     $('ganzhi-toggle').addEventListener('change',()=>chart.setOptions({showGanzhi:$('ganzhi-toggle').checked}));

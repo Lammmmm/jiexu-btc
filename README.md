@@ -205,3 +205,36 @@ Lightweight Charts 使用 [Apache 2.0](https://github.com/tradingview/lightweigh
 年/月干支预先由 lunar-python 1.4.8 的 getYearInGanZhiByLiChun / getMonthInGanZhi 生成，使用日期零点切换口径。Calendar schema 已升级为 2，新增 ganzhi_month / ganzhi_year。API metadata 增加 displayGanzhi、ganzhiBasis、ganzhiDate。OHLCV 和周期边界不变；图表上的节气标记开关仍可单独控制。
 
 桌面启动入口为 scripts/launch.py，经由项目内 pythonw.exe 运行；错误日志在 artifacts/launcher-error.log，后台服务日志在 artifacts/desktop-server-8000.log。同一条历史提前收盘警告每个进程只记录一次，原始数据与页面异常提示仍完整保留。
+
+## 日线干支筛选与全部干支排行
+
+在日线图下方输入干支（例如“丁酉”）并点击“筛选统计”，查看匹配日期的 OHLC、涨跌幅、上涨/下跌/平盘次数和历史比例。点击明细日期会定位并固定图表详情，匹配日线会突出显示。
+
+点击旁边的“遍历全部干支”无需填写干支，会按当前日期范围和涨跌口径一次统计六十甲子，同时显示上涨概率降序榜、下跌概率降序榜。点击排行榜里的干支，按该榜的日期范围和口径查看明细。概率相同时先按有效样本数降序，再按六十甲子顺序；无有效样本时显示“—”并排最后。排序用精确次数比值，不用显示后四舍五入的百分数。
+
+- 日期范围含开始日和结束日；留空使用全部本地历史，统计不受图表缩放范围影响。
+- 默认口径：收盘相对开盘；可切换为收盘相对前一自然日收盘。昨收即使在筛选范围外也会读取。
+- 分母为有效样本总数，上涨、下跌和平盘分别计数；未收盘、没有成功同步快照、源时间异常、上市首日不完整的日线不计入。昨收口径还排除缺少有效昨收的日期。
+- 关闭时间以最近成功同步快照为准；不会因为本机时间已跨日就把未刷新的日线计为已收盘。
+- 一次遍历共享同一份 SQLite 读快照。发现历史缺日会明确报错，不默默跳过或填造数据。
+- 概率是历史样本频率，不代表未来表现。日线和月线提供此面板；切换到周/年线时隐藏。切换统计周期会清除旧周期的查询结果和高亮。
+
+接口：
+- `GET /api/statistics/ganzhi/options`：60 个有效干支。
+- `GET /api/statistics/ganzhi?ganzhi=丁酉&basis=open`：单干支明细与统计。
+- `GET /api/statistics/ganzhi/rankings?basis=open`：两个完整排行榜。
+- 后两者支持可选 `start=YYYY-MM-DD`、`end=YYYY-MM-DD`；`basis` 可选 `open` 或 `previous_close`。
+
+浏览器统计验收：`npm run test:statistics`（需先启动本地服务）。
+
+## 月线干支筛选与排行
+
+切换到“月”后，图表下方显示“干支月 · 筛选统计”。输入“丁酉”或“丁酉月”筛选月干支，或直接点击“遍历全部干支”，查看上涨概率、下跌概率降序双榜。点击干支展开对应月份的 OHLCV 和涨跌幅，点击月周期起止日期定位并固定月 K 详情。
+
+- 使用已有的十二节月线边界和对应月干支，不按公历月份、起始日日干支或单根日 K 分组。
+- 日期范围按月 K 理论起始日筛选，包含两端；即使结束筛选日位于月内，也使用整根月 K，不截断月 OHLCV。
+- 默认比较月收盘和月开盘；“收盘 vs 上月收盘”读取前一个连续节气月，前月可在筛选范围外。
+- 仅统计已收盘、自然日日线覆盖完整、没有源时间异常且不包含上市首日的月份。上月收盘口径还要求前月有效。未收盘或不完整月份保留在明细中并注明不计入。
+- 两榜包含全部 60 个干支，无有效月样本显示“—”并排最后。月线样本数独立于日线。
+- 单干支和排行榜接口增加可选参数 `period=month`；不传仍默认 `period=day`。例如：`GET /api/statistics/ganzhi?ganzhi=丁酉&period=month`、`GET /api/statistics/ganzhi/rankings?period=month`。
+- 月线浏览器验收：`npm run test:month-statistics`；该测试会核对真实月 K 与双榜计数、月干支明细、日期范围、前月收盘、图表定位及手机布局。

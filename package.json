@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "vendor": "node scripts/vendor-charts.mjs",
-    "test:ui": "node tests/browser-smoke.mjs"
+    "test:ui": "node tests/browser-smoke.mjs",
+    "test:statistics": "node tests/browser-statistics.mjs",
+    "test:month-statistics": "node tests/browser-month-statistics.mjs"
   },
   "dependencies": {
     "lightweight-charts": "5.2.1"

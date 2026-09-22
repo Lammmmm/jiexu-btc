@@ -49,6 +49,17 @@ class MarketRepository:
                        *(Decimal(r[k]) for k in ("open", "high", "low", "close", "volume")), r["date"])
                 for r in rows]
 
+    def snapshot(self):
+        """Read prices and sync cutoff in one SQLite read transaction."""
+        with self.connection() as conn:
+            conn.execute("BEGIN")
+            rows = conn.execute("SELECT * FROM daily_candles ORDER BY timestamp").fetchall()
+            metadata = dict(conn.execute("SELECT key,value FROM market_metadata").fetchall())
+        candles = [Candle(r["timestamp"], r["close_time"],
+                         *(Decimal(r[k]) for k in ("open", "high", "low", "close", "volume")), r["date"])
+                   for r in rows]
+        return candles, metadata
+
     def set_meta(self, key, value):
         with self.connection() as conn:
             conn.execute("INSERT OR REPLACE INTO market_metadata VALUES (?,?)", (key, str(value)))

@@ -61,6 +61,44 @@
       </aside>
     </div>
 
+    <section id="ganzhi-statistics" class="panel statistics-panel" aria-labelledby="statistics-heading">
+      <div class="statistics-header">
+        <div><span id="statistics-eyebrow" class="eyebrow">GANZHI DAY STATISTICS</span><h2 id="statistics-heading">干支日 · 筛选统计</h2><p id="statistics-description">查找同一干支日，观察历史日线的涨跌分布。</p></div>
+        <span id="statistics-period-tag" class="market-tag">日线 · UTC+8</span>
+      </div>
+      <form id="statistics-form" class="statistics-form">
+        <label>干支<input id="statistics-ganzhi" type="text" list="statistics-options" placeholder="例如：丁酉" maxlength="16" required autocomplete="off"><datalist id="statistics-options"></datalist></label>
+        <label>开始日期<input id="statistics-start" type="date" min="1900-01-01" max="2100-12-31"></label>
+        <label>结束日期<input id="statistics-end" type="date" min="1900-01-01" max="2100-12-31"></label>
+        <label class="statistics-basis-label">涨跌口径<select id="statistics-basis"><option value="open">收盘 vs 开盘</option><option value="previous_close">收盘 vs 昨收</option></select></label>
+        <button id="statistics-submit" type="submit">筛选统计</button><button id="statistics-rank" type="button">遍历全部干支</button><button id="statistics-clear" type="button" class="quiet">清除筛选</button>
+      </form>
+      <p id="statistics-status" class="statistics-note" role="status" aria-live="polite">输入干支，查看它在全部本地日线中的历史涨跌分布。</p>
+      <p id="statistics-ranking-status" class="statistics-note" role="status" aria-live="polite" hidden></p>
+      <div id="statistics-rankings" hidden>
+        <div class="statistics-result-heading"><h3>六十甲子 · 涨跌概率排行</h3><span id="statistics-ranking-scope" class="muted"></span></div>
+        <div class="statistics-rank-grid"><section><h3 class="positive">上涨概率 · 从高到低</h3><div class="statistics-table-wrap" tabindex="0" aria-label="上涨概率排行榜"><table class="statistics-table"><thead><tr><th>排名</th><th>干支</th><th>上涨概率</th><th>下跌概率</th><th>平盘</th><th>样本</th></tr></thead><tbody id="statistics-rank-up"></tbody></table></div></section><section><h3 class="negative">下跌概率 · 从高到低</h3><div class="statistics-table-wrap" tabindex="0" aria-label="下跌概率排行榜"><table class="statistics-table"><thead><tr><th>排名</th><th>干支</th><th>下跌概率</th><th>上涨概率</th><th>平盘</th><th>样本</th></tr></thead><tbody id="statistics-rank-down"></tbody></table></div></section></div>
+        <p class="statistics-note">点击干支查看 K 线明细。同概率时，样本多的优先，再按六十甲子顺序排列；无有效样本的排最后。排序基于历史频率，不代表未来表现。</p>
+      </div>
+      <div id="statistics-results" hidden>
+        <div class="statistics-result-heading"><h3 id="statistics-result-title"></h3><span id="statistics-scope" class="muted"></span></div>
+        <div class="statistics-cards">
+          <div><span>有效样本</span><strong id="statistics-sample-count">—</strong><small id="statistics-sample-label">已收盘日线</small></div>
+          <div><span>上涨概率 · 历史频率</span><strong id="statistics-up-pct" class="positive">—</strong><small id="statistics-up-count"></small></div>
+          <div><span>下跌概率 · 历史频率</span><strong id="statistics-down-pct" class="negative">—</strong><small id="statistics-down-count"></small></div>
+          <div><span>平盘比例</span><strong id="statistics-flat-pct">—</strong><small id="statistics-flat-count"></small></div>
+        </div>
+        <div class="statistics-distribution" aria-hidden="true"><i id="statistics-up-bar"></i><i id="statistics-down-bar"></i><i id="statistics-flat-bar"></i></div>
+        <p id="statistics-summary" class="statistics-note"></p>
+        <div class="statistics-table-wrap" tabindex="0" aria-label="匹配K线明细，可横向滚动"><table class="statistics-table">
+          <thead><tr><th id="statistics-date-heading">日期 ↗</th><th>开盘</th><th>最高</th><th>最低</th><th>收盘</th><th>涨跌幅</th><th>统计状态</th></tr></thead>
+          <tbody id="statistics-rows"></tbody>
+        </table><p id="statistics-empty" class="statistics-note" hidden>所选日期范围没有匹配日线。</p></div>
+        <p class="statistics-note">上涨 / 下跌 / 平盘次数 ÷ 有效样本数；相等计为平盘。图表突出匹配日期，点击明细日期可定位。历史频率不代表未来发生概率。</p>
+      </div>
+    </section>
+
+
     <section class="data-bar panel">
       <div><span class="eyebrow">LOCAL DATA</span><strong id="data-range">正在读取 SQLite 缓存</strong><span id="data-count" class="muted">—</span></div>
       <div class="sync-controls"><span id="last-sync" class="muted">尚未同步</span><button id="sync">↻ 同步行情</button></div>

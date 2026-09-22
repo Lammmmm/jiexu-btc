@@ -34,3 +34,10 @@ class CalendarRepository:
         if str(day) not in result:
             raise ValueError(f"Date outside calendar coverage: {day}")
         return result[str(day)]
+
+    def ganzhi_options(self):
+        with closing(self.connect()) as conn:
+            rows = conn.execute(
+                "SELECT DISTINCT ganzhi_day,ganzhi_index FROM calendar_days ORDER BY ganzhi_index"
+            ).fetchall()
+        return [r["ganzhi_day"] for r in rows]

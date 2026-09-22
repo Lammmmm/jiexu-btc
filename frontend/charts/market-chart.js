@@ -6,6 +6,7 @@ export class MarketChart {
     this.container = container;
     this.candles = [];
     this.byDate = new Map();
+    this.highlightDates = new Set();
     this.options = {period:'day',showGanzhi:true,showTerms:true};
     this.chart = L.createChart(container, {
       autoSize:true,
@@ -41,7 +42,7 @@ export class MarketChart {
     this.candles = candles; this.options.period=period;
     this.byDate = new Map(candles.map(c=>[c.metadata.startDate,c]));
     this.markerApi.setMarkers([]);
-    this.series.setData(candles.map(c=>({time:c.metadata.startDate,open:Number(c.open),high:Number(c.high),low:Number(c.low),close:Number(c.close)})));
+    this.series.setData(this.candlePoints());
     this.volume.setData(candles.map(c=>({time:c.metadata.startDate,value:Number(c.volume),color:Number(c.close)>=Number(c.open)?'#33584f':'#5e3942'})));
     if(oldRange) this.chart.timeScale().setVisibleLogicalRange(oldRange);
     else {
@@ -49,6 +50,32 @@ export class MarketChart {
       this.chart.timeScale().setVisibleLogicalRange({from:Math.max(-1,candles.length-visible),to:candles.length+3});
     }
     this.scheduleMarkers();
+  }
+  candlePoints() {
+    const highlighting=['day','month'].includes(this.options.period)&&this.highlightDates.size>0;
+    return this.candles.map(c=>{
+      const point={time:c.metadata.startDate,open:Number(c.open),high:Number(c.high),low:Number(c.low),close:Number(c.close)};
+      if(highlighting){
+        const matched=this.highlightDates.has(c.metadata.startDate);
+        const up=Number(c.close)>=Number(c.open);
+        point.color=matched?(up?'#67d7b4':'#ef7e89'):(up?'rgba(103,215,180,0.2)':'rgba(239,126,137,0.2)');
+        point.wickColor=matched?'#e9ca88':point.color;
+        point.borderColor=matched?'#e9ca88':point.color;
+      }
+      return point;
+    });
+  }
+  setHighlightDates(dates) {
+    const next=new Set(dates);
+    if(next.size===this.highlightDates.size&&[...next].every(d=>this.highlightDates.has(d))) return;
+    this.highlightDates=next;
+    this.series.setData(this.candlePoints());
+  }
+  focusDate(date) {
+    const i=this.candles.findIndex(c=>c.metadata.startDate===date);
+    if(i<0) return;
+    this.chart.timeScale().setVisibleLogicalRange({from:i-15,to:i+15});
+    this.chart.setCrosshairPosition(Number(this.candles[i].close),date,this.series);
   }
   scheduleMarkers() {
     cancelAnimationFrame(this.markerFrame);

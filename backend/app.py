@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 from datetime import date
 from typing import Literal
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Query
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
@@ -13,6 +13,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from backend.config import Settings, ROOT
 from backend.calendar.repository import CalendarRepository
 from backend.chart_service import ChartService
+from backend.statistics.ganzhi import GanzhiStatisticsService
 from backend.market.binance_client import BinanceClient
 from backend.market.repository import MarketRepository
 from backend.market.updater import MarketDataService
@@ -60,6 +61,7 @@ def create_app(settings=None):
     calendar = CalendarRepository(settings.calendar_db)
     charts = ChartService(market,calendar)
     coordinator = SyncCoordinator(market,settings)
+    statistics = GanzhiStatisticsService(market,calendar)
 
     @asynccontextmanager
     async def lifespan(app):
@@ -125,6 +127,39 @@ def create_app(settings=None):
             raise
         except ValueError as exc:
             raise HTTPException(422,detail=str(exc)) from exc
+
+    @app.get("/api/statistics/ganzhi/options")
+    def ganzhi_options():
+        return {"options": statistics.options()}
+
+    @app.get("/api/statistics/ganzhi")
+    def ganzhi_statistics(
+        ganzhi: str = Query(..., min_length=1, max_length=16),
+        start: date | None = None,
+        end: date | None = None,
+        basis: Literal["open", "previous_close"] = "open",
+        period: Literal["day", "month"] = "day",
+    ):
+        try:
+            return statistics.summarize(ganzhi, start=start, end=end, basis=basis, period=period)
+        except DataIntegrityError:
+            raise
+        except ValueError as exc:
+            raise HTTPException(422, detail=str(exc)) from exc
+
+    @app.get("/api/statistics/ganzhi/rankings")
+    def ganzhi_rankings(
+        start: date | None = None,
+        end: date | None = None,
+        basis: Literal["open", "previous_close"] = "open",
+        period: Literal["day", "month"] = "day",
+    ):
+        try:
+            return statistics.rankings(start=start, end=end, basis=basis, period=period)
+        except DataIntegrityError:
+            raise
+        except ValueError as exc:
+            raise HTTPException(422, detail=str(exc)) from exc
 
     @app.get("/api/debug/{day}")
     def debug(day:date,anchor:date|None=None):
