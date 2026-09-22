@@ -1,0 +1,16 @@
+{
+  "schema_version": "2",
+  "source": "https://github.com/6tail/lunar-python",
+  "source_version": "1.4.8",
+  "license": "MIT",
+  "start_date": "1900-01-01",
+  "end_date": "2100-12-31",
+  "timezone": "Asia/Shanghai",
+  "term_time_convention": "library Beijing standard time, fixed +08:00; not historical DST",
+  "boundary_rule": "solar term Gregorian date at 00:00 +08:00",
+  "ganzhi_rule": "getDayInGanZhi at Gregorian midnight; no 23:00 rollover",
+  "ganzhi_month_rule": "getMonthInGanZhi; switch on Jie date at midnight",
+  "ganzhi_year_rule": "getYearInGanZhiByLiChun; switch on Lichun date at midnight",
+  "row_count": 73414,
+  "database_sha256": "5e7eda36addba9d7a3419ef1a22f7be2b815b09fcb9c36e3d68016d3f9754297"
+}

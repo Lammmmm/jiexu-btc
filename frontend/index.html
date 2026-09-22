@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>节序 · BTC 看盘</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2316252e'/%3E%3Ctext x='8' y='29' font-size='28' fill='%237ae0c3'%3E节%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer src="/static/vendor/lightweight-charts.js"></script>
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">节</span><div><strong>节序</strong><span>CALENDAR MARKET</span></div><b class="version">V1</b></div>
+    <div class="topmeta"><span>Binance Spot</span><span class="divider"></span><span>Asia/Shanghai · UTC+8</span><span id="connection" class="status">正在连接</span></div>
+  </header>
+  <main>
+    <section class="market-heading">
+      <div><div class="eyebrow">比特币 / 泰达币</div><div class="symbol-line"><h1>BTC<span>/ USDT</span></h1><span class="market-tag">现货</span></div></div>
+      <div class="quote"><strong id="last-price">—</strong><span id="day-change">UTC+8 当日涨跌 —</span></div>
+      <div class="quote-stat"><span>当日最高</span><strong id="day-high">—</strong></div>
+      <div class="quote-stat"><span>当日最低</span><strong id="day-low">—</strong></div>
+      <div class="quote-stat"><span>当日成交量 · BTC</span><strong id="day-volume">—</strong></div>
+    </section>
+
+    <div class="workspace">
+      <section class="chart-panel panel">
+        <div class="chart-toolbar">
+          <nav aria-label="K线周期" class="period-tabs">
+            <button data-period="day" class="active" aria-pressed="true">日<span>干支日</span></button>
+            <button data-period="week" aria-pressed="false">周<span>自定义七日</span></button>
+            <button data-period="month" aria-pressed="false">月<span>节气月</span></button>
+            <button data-period="year" aria-pressed="false">年<span>立春年</span></button>
+          </nav>
+          <button id="fit" class="quiet" title="显示当前周期的全部历史">全部历史 ↔</button>
+        </div>
+        <div class="chart-options">
+          <span id="period-description">UTC+8 自然日 · 00:00 至 23:59:59</span>
+          <div class="switches"><label><input id="ganzhi-toggle" type="checkbox" checked>干支</label><label><input id="term-toggle" type="checkbox" checked>节气</label></div>
+        </div>
+        <div class="chart-wrap"><div id="chart" aria-label="BTC K线和成交量图表"></div><div id="chart-overlay" role="status">正在载入本地行情…</div></div>
+        <div class="chart-caption"><span><i class="dot green"></i>上涨<i class="dot red"></i>下跌<i class="dot amber"></i>节气</span><span id="label-hint">缩放查看干支；点击 K 线固定详情</span></div>
+        <div class="anchor-bar">
+          <div><strong>七日周期锚点</strong><span id="anchor-note">尚未设定 · 不默认采用星期一</span></div>
+          <form id="anchor-form"><label class="sr-only" for="anchor">起算日期</label><input id="anchor" type="date" aria-label="周线起算日期"><button type="submit">应用</button><button type="button" id="clear-anchor" class="quiet">清除</button></form>
+        </div>
+        <div id="message" role="alert" class="message" hidden></div>
+      </section>
+
+      <aside class="detail-panel panel">
+        <div class="section-top"><span class="eyebrow">CANDLE INSPECTOR</span><button id="unpin" class="quiet" hidden>取消固定</button></div>
+        <h2 id="detail-title">K 线详情</h2>
+        <div id="detail-id" class="mono muted">等待行情</div>
+        <span id="detail-state" class="badge">—</span>
+        <dl class="period-dates"><div><dt>周期开始</dt><dd id="detail-start">—</dd></div><div><dt>周期结束</dt><dd id="detail-end">—</dd></div><div><dt>已含日线</dt><dd id="detail-count">—</dd></div></dl>
+        <div class="section-label">OHLCV <span>原始精度</span></div>
+        <dl id="ohlcv" class="ohlcv"><div><dt>开盘 <small>O</small></dt><dd id="detail-open">—</dd></div><div><dt>最高 <small>H</small></dt><dd id="detail-high">—</dd></div><div><dt>最低 <small>L</small></dt><dd id="detail-low">—</dd></div><div><dt>收盘 <small>C</small></dt><dd id="detail-close">—</dd></div><div><dt>成交量 <small>BTC</small></dt><dd id="detail-volume">—</dd></div></dl>
+        <div id="calendar-detail"><div class="section-label">历法坐标 <span>本地数据库</span></div><dl class="calendar-fields"><div><dt id="detail-ganzhi-label">日干支</dt><dd id="detail-ganzhi" class="ganzhi">—</dd></div><div><dt>干支取值日</dt><dd id="detail-month">—</dd></div><div><dt>传统年</dt><dd id="detail-year">—</dd></div></dl></div>
+        <p id="detail-warning" class="detail-warning"></p>
+        <p class="rule-note">年、月、日分别显示对应干支；七日周期显示起始日干支。当前周期会随行情同步继续更新。</p>
+      </aside>
+    </div>
+
+    <section class="data-bar panel">
+      <div><span class="eyebrow">LOCAL DATA</span><strong id="data-range">正在读取 SQLite 缓存</strong><span id="data-count" class="muted">—</span></div>
+      <div class="sync-controls"><span id="last-sync" class="muted">尚未同步</span><button id="sync">↻ 同步行情</button></div>
+    </section>
+    <details id="anomalies" class="audit-notice" hidden><summary id="anomaly-summary"></summary><p id="anomaly-text"></p></details>
+    <section id="debug-panel" class="panel debug-panel" hidden>
+      <div><span class="eyebrow">DEBUG MODE</span><h3>日期与周期核验</h3><p class="muted">查询任意历法日期，核对原始日线及周期归属。</p></div>
+      <form id="debug-form"><label class="sr-only" for="debug-date">查询日期</label><input id="debug-date" type="date" min="1900-01-01" max="2100-12-31" required><button type="submit">查询</button></form>
+      <pre id="debug-output" aria-live="polite">选择日期以查询 Calendar Database</pre>
+    </section>
+  </main>
+  <footer><span>节序 V1 · 历法决定坐标，行情保留原貌</span><span>图表由 <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView Lightweight Charts™</a> 提供 · © 2025 TradingView, Inc. · 历法 lunar-python 1.4.8</span></footer>
+</div>
+</body>
+</html>

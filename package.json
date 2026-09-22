@@ -1,0 +1,16 @@
+{
+  "name": "jie-xu-btc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor-charts.mjs",
+    "test:ui": "node tests/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "lightweight-charts": "5.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2"
+  }
+}

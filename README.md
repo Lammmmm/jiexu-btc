@@ -1,0 +1,207 @@
+# 节序 · BTC 看盘 V1
+
+本地运行的 BTCUSDT / Binance Spot 看盘系统。以 **UTC+8 自然日日线** 为唯一行情源，关联固定中国历法数据库，再聚合自定义七日线、十二节月线、立春年线。没有交易下单、指标、信号或预测功能。
+
+## 立即运行
+
+本项目已在当前机器安装依赖、生成历法和下载历史行情。
+
+- 双击桌面“节序 BTC 看盘”或 `start.cmd`：自动后台启动并打开浏览器；已运行时直接打开页面。
+- PowerShell 执行 `.\start.ps1` 是保留的前台日志模式，需要手动打开下方地址。
+- 浏览器打开 **http://127.0.0.1:8000**。
+- 需要日期核验面板：`.\start.ps1 -DebugMode`。
+- 只查看缓存、不联网更新：`.\start.ps1 -NoSync`。
+- 默认每 60 秒更新一次，界面每 5 秒检查本地同步状态。页面“同步行情”可手动触发。
+- 前台日志模式中按 Ctrl+C 停止。桌面模式服务在后台运行，关闭浏览器不会停止服务；再次双击会复用。服务仅监听 127.0.0.1。
+
+首次复制到其他机器（Python 3.11+）：
+
+```powershell
+.\setup.ps1
+.\start.ps1 -DebugMode
+```
+
+图表库和历法数据库已包含在项目中，正常运行不需要 Node.js、不访问 CDN、不访问 GitHub。仅重新安装图表依赖或运行浏览器测试需要 Node.js 20+。PowerShell 如果限制脚本执行，可使用 `powershell -NoProfile -ExecutionPolicy Bypass -File .\setup.ps1`，只影响该次进程。
+
+## 周线锚点：尚未决定
+
+**没有默认锚点，也不默认采用星期一。** 未配置时，点击周线会提示先设置。
+
+1. 页面输入锚点日期并点击“应用”，浏览器将该选择保存在本机 localStorage；或
+2. 启动前设置环境变量：
+
+```powershell
+# 仅为配置语法示例；不是本系统预设的正式锚点。
+$env:CUSTOM_WEEK_ANCHOR = '你最终确定的 YYYY-MM-DD'
+.\start.ps1
+```
+
+页面设置优先于环境变量。“清除”删除浏览器覆盖值，回到环境变量；环境变量也未配置时回到“尚未设定”。验收使用的 2026-01-01 已清除。
+
+## 1. 目录
+
+```text
+backend/
+  app.py                    FastAPI、本地静态文件、后台增量同步
+  config.py                 环境变量配置
+  models.py                 通用 Decimal Candle
+  timeutils.py              Asia/Shanghai 时间与 UTC 毫秒转换
+  market/
+    binance_client.py       官方 API、分页、限流/重试
+    repository.py          SQLite 原始日线缓存
+    updater.py             增量刷新、缺日检测与补齐
+    validation.py          重复/缺日/OHLC/时区验证
+  calendar/
+    repository.py          固定 Calendar DB 只读查询
+    service.py             历法查询、日线日期关联
+  period/engine.py          日/锚点周/节气月/立春年解析器
+  aggregation/aggregator.py 唯一通用 OHLCV 聚合器
+  chart_service.py          历法关联与图表数据输出
+frontend/
+  index.html                本地页面
+  app.js                    数据加载与交互
+  charts/market-chart.js    Lightweight Charts 适配器
+  controls/details.js      原始精度详情
+  markers/daily-markers.js  干支/节气标签抽稀
+  vendor/                   本地图表库、Apache License、NOTICE
+data/
+  market.db                 唯一行情源：原始日线
+  calendar.db               1900-01-01 至 2100-12-31 固定历法
+  calendar_source/          历法原始源码包、MIT License、生成清单与校验值
+scripts/
+  sync_market.py            命令行历史/增量下载
+  generate_calendar.py      一次性离线生成历法
+  verify_live_market.py     真实行情独立复核
+  vendor-charts.mjs         从锁定 npm 依赖准备本地图表
+tests/                      离线核心/API 测试、真实浏览器验收
+artifacts/
+  market-verification.json  真实 OHLCV 和小时线复核结果
+  browser-verification.json 浏览器验收结果
+  test-results.xml          自动测试报告
+  browser/                  日/月/年及手机截图
+requirements-lock.txt       Python 完整依赖锁
+package-lock.json           前端及浏览器测试依赖锁
+setup.ps1 / start.ps1 / start.cmd
+```
+
+## 2. 技术栈
+
+- Python 3.11+、FastAPI 0.115.12、Uvicorn 0.34.2、httpx 0.28.1。
+- Python sqlite3；OHLCV 在数据库中保存十进制字符串，聚合使用 Decimal。
+- 原生 JavaScript 模块 + **TradingView Lightweight Charts 5.2.1**；不是 Pine Script，也不是官网 Widget。
+- lunar-python **1.4.8** 只用于离线数据生成及测试；生产 `backend/` 没有对该库的导入。
+- pytest；Playwright 1.58.2 + 本机 Edge 用于端到端验收。
+- `requirements.txt` 为生产直接依赖，`requirements-dev.txt` 加上生成和测试工具；`requirements-lock.txt` 锁定此次验证的完整环境。
+
+## 3. Binance 数据获取
+
+官方只读行情端点 `https://data-api.binance.vision/api/v3/klines`，无需 API Key：
+
+```text
+symbol=BTCUSDT
+interval=1d
+timeZone=8
+limit=1000
+startTime=<UTC 毫秒时间戳>
+endTime=<UTC 毫秒时间戳>
+```
+
+首次从上市前日期开始查询，以 API 真正返回的第一根 K 确定历史起点；分页后保存 SQLite。后续只刷新缓存尾部及缺失区间，并重取上一天，避免昨天未收盘快照永久留在缓存中。缺口按连续区间合并请求，主键 UPSERT 防止重复；响应内部重复、乱序和非法 OHLC 会明确报错。
+
+连接失败/5xx 最多重试三次；429/418 显示错误，并按 Retry-After 进入冷却。离线仍可查看既有缓存，UI 明示同步错误或陈旧状态。若缺日无法补齐，聚合返回 HTTP 409，绝不填造 K 线。
+
+参考：[Binance 官方 Klines 参数](https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md#klinecandlestick-data)、[官方公开行情端点](https://developers.binance.com/en/docs/products/spot/rest-api)。
+
+## 4. UTC+8 日线实现
+
+使用 Binance 原生 `timeZone=8`，不是默认 UTC 日线改显示标签。请求时间戳仍为 UTC 毫秒；每条响应校验 openTime 必须对应 Asia/Shanghai 当天 00:00。
+
+例如 2026-09-07 00:00 +08:00 对应 2026-09-06 16:00Z。原始正常日线 closeTime 为下一零点前 1 毫秒。图表横轴传入服务端提供的公历日期（BusinessDay），不在浏览器重新分组或推算历法。
+
+实际将 **2025-09-07 的 24 根 Binance 小时线**独立汇总，与 UTC+8 日线 OHLCV 全部一致，详见验收 JSON。
+
+## 5–6. 历法来源、版本与许可证
+
+- 项目：[6tail/lunar-python](https://github.com/6tail/lunar-python)。
+- 精确发行版本：**1.4.8**。生成器检查安装版本，版本不符直接拒绝。
+- License：[MIT](https://github.com/6tail/lunar-python/blob/master/LICENSE)，完整文本保存在 `data/calendar_source/LICENSE.lunar-python`。
+- 原始发行源码包：`data/calendar_source/lunar_python-1.4.8.tar.gz`。
+- 生成范围：1900-01-01～2100-12-31，**73,414 行**；额外读取前后年份的节气作为边界，使首尾年不截断。
+- `manifest.json` 保存版本、范围、规则和数据库 SHA-256；`source-archive.json` 保存源码包与 PyPI 发布校验值。
+- 重新生成：`.\.venv\Scripts\python.exe -m scripts.generate_calendar`。过程完全离线；先写临时数据库，完整性检查成功后替换正式库。建议停服后再生成。
+- 节气精确时刻遵循源库的北京时间（固定 +08:00），不额外套用历史夏令时。V1 实际只使用日期；BTC 行情始于 2017 年，不涉及中国历史夏令时。
+- 干支使用源库 `getDayInGanZhi()` 对自然日的输出，不使用 23 点换日口径。需求示例 2026-09-07 的真实输出是 **甲申**。
+
+## 7. Calendar Database 结构
+
+`calendar_days`：
+`date`、`ganzhi_day`、`heavenly_stem`、`earthly_branch`、`ganzhi_index`（0 起）、`solar_term`、`solar_term_index`（源库冬至起，0 起）、`solar_term_date`、`solar_term_exact_time`、`solar_month`、`solar_month_id`、`month_index`（立春起 1～12）、`solar_year_id`。
+
+`calendar_periods` 保存历法周期 ID、种类、名称、真实起止日期；`calendar_metadata` 保存生成规则及来源。历法周期表是离线历法索引，**不保存周/月/年行情**。
+
+例如 2026-09-07：干支甲申、节气白露、`solar_month_id=2026-bailu`、`solar_year_id=2026`、精确节气时间 `2026-09-07T22:41:16+08:00`；V1 从当天 00:00 切月。
+
+## 8. 聚合规则
+
+- 日：UTC+8 自然日。
+- 周：`index = floor((date - anchor).days / 7)`，起点为 `anchor + index*7 天`，终点为第七天；负 index 支持锚点前历史。
+- 月：仅十二“节”切月；雨水、春分、秋分等“气”只作标记，不切月。白露月结束于寒露前一天。
+- 年：立春起，到下一立春前一天；1 月 1 日不切换。2026 小寒月 ID 为 `2025-xiaohan`，其传统年为 2025。
+- 唯一聚合器按 period resolver 分组：首日 Open / 最高 High / 最低 Low / 尾日 Close / Decimal Volume 求和。
+- `Candle.metadata` 区分完整周期起止、实际包含的日期、日数、是否收盘、是否完整、源数据异常。首个不完整历史周期及正在形成的周期都不冒充完整周期。
+- API 中 OHLCV 为十进制字符串；只在绘图时转换为 JS Number，详情保留原始精度。
+- 聚合结果的 openTime/closeTime 是周期理论边界；日线 metadata 的 `sourceCloseTime` 保留 Binance 原始值，SQLite 也完整保留原始 close_time。
+
+## 9. 测试与实际验收
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q --junitxml=artifacts/test-results.xml
+.\.venv\Scripts\python.exe -m scripts.verify_live_market
+# 服务以 DebugMode 运行后执行；需要 npm ci 安装开发依赖和本机 Edge
+npm run test:ui
+```
+
+此次结果记录在 `V1-REPORT.md`。核心测试包含 25 个固定随机日期的干支对照、201 年全部 4,824 个节气的源库对照、立春/白露/小寒边界、十进制精确 OHLCV、锚点前后周线、完整历法范围、缺日修复、缓存幂等、昨天终值刷新、限流冷却、API 错误和 Debug 开关。
+
+浏览器测试会在隔离的浏览器上下文中临时使用 2026-01-01 锚点并清除，不改变正式配置。截图保存在本地。市场复核脚本需联网，离线单元测试不需联网。
+
+## 10. 已知问题与明确边界
+
+1. Binance 原始日线 **2018-02-08、2020-02-19、2020-12-21** 的 closeTime 提前。保留源行情，记录 warning，UI 显示并向周/月/年传播异常；没有用猜测价格补齐。尚未用完整分钟/小时历史重建这些异常日，因此不能宣称这些日完整无异常。
+2. 周线正式锚点待你决定；没有擅自设定。
+3. V1 是 60 秒轮询，不是逐笔/秒级流；当前日线及其上级周期均会变动。
+4. 首个上市日可能只有部分日内交易；它所在的首个周/月/年若缺少前置自然日会标为不完整。
+5. 历法可靠性继承 lunar-python 1.4.8；已对库原始输出交叉验证，未另做独立天文机构校核。1900～2100 范围外明确拒绝查询。
+6. 首次使用需网络可达 Binance；不可达时保留缓存并显示失败，无备用交易所或模拟行情。
+7. 运行环境的 AnyIO/Starlette 测试工具有一条弃用警告，不影响通过的测试。
+8. 本机 Codex 内置浏览器/图片工具因 Windows ACL 配置错误无法使用；已使用本机 Edge 的真实浏览器测试与截图核验，项目服务不受该工具故障影响。
+
+## 11. 后续扩展接口
+
+- 新行情源实现 `server_time()`、`daily(start_ms,end_ms)` 接口；新增交易对时再扩展 SQLite 复合主键，V1 当前严格只有 BTCUSDT。
+- 新周期实现 `PeriodResolver.resolve(candle) -> Period` 并注册到 `resolver_for`；共享同一聚合器。
+- 新历法字段在离线生成器和 schema 版本中扩展，通过 CalendarService join 进入 metadata。
+- 图表仅消费 ChartService 输出；五行、指标等后续模块可单独计算后附加，当前没有预先实现。
+- 要改成精确节气时刻，需引入小时/分钟等更细行情并重新定义切分；本版不会把日线任意拆分。
+
+### 配置与 API
+
+环境变量：`CUSTOM_WEEK_ANCHOR`（空）、`DEBUG_MODE=false`、`AUTO_SYNC=true`、`SYNC_SECONDS=60`（最小 30）、`BINANCE_BASE_URL`、`MARKET_DB`、`CALENDAR_DB`。程序直接读取进程环境，`.env.example` 是说明示例，不自动加载。
+
+- `GET /api/config`：规则、历法来源、配置。
+- `GET /api/status`：缓存范围、同步状态、错误、陈旧状态。
+- `POST /api/sync`：后台增量更新，不阻塞图表。
+- `GET /api/candles?period=day|week|month|year&anchor=YYYY-MM-DD`：完整本地历史的相应聚合；anchor 为可选覆盖。
+- `GET /api/debug/YYYY-MM-DD?anchor=YYYY-MM-DD`：仅 DEBUG_MODE 开启时提供。
+- `GET /docs`：FastAPI 本地交互接口文档。
+
+Lightweight Charts 使用 [Apache 2.0](https://github.com/tradingview/lightweight-charts/blob/v5.2.1/LICENSE)，页面保留 TradingView 链接与版权声明，分发保留完整 LICENSE / NOTICE。
+
+
+## 周期干支显示更新
+
+右侧详情标题与历法坐标统一使用对应周期的干支：日线取日干支、月线取月干支、年线取立春年干支；自定义周线取理论周期起始日干支，即使最早行情缺少该日，也不改用首根已缓存日线的干支。周线这一值是起始日标识，不另造传统“周干支”。
+
+年/月干支预先由 lunar-python 1.4.8 的 getYearInGanZhiByLiChun / getMonthInGanZhi 生成，使用日期零点切换口径。Calendar schema 已升级为 2，新增 ganzhi_month / ganzhi_year。API metadata 增加 displayGanzhi、ganzhiBasis、ganzhiDate。OHLCV 和周期边界不变；图表上的节气标记开关仍可单独控制。
+
+桌面启动入口为 scripts/launch.py，经由项目内 pythonw.exe 运行；错误日志在 artifacts/launcher-error.log，后台服务日志在 artifacts/desktop-server-8000.log。同一条历史提前收盘警告每个进程只记录一次，原始数据与页面异常提示仍完整保留。
