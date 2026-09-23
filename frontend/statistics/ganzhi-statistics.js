@@ -11,11 +11,12 @@ export class GanzhiStatistics {
   constructor({api,onHighlight,onLocate}){
     this.api=api;this.onHighlight=onHighlight;this.onLocate=onLocate;
     this.root=document.getElementById('ganzhi-statistics');
-    this.period='day';this.query=null;this.data=null;this.sequence=0;
+    this.period='day';this.query=null;this.data=null;this.selectedDate=null;this.sequence=0;
     this.rankQuery=null;this.rankData=null;this.rankSequence=0;this.rankLoading=false;
     this.$=id=>document.getElementById(id);
     this.$('statistics-form').addEventListener('submit',e=>{
       e.preventDefault();
+      this.selectedDate=null;this.hideYearly();
       this.query={
         period:this.period,
         ganzhi:this.$('statistics-ganzhi').value.trim(),
@@ -33,7 +34,12 @@ export class GanzhiStatistics {
     });
     this.$('statistics-rows').addEventListener('click',e=>{
       const button=e.target.closest('button[data-date]');
-      if(button) this.onLocate(button.dataset.date);
+      if(button){
+        this.selectedDate=button.dataset.date;
+        this.showYearly(this.selectedDate);
+        this.onLocate(this.selectedDate,this.period==='month');
+        if(this.period==='day') this.$('statistics-yearly').scrollIntoView({behavior:'smooth',block:'nearest'});
+      }
     });
     this.loadOptions();
   }
@@ -73,6 +79,7 @@ export class GanzhiStatistics {
     if(this.rankQuery&&this.supported&&!this.rankLoading) this.fetchRankings(this.rankQuery);
   }
   clear(){
+    this.selectedDate=null;this.hideYearly();
     this.sequence++;this.abort?.abort();this.query=null;this.data=null;this.loading=false;
     this.rankSequence++;this.rankAbort?.abort();this.rankQuery=null;this.rankData=null;this.rankLoading=false;
     this.$('statistics-rankings').hidden=true;this.$('statistics-ranking-status').hidden=true;
@@ -88,7 +95,7 @@ export class GanzhiStatistics {
     if(!this.query) return;
     const sequence=++this.sequence;
     this.abort?.abort();this.abort=new AbortController();this.loading=true;this.data=null;
-    this.$('statistics-results').hidden=true;this.onHighlight([]);
+    this.$('statistics-results').hidden=true;this.hideYearly();this.onHighlight([]);
     this.$('statistics-submit').disabled=true;this.$('statistics-submit').textContent='正在统计…';
     this.$('statistics-status').textContent='正在核对已收盘'+this.unit+'线…';
     this.$('statistics-status').className='statistics-note';
@@ -142,6 +149,7 @@ export class GanzhiStatistics {
   }
   drillDown(ganzhi){
     const data=this.rankData;
+    this.selectedDate=null;this.hideYearly();
     this.query={ganzhi,period:data.period,start:data.start||'',end:data.end||'',basis:data.basis};
     this.$('statistics-ganzhi').value=ganzhi;
     for(const key of ['start','end','basis']) this.$('statistics-'+key).value=this.query[key];
@@ -214,5 +222,35 @@ export class GanzhiStatistics {
       tr.append(state);return tr;
     }));
     this.$('statistics-empty').hidden=data.matches.length>0;
+    if(this.selectedDate&&data.period==='day'&&data.matches.some(row=>row.date===this.selectedDate))
+      this.showYearly(this.selectedDate);
+    else this.hideYearly();
+  }
+  hideYearly(){this.$('statistics-yearly').hidden=true;}
+  showYearly(date){
+    const data=this.data;
+    if(this.period!=='day'||!data?.yearly?.length) return this.hideYearly();
+    const year=Number(date.slice(0,4));
+    const active=data.yearly.find(row=>row.year===year);
+    if(!active) return this.hideYearly();
+    this.$('statistics-yearly-title').textContent=data.ganzhi+'日 · 当前 '+year+' 年（'+date+'）';
+    const rows=data.yearly.map(item=>{
+      const tr=document.createElement('tr');
+      tr.className=item.year===year?'statistics-year-active':'';
+      tr.title=item.start+' 至 '+item.endExclusive+'（不含）；匹配 '+item.matchedCount+' 次，排除 '+item.excludedCount+' 次';
+      for(const [value,cls] of [
+        [String(item.year), ''],
+        [pct(item.probabilitiesPct.up), 'positive'],
+        [pct(item.probabilitiesPct.down), 'negative'],
+        [String(item.counts.flat), ''],
+        [String(item.sampleCount), ''],
+      ]){
+        const td=document.createElement('td');
+        td.textContent=value;td.className=cls;tr.append(td);
+      }
+      return tr;
+    });
+    this.$('statistics-yearly-rows').replaceChildren(...rows);
+    this.$('statistics-yearly').hidden=false;
   }
 }

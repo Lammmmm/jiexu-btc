@@ -14,3 +14,9 @@ footer{display:flex;justify-content:space-between;gap:16px;padding:25px 0;color:
 @media(max-width:800px){.statistics-panel{padding:16px}.statistics-header{align-items:flex-start}.statistics-header .market-tag{white-space:nowrap}.statistics-header h2{font-size:17px}.statistics-header p{font-size:11px}.statistics-form{gap:12px 10px}.statistics-form label{width:calc(50% - 5px);min-width:0}.statistics-form input,.statistics-form input[type=text],.statistics-form select{width:100%;min-width:0}.statistics-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.statistics-cards>div{padding:12px}.statistics-cards strong{font-size:25px}.statistics-result-heading{align-items:flex-start;flex-direction:column;gap:4px}.statistics-table th,.statistics-table td{padding-left:10px;padding-right:10px}}
 
 .statistics-rank-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:18px}.statistics-rank-grid>section{min-width:0}.statistics-rank-grid h3{font-size:13px}.statistics-rank-grid .statistics-table-wrap{margin-top:10px}.statistics-rank-grid th,.statistics-rank-grid td{padding:9px 11px}.statistics-rank-grid .statistics-date{font-family:"Microsoft YaHei",sans-serif}.statistics-rank-grid td:last-child{color:var(--muted)}@media(max-width:1000px){.statistics-rank-grid{grid-template-columns:1fr}}
+
+.statistics-yearly{border-top:1px solid var(--border);margin-top:22px;padding-top:18px}
+.statistics-yearly .section-label{margin-top:0}
+.statistics-yearly .statistics-table-wrap{margin-top:12px;max-height:440px}
+.statistics-yearly .statistics-year-active td{background:#254036}
+.statistics-yearly #statistics-yearly-title{color:var(--text);margin-top:4px}

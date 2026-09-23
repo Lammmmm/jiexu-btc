@@ -91,12 +91,12 @@ async function init(){
     statistics=new GanzhiStatistics({
       api,
       onHighlight:dates=>chart.setHighlightDates(dates),
-      onLocate:date=>{
+      onLocate:(date,scrollToChart=true)=>{
         if(!['day','month'].includes(period)) return;
         const candle=payload?.candles.find(c=>c.metadata.startDate===date);
         if(!candle) return;
         chart.focusDate(date);select(candle,true);
-        $('chart').scrollIntoView({behavior:'smooth',block:'center'});
+        if(scrollToChart) $('chart').scrollIntoView({behavior:'smooth',block:'center'});
       },
     });
     document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>load(b.dataset.period)));

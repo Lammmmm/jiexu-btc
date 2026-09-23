@@ -238,3 +238,9 @@ Lightweight Charts 使用 [Apache 2.0](https://github.com/tradingview/lightweigh
 - 两榜包含全部 60 个干支，无有效月样本显示“—”并排最后。月线样本数独立于日线。
 - 单干支和排行榜接口增加可选参数 `period=month`；不传仍默认 `period=day`。例如：`GET /api/statistics/ganzhi?ganzhi=丁酉&period=month`、`GET /api/statistics/ganzhi/rankings?period=month`。
 - 月线浏览器验收：`npm run test:month-statistics`；该测试会核对真实月 K 与双榜计数、月干支明细、日期范围、前月收盘、图表定位及手机布局。
+
+## 流日逐年胜率
+
+在日线页筛选干支日后，点击明细中的任意日期，历史统计区会在日线明细表后直接显示该干支日的逐年胜率，并突出当前点击日期所属的公历年。每一行年份为该年 1 月 1 日（含）至次年 1 月 1 日（不含）；显示上涨率、下跌率、平盘次数与有效样本数。上涨率 = 当年有效上涨次数 ÷ 当年有效样本数，平盘计入分母。
+
+逐年结果沿用当前干支、日期范围、收盘/开盘或收盘/昨收口径，以及未收盘、源异常和上市首日的排除规则。日期范围若只覆盖某年的一部分，该年只统计范围内的匹配日线；没有有效样本时概率显示“—”。API 单干支结果增加 `yearly` 数组，每项含 `start` 与次年 1 月 1 日 `endExclusive`；排行榜和月线结果不展示年度明细。

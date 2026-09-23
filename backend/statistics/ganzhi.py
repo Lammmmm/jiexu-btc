@@ -15,6 +15,33 @@ def decimal_string(value):
     return format(value.quantize(Decimal("0.000001")), "f") if value is not None else None
 
 
+def yearly_breakdown(matches):
+    """Calendar-year bins [January 1, next January 1), using the same filtered rows."""
+    years = {}
+    for match in matches:
+        year = int(match["date"][:4])
+        if year not in years:
+            years[year] = {
+                "year": year, "start": f"{year}-01-01", "endExclusive": f"{year + 1}-01-01",
+                "matchedCount": 0, "sampleCount": 0, "excludedCount": 0,
+                "counts": {"up": 0, "down": 0, "flat": 0},
+            }
+        bucket = years[year]
+        bucket["matchedCount"] += 1
+        if match["included"]:
+            bucket["sampleCount"] += 1
+            bucket["counts"][match["direction"]] += 1
+        else:
+            bucket["excludedCount"] += 1
+    for bucket in years.values():
+        count = bucket["sampleCount"]
+        bucket["probabilitiesPct"] = {
+            direction: decimal_string(Decimal(n) / count * 100) if count else None
+            for direction, n in bucket["counts"].items()
+        }
+    return [years[year] for year in sorted(years, reverse=True)]
+
+
 class GanzhiStatisticsService:
     def __init__(self, market_repository, calendar_repository):
         self.market = market_repository
@@ -39,6 +66,7 @@ class GanzhiStatisticsService:
         for ganzhi in options:
             summary = self._summarize(ganzhi, prepared, start=start, end=end, basis=basis, period=period)
             summary.pop("matches")
+            summary.pop("yearly", None)
             summaries.append(summary)
         order = {ganzhi: index for index, ganzhi in enumerate(options)}
 
@@ -169,4 +197,5 @@ class GanzhiStatisticsService:
             "bestChangePct": decimal_string(max(changes)) if changes else None,
             "worstChangePct": decimal_string(min(changes)) if changes else None,
             "matches": list(reversed(matches)),
+            "yearly": yearly_breakdown(matches) if period == "day" else [],
         }

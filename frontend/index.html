@@ -94,6 +94,17 @@
           <thead><tr><th id="statistics-date-heading">日期 ↗</th><th>开盘</th><th>最高</th><th>最低</th><th>收盘</th><th>涨跌幅</th><th>统计状态</th></tr></thead>
           <tbody id="statistics-rows"></tbody>
         </table><p id="statistics-empty" class="statistics-note" hidden>所选日期范围没有匹配日线。</p></div>
+        <section id="statistics-yearly" class="statistics-yearly" aria-labelledby="statistics-yearly-heading" hidden>
+          <div class="section-label" id="statistics-yearly-heading">流日逐年胜率 <span>公历年</span></div>
+          <p id="statistics-yearly-title" class="statistics-note"></p>
+          <div class="statistics-table-wrap" tabindex="0" aria-label="所选流日逐年胜率">
+            <table class="statistics-table">
+              <thead><tr><th>年份</th><th>上涨率</th><th>下跌率</th><th>平盘</th><th>样本</th></tr></thead>
+              <tbody id="statistics-yearly-rows"></tbody>
+            </table>
+          </div>
+          <p class="statistics-note">每年为当年 1 月 1 日（含）至次年 1 月 1 日（不含）。胜率 = 上涨次数 ÷ 有效样本数；仅统计当前筛选范围内的匹配日线。</p>
+        </section>
         <p class="statistics-note">上涨 / 下跌 / 平盘次数 ÷ 有效样本数；相等计为平盘。图表突出匹配日期，点击明细日期可定位。历史频率不代表未来发生概率。</p>
       </div>
     </section>

@@ -53,12 +53,37 @@ try{
   await page.locator('#statistics-rows button').first().click();
   await expect(page.locator('#detail-id')).toHaveText(day);
   await expect(page.locator('#detail-ganzhi')).toHaveText('丁酉');
-  check('丁酉筛选和逐日表正确，点击日期定位K线并固定详情');
+  await expect(page.locator('#statistics-yearly')).toBeVisible();
+  assert.equal(await page.locator('#statistics-results #statistics-yearly').count(),1);
+  assert.equal(await page.locator('.detail-panel #statistics-yearly').count(),0);
+  await expect(page.locator('#statistics-yearly-rows tr')).toHaveCount(ding.yearly.length);
+  assert.ok(ding.yearly.length>1);
+  assert.equal(ding.yearly.reduce((sum,row)=>sum+row.sampleCount,0),ding.sampleCount);
+  assert.equal(ding.yearly.reduce((sum,row)=>sum+row.counts.up,0),ding.counts.up);
+  assert.equal(ding.yearly.reduce((sum,row)=>sum+row.counts.down,0),ding.counts.down);
+  for(const [i,row] of ding.yearly.entries()){
+    const cells=page.locator('#statistics-yearly-rows tr').nth(i).locator('td');
+    await expect(cells.nth(0)).toHaveText(String(row.year));
+    await expect(cells.nth(1)).toHaveText(row.sampleCount?Number(row.probabilitiesPct.up).toFixed(2)+'%':'—');
+    await expect(cells.nth(2)).toHaveText(row.sampleCount?Number(row.probabilitiesPct.down).toFixed(2)+'%':'—');
+    await expect(cells.nth(4)).toHaveText(String(row.sampleCount));
+  }
+  await expect(page.locator('#statistics-yearly-rows tr.statistics-year-active td').first()).toHaveText(day.slice(0,4));
+  const older=ding.matches.at(-1).date;
+  await page.locator('#statistics-rows button').last().click();
+  await expect(page.locator('#statistics-yearly-rows tr.statistics-year-active td').first()).toHaveText(older.slice(0,4));
+  await page.locator('#statistics-yearly').screenshot({path:fileURLToPath(new URL('daily-yearly-detail.png',out))});
+  await page.setViewportSize({width:390,height:844});
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  await page.locator('#statistics-yearly').screenshot({path:fileURLToPath(new URL('daily-yearly-mobile.png',out))});
+  await page.setViewportSize({width:1440,height:1050});
+  check('点击流日明细后，历史统计区显示各年胜率并突出当前年份');
   await page.locator('#statistics-basis').selectOption('previous_close');
   const previous=await single();
   assert.equal(previous.basis,'previous_close');
   check('可切换收盘相对昨收口径');
   await page.locator('[data-period=year]').click();
+  await expect(page.locator('#statistics-yearly')).toBeHidden();
   await expect(page.locator('#ganzhi-statistics')).toBeHidden();
   await page.locator('[data-period=day]').click();
   await expect(page.locator('#ganzhi-statistics')).toBeVisible();
