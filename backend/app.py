@@ -2,7 +2,7 @@ import logging
 import threading
 import time
 from contextlib import asynccontextmanager
-from datetime import date
+from datetime import date, timedelta
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Request, Query
@@ -127,6 +127,51 @@ def create_app(settings=None):
             raise
         except ValueError as exc:
             raise HTTPException(422,detail=str(exc)) from exc
+
+    @app.get("/api/calendar/days")
+    def calendar_days(
+        start: date,
+        end: date,
+        basis: Literal["open", "previous_close"] = "open",
+        threshold: Literal["2", "3", "5"] = "3",
+        window: Literal["all", "recent3"] = "all",
+    ):
+        """FullCalendar visible range; end is exclusive."""
+        if not start < end <= start + timedelta(days=56):
+            raise HTTPException(422, detail="日历日期范围必须为连续的 1—56 天。")
+        try:
+            overlay = statistics.calendar_overlay(start=start, end=end, basis=basis, threshold=threshold, window=window)
+        except DataIntegrityError:
+            raise
+        coverage_start = max(start, date.fromisoformat(calendar.metadata["start_date"]))
+        coverage_end = min(end - timedelta(days=1), date.fromisoformat(calendar.metadata["end_date"]))
+        rows = calendar.range(coverage_start, coverage_end) if coverage_start <= coverage_end else {}
+        days = []
+        for i in range((end - start).days):
+            ds = str(start + timedelta(days=i))
+            row = rows.get(ds)
+            if row:
+                rate = overlay["rates"][row["ganzhi_day"]]
+                actual = overlay["actual"].get(ds, {})
+                days.append({
+                    "date": ds, "ganzhi": row["ganzhi_day"],
+                    "solarTerm": row["solar_term"],
+                    **rate,
+                    "actualDirection": actual.get("actualDirection"),
+                    "actualChangePct": actual.get("actualChangePct"),
+                })
+            else:
+                days.append({"date": ds, "ganzhi": None, "solarTerm": None,
+                             "upPct": None, "downPct": None, "sampleCount": 0,
+                             "signalDirection": "none", "signalPct": None,
+                             "actualDirection": None, "actualChangePct": None,
+                             "sampleStart": None, "sampleEnd": None, "strength": None})
+        return {
+            "start": str(start), "endExclusive": str(end), "basis": basis,
+            "asOf": overlay["asOf"], "days": days,
+            "window": overlay["window"], "windowStart": overlay["windowStart"],
+            "thresholdPct": overlay["thresholdPct"], "benchmark": overlay["benchmark"],
+        }
 
     @app.get("/api/statistics/ganzhi/options")
     def ganzhi_options():

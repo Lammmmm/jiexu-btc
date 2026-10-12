@@ -30,6 +30,7 @@ try {
   await page.goto(origin);
   await page.locator('#chart-overlay').waitFor({state:'hidden'});
   await page.waitForFunction(()=>document.querySelector('#last-price').textContent!=='—');
+  await page.waitForFunction(()=>document.querySelector('#data-count').textContent.includes('根'));
   assert.ok(await page.locator('#chart canvas').count()>0);
   assert.match(await page.locator('#data-count').textContent(),/3,319|[0-9,]+ 根/);
   await page.screenshot({path:fileURLToPath(new URL('daily.png',out)),fullPage:true});
@@ -45,6 +46,7 @@ try {
   await page.waitForFunction(()=>document.querySelector('[data-period=week]').getAttribute('aria-pressed')==='true');
   assert.match(await page.locator('#detail-id').textContent(),/week:2026-01-01:/);
   assert.equal(await page.locator('#ganzhi-toggle').isDisabled(),true);
+  assert.equal(await page.locator('#day14-toggle').isDisabled(),true);
   await verifyGanzhiPanel('week');
   check('自定义七日线及起始日干支显示正确');
 
@@ -59,6 +61,30 @@ try {
     assert.match(await page.locator('#detail-start').textContent(),/^\d{4}-\d{2}-\d{2}$/);
     assert.match(await page.locator('#detail-end').textContent(),/^\d{4}-\d{2}-\d{2}$/);
     await verifyGanzhiPanel(period);
+    assert.equal(await page.locator('#day14-toggle').isDisabled(),true);
+    if(period==='month'){
+      assert.equal(await page.locator('#ganzhi-toggle').isEnabled(),true);
+      assert.equal(await page.locator('#term-toggle').isDisabled(),true);
+      const monthly=await (await page.request.get(origin+'/api/candles?period=month')).json();
+      const from=Math.max(0,monthly.candles.length-42),to=monthly.candles.length-1;
+      const labels=buildMarkers(monthly.candles,{from,to},1500,{
+        period:'month',showGanzhi:true,showTerms:true,
+      });
+      assert.equal(labels.length,to-from+1);
+      assert.equal(labels.at(-1).text,monthly.candles.at(-1).metadata.displayGanzhi);
+      assert.equal(labels.at(-1).time,monthly.candles.at(-1).metadata.startDate);
+      const sparse=buildMarkers(monthly.candles,{from,to},320,{
+        period:'month',showGanzhi:true,showTerms:false,
+      });
+      assert.ok(sparse.length<labels.length);
+      assert.equal(sparse.at(-1).text,monthly.candles.at(-1).metadata.displayGanzhi);
+      assert.equal(buildMarkers(monthly.candles,{from,to},1500,{
+        period:'month',showGanzhi:false,showTerms:true,
+      }).length,0);
+      await page.locator('#ganzhi-toggle').uncheck();
+      await page.locator('#ganzhi-toggle').check();
+      check('流月干支逐根标在月 K，下图缩小时抽稀且开关生效');
+    }
     await page.screenshot({path:fileURLToPath(new URL(period+'.png',out)),fullPage:true});
     await page.locator('#unpin').click();
     check(period==='month'?'节气月切换、点击固定详情与起止日期显示':'立春年切换、点击固定详情与起止日期显示');
@@ -71,6 +97,25 @@ try {
   await page.locator('#ganzhi-toggle').check();
   await page.locator('#term-toggle').check();
   const daily=await (await page.request.get(origin+'/api/candles?period=day')).json();
+  const day14Index=daily.candles.findIndex(c=>c.metadata.startDate==='2026-09-14');
+  assert.ok(day14Index>0);
+  assert.equal(await page.locator('#day14-toggle').isEnabled(),true);
+  assert.equal(await page.locator('#day14-toggle').isChecked(),false);
+  const day14Range={from:day14Index-10,to:day14Index+10};
+  const marked14=buildMarkers(daily.candles,day14Range,1000,{
+    period:'day',showDay14:true,showGanzhi:false,showTerms:false,
+  });
+  assert.deepEqual(marked14.map(m=>[m.time,m.text,m.position]),[
+    ['2026-09-14','14号','aboveBar'],
+  ]);
+  assert.equal(buildMarkers(daily.candles,day14Range,1000,{
+    period:'day',showDay14:false,showGanzhi:false,showTerms:false,
+  }).length,0);
+  await page.locator('#day14-toggle').check();
+  await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+  await page.locator('.chart-panel').screenshot({path:fileURLToPath(new URL('daily-14.png',out))});
+  await page.locator('#day14-toggle').uncheck();
+  check('14号开关只在日线可用，勾选后突出每月14日日 K');
   const index=daily.candles.findIndex(c=>c.metadata.startDate==='2026-09-07');
   const markers=buildMarkers(daily.candles,{from:index,to:index+1},1000,{period:'day',showGanzhi:true,showTerms:true});
   assert.ok(markers.some(m=>m.text==='甲申'&&m.time==='2026-09-07'));

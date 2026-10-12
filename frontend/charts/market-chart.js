@@ -1,5 +1,21 @@
 import { buildMarkers } from '../markers/daily-markers.js';
 
+const samePoint=(left,right)=>JSON.stringify(left)===JSON.stringify(right);
+function applySeriesData(series,next,previous=[],incremental=false){
+  if(samePoint(next,previous)) return next;
+  // Binance normally changes the last bar or appends bars. Earlier corrections
+  // still replace the full series so repaired history is never skipped.
+  const tailOnly=incremental&&previous.length>0&&next.length>=previous.length&&
+    previous.every((point,index)=>point.time===next[index].time&&
+      (index===previous.length-1||samePoint(point,next[index])));
+  if(tailOnly){
+    if(!samePoint(previous.at(-1),next[previous.length-1])) series.update({...next[previous.length-1]});
+    for(let index=previous.length;index<next.length;index++) series.update({...next[index]});
+  }else series.setData(next.map(point=>({...point})));
+  // The library normalizes time in update(); keep our comparison snapshot intact.
+  return next;
+}
+
 export class MarketChart {
   constructor(container, onSelect) {
     const L = window.LightweightCharts;
@@ -7,7 +23,7 @@ export class MarketChart {
     this.candles = [];
     this.byDate = new Map();
     this.highlightDates = new Set();
-    this.options = {period:'day',showGanzhi:true,showTerms:true};
+    this.options = {period:'day',showDay14:false,showGanzhi:true,showTerms:true};
     this.chart = L.createChart(container, {
       autoSize:true,
       layout:{background:{color:'#111c27'},textColor:'#8c9caa',fontSize:11,fontFamily:'Consolas, Microsoft YaHei, sans-serif',attributionLogo:true},
@@ -38,18 +54,25 @@ export class MarketChart {
     return this.byDate.get(key);
   }
   setData(candles, period, preserve=false) {
+    const incremental=preserve&&period===this.options.period;
     const oldRange = preserve ? this.chart.timeScale().getVisibleLogicalRange() : null;
+    const sameDates=incremental&&candles.length>=this.candles.length&&
+      this.candles.every((c,index)=>c.metadata.startDate===candles[index].metadata.startDate);
+    if(!sameDates){this.markerApi.setMarkers([]);this.markerKey=null;}
     this.candles = candles; this.options.period=period;
     this.byDate = new Map(candles.map(c=>[c.metadata.startDate,c]));
-    this.markerApi.setMarkers([]);
-    this.series.setData(this.candlePoints());
-    this.volume.setData(candles.map(c=>({time:c.metadata.startDate,value:Number(c.volume),color:Number(c.close)>=Number(c.open)?'#33584f':'#5e3942'})));
+    this.pricePoints=applySeriesData(this.series,this.candlePoints(),this.pricePoints,incremental);
+    const volumes=candles.map(c=>({
+      time:c.metadata.startDate,value:Number(c.volume),
+      color:Number(c.close)>=Number(c.open)?'#33584f':'#5e3942',
+    }));
+    this.volumePoints=applySeriesData(this.volume,volumes,this.volumePoints,incremental);
     if(oldRange) this.chart.timeScale().setVisibleLogicalRange(oldRange);
     else {
-      const visible = period==='day'?65:period==='week'?60:period==='month'?42:15;
+      const visible = period==='day'?65:period==='week'?60:period==='month'?36:15;
       this.chart.timeScale().setVisibleLogicalRange({from:Math.max(-1,candles.length-visible),to:candles.length+3});
     }
-    this.scheduleMarkers();
+    this.paintMarkers();
   }
   candlePoints() {
     const highlighting=['day','month'].includes(this.options.period)&&this.highlightDates.size>0;
@@ -62,6 +85,8 @@ export class MarketChart {
         point.wickColor=matched?'#e9ca88':point.color;
         point.borderColor=matched?'#e9ca88':point.color;
       }
+      if(this.options.period==='day'&&this.options.showDay14&&c.metadata.startDate.endsWith('-14'))
+        point.wickColor='#f2c879';
       return point;
     });
   }
@@ -69,7 +94,7 @@ export class MarketChart {
     const next=new Set(dates);
     if(next.size===this.highlightDates.size&&[...next].every(d=>this.highlightDates.has(d))) return;
     this.highlightDates=next;
-    this.series.setData(this.candlePoints());
+    this.pricePoints=applySeriesData(this.series,this.candlePoints(),this.pricePoints);
   }
   focusDate(date) {
     const i=this.candles.findIndex(c=>c.metadata.startDate===date);
@@ -77,12 +102,22 @@ export class MarketChart {
     this.chart.timeScale().setVisibleLogicalRange({from:i-15,to:i+15});
     this.chart.setCrosshairPosition(Number(this.candles[i].close),date,this.series);
   }
+  paintMarkers(){
+    cancelAnimationFrame(this.markerFrame);
+    const markers=buildMarkers(this.candles,this.chart.timeScale().getVisibleLogicalRange(),this.container.clientWidth-80,this.options);
+    const key=JSON.stringify(markers);
+    if(key===this.markerKey) return;
+    this.markerKey=key;this.markerApi.setMarkers(markers);
+  }
   scheduleMarkers() {
     cancelAnimationFrame(this.markerFrame);
-    this.markerFrame=requestAnimationFrame(()=>{
-      this.markerApi.setMarkers(buildMarkers(this.candles,this.chart.timeScale().getVisibleLogicalRange(),this.container.clientWidth-80,this.options));
-    });
+    this.markerFrame=requestAnimationFrame(()=>this.paintMarkers());
   }
-  setOptions(options) { Object.assign(this.options,options); this.scheduleMarkers(); }
+  setOptions(options) {
+    const repaintCandles='showDay14' in options&&options.showDay14!==this.options.showDay14;
+    Object.assign(this.options,options);
+    if(repaintCandles) this.pricePoints=applySeriesData(this.series,this.candlePoints(),this.pricePoints);
+    this.scheduleMarkers();
+  }
   fit() { this.chart.timeScale().fitContent(); }
 }

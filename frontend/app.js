@@ -1,11 +1,12 @@
 import { MarketChart } from './charts/market-chart.js';
 import { showDetails } from './controls/details.js';
 import { GanzhiStatistics } from './statistics/ganzhi-statistics.js';
+import { GanzhiCalendar } from './calendar/ganzhi-calendar.js';
 
 const $=id=>document.getElementById(id);
 const number = n=>Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 const descriptions={day:'UTC+8 自然日 · 00:00 至 23:59:59',week:'连续 7 个自然日 · 从配置锚点向前 / 向后划分',month:'十二节划月 · 当节当日零点至下节前一日',year:'立春划年 · 立春当日零点至下一立春前一日'};
-let config, chart, statistics, period='day', anchor=null, pinned=null, payload=null, requestId=0, dataVersion=null, statusBusy=false;
+let config, chart, statistics, calendarView, period='day', anchor=null, pinned=null, payload=null, requestId=0, dataVersion=null, statusBusy=false;
 function message(text='') {$('message').textContent=text;$('message').hidden=!text;}
 function overlay(text) {$('chart-overlay').textContent=text??'';$('chart-overlay').hidden=!text;}
 async function api(url,options) {
@@ -38,15 +39,20 @@ async function load(nextPeriod=period,preserve=false) {
   if(!preserve) overlay('正在载入周期数据…');
   try{
     const data=await api(withAnchor('/api/candles?period='+nextPeriod));
-    if(id!==requestId) return;
+    if(id!==requestId) return false;
     period=nextPeriod;payload=data;
     if(!preserve) pinned=null;
     $('period-description').textContent=descriptions[period];
     document.querySelectorAll('[data-period]').forEach(b=>{b.classList.toggle('active',b.dataset.period===period);b.setAttribute('aria-pressed',String(b.dataset.period===period));});
-    for(const id of ['ganzhi-toggle','term-toggle']) $(id).disabled=period!=='day';
-    $('label-hint').textContent=period==='day'?'干支随缩放自动抽稀；点击 K 线固定详情':'点击 K 线查看完整周期起止与 OHLCV';
+    $('day14-toggle').disabled=period!=='day';
+    $('ganzhi-toggle').disabled=!['day','month'].includes(period);
+    $('term-toggle').disabled=period!=='day';
+    $('label-hint').textContent=period==='day'?'干支随缩放自动抽稀；点击 K 线固定详情':
+      period==='month'?'流月干支标在月 K 下方；点击 K 线查看完整周期起止与 OHLCV':
+      '点击 K 线查看完整周期起止与 OHLCV';
     chart.setData(data.candles,period,preserve);
     statistics?.setPeriod(period);
+    calendarView?.setPeriod(period);
     if(data.candles.length){
       overlay(null);
       const selected=data.candles.find(c=>c.periodId===pinned)??data.candles.at(-1);
@@ -57,7 +63,14 @@ async function load(nextPeriod=period,preserve=false) {
     $('anomaly-summary').textContent=data.sourceAnomalies.length+' 条交易所原始时间异常 · 已保留并标记';
     $('anomaly-text').textContent=data.sourceAnomalies.join('、')+' 的 Binance 原始 closeTime 早于自然日结束。原始 OHLCV 与 closeTime 均保存在本地；受影响周期标为异常，未填补或伪造价格。';
     message('');
-  }catch(e){if(id===requestId){message(e.message);overlay('无法载入：'+e.message);}}
+    return true;
+  }catch(e){
+    if(id===requestId){
+      message((preserve?'行情更新失败，仍显示上次数据：':'')+e.message);
+      if(!preserve) overlay('无法载入：'+e.message);
+    }
+    return false;
+  }
 }
 async function refreshStatus(){
   if(statusBusy) return;statusBusy=true;
@@ -73,10 +86,15 @@ async function refreshStatus(){
     $('last-sync').textContent=s.lastSync?'同步于 '+new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date(s.lastSync)):'尚未同步';
     if(s.error) message(s.error);
     if(s.lastSync && dataVersion!==s.lastSync){
-      dataVersion=s.lastSync;
-      await load(period,Boolean(payload));
-      statistics?.refresh();
+      const activePeriod=period;
+      if(!await load(activePeriod,Boolean(payload))) return;
+      const updates=await Promise.all([
+        statistics?.refresh()??true,
+        calendarView?.refresh({background:true})??true,
+      ]);
+      if(period!==activePeriod) return;
       if(period!=='day'){const daily=await api('/api/candles?period=day');updateQuote(daily.candles.at(-1));}
+      if(updates.every(Boolean)) dataVersion=s.lastSync;
     }
   }catch(e){$('connection').textContent='本地服务连接中断';$('connection').className='status error';message(e.message);}
   finally{statusBusy=false;}
@@ -99,8 +117,14 @@ async function init(){
         if(scrollToChart) $('chart').scrollIntoView({behavior:'smooth',block:'center'});
       },
     });
+    calendarView=new GanzhiCalendar({
+      api,
+      basisInput:$('statistics-basis'),
+      onSelect:row=>statistics.selectCalendarDay(row,{scrollToStatistics:false}),
+    });
     document.querySelectorAll('[data-period]').forEach(b=>b.addEventListener('click',()=>load(b.dataset.period)));
     $('fit').addEventListener('click',()=>chart.fit());
+    $('day14-toggle').addEventListener('change',()=>chart.setOptions({showDay14:$('day14-toggle').checked}));
     $('ganzhi-toggle').addEventListener('change',()=>chart.setOptions({showGanzhi:$('ganzhi-toggle').checked}));
     $('term-toggle').addEventListener('change',()=>chart.setOptions({showTerms:$('term-toggle').checked}));
     $('unpin').addEventListener('click',()=>{pinned=null;$('unpin').hidden=true;if(payload?.candles.length)select(payload.candles.at(-1),false);});
@@ -127,6 +151,7 @@ async function init(){
       catch(err){$('debug-output').textContent=err.message;}
     });
     await load();
+    dataVersion=payload?.asOf??null;
     await refreshStatus();
     setInterval(refreshStatus,5000);
   }catch(e){overlay('启动失败：'+e.message);message('请确认本地服务和图表文件安装完整。');}

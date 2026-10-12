@@ -7,12 +7,39 @@ from backend.aggregation.aggregator import CandleAggregator
 from backend.period.engine import SolarMonthPeriod
 from backend.calendar.service import CalendarService
 from backend.market.validation import DataIntegrityError, validate_daily
-from backend.timeutils import DAY_MS
+from backend.timeutils import DAY_MS, local_date
 
 EXCLUSION_REASONS = ("unclosed", "source_anomaly", "listing_day", "invalid_previous_close", "incomplete_period")
 
 def decimal_string(value):
     return format(value.quantize(Decimal("0.000001")), "f") if value is not None else None
+
+
+def strength_metrics(changes, ranges, threshold):
+    """Keep Decimal precision through threshold classification and aggregation."""
+    count = len(changes)
+    up = [change for change in changes if change > 0]
+    down = [change for change in changes if change < 0]
+    large_up = sum(change >= threshold for change in changes)
+    large_down = sum(change <= -threshold for change in changes)
+    def probability(n):
+        return decimal_string(Decimal(n) / count * 100) if count else None
+    return {
+        "medianAbsoluteChangePct": decimal_string(median([abs(change) for change in changes])) if count else None,
+        "averageChangePct": decimal_string(sum(changes, Decimal(0)) / count) if count else None,
+        "upMedianChangePct": decimal_string(median(up)) if up else None,
+        "downMedianChangePct": decimal_string(median(down)) if down else None,
+        "upSampleCount": len(up), "downSampleCount": len(down),
+        "medianIntradayRangePct": decimal_string(median(ranges)) if ranges else None,
+        "largeMove": {
+            "thresholdPct": str(threshold),
+            "counts": {"up": large_up, "down": large_down, "total": large_up + large_down},
+            "probabilitiesPct": {
+                "up": probability(large_up), "down": probability(large_down),
+                "total": probability(large_up + large_down),
+            },
+        },
+    }
 
 
 def yearly_breakdown(matches):
@@ -90,6 +117,70 @@ class GanzhiStatisticsService:
             "upRanking": ranked("up"), "downRanking": ranked("down"),
         }
 
+    def calendar_overlay(self, *, start, end, basis="open", threshold=3, window="all"):
+        """Historical strength and finalized daily moves from one market snapshot."""
+        self._validate_filters(None, None, basis, "day")
+        threshold = Decimal(str(threshold))
+        if threshold not in (Decimal(2), Decimal(3), Decimal(5)):
+            raise ValueError("大行情门槛必须为 2%、3% 或 5%。")
+        if window not in ("all", "recent3"):
+            raise ValueError("统计样本必须为全部历史或近三年。")
+        prepared = self._prepare("day")
+        raw, cache, _, _ = prepared
+        as_of = int(cache.get("last_sync_ms") or 0) or None
+        window_start = None
+        if window == "recent3" and as_of:
+            last_date = local_date(as_of)
+            try:
+                window_start = last_date.replace(year=last_date.year - 3)
+            except ValueError:
+                window_start = last_date.replace(year=last_date.year - 3, day=28)
+        benchmark = self._summarize(
+            None, prepared, start=window_start, end=None, basis=basis, period="day", threshold=threshold)
+        rates = {}
+        actual = {}
+        for ganzhi in self.options():
+            full = self._summarize(
+                ganzhi, prepared, start=None, end=None, basis=basis, period="day", threshold=threshold)
+            summary = self._summarize(
+                ganzhi, prepared, start=window_start, end=None, basis=basis, period="day",
+                threshold=threshold) if window_start else full
+            count = summary["sampleCount"]
+            counts = summary["counts"]
+            if count and counts["up"] * 2 > count:
+                signal = "up"
+            elif count and counts["down"] * 2 > count:
+                signal = "down"
+            else:
+                signal = "neutral" if count else "none"
+            rates[ganzhi] = {
+                "upPct": summary["probabilitiesPct"]["up"],
+                "downPct": summary["probabilitiesPct"]["down"],
+                "sampleCount": count,
+                "sampleStart": summary["sampleStart"], "sampleEnd": summary["sampleEnd"],
+                "signalDirection": signal,
+                "signalPct": summary["probabilitiesPct"].get(signal),
+                "strength": summary["strength"],
+            }
+            # Actual candles are independent of the selected historical sample window.
+            for match in full["matches"]:
+                if match["included"] and str(start) <= match["date"] < str(end):
+                    actual[match["date"]] = {
+                        "actualDirection": match["direction"],
+                        "actualChangePct": match["changePct"],
+                    }
+        return {
+            "asOf": as_of, "window": window,
+            "windowStart": str(window_start) if window_start else None,
+            "thresholdPct": str(threshold),
+            "benchmark": {
+                "sampleCount": benchmark["sampleCount"],
+                "sampleStart": benchmark["sampleStart"], "sampleEnd": benchmark["sampleEnd"],
+                "strength": benchmark["strength"],
+            },
+            "rates": rates, "actual": actual,
+        }
+
     def _validate_filters(self, start, end, basis, period):
         if period not in ("day", "month"):
             raise ValueError("统计周期必须是 day 或 month。")
@@ -137,14 +228,16 @@ class GanzhiStatisticsService:
             return "listing_day"
         return None
 
-    def _summarize(self, ganzhi, prepared, *, start, end, basis, period):
+    def _summarize(self, ganzhi, prepared, *, start, end, basis, period, threshold=Decimal(3)):
         raw, cache, joined, groups = prepared
         as_of = int(cache.get("last_sync_ms") or 0)
         counts = {"up": 0, "down": 0, "flat": 0}
         excluded = dict.fromkeys(EXCLUSION_REASONS, 0)
         changes = []
+        ranges = []
         matches = []
-        for i, candle in groups.get(ganzhi, []):
+        entries = enumerate(joined) if ganzhi is None else groups.get(ganzhi, [])
+        for i, candle in entries:
             ds = candle.metadata["date"]
             if (start and ds < str(start)) or (end and ds > str(end)):
                 continue
@@ -166,6 +259,7 @@ class GanzhiStatisticsService:
                 change = (candle.close / baseline - 1) * 100
                 counts[direction] += 1
                 changes.append(change)
+                ranges.append((candle.high - candle.low) / candle.open * 100)
             matches.append({
                 "date": ds, "endDate": candle.metadata.get("endDate", ds),
                 "periodId": candle.period_id, "ganzhi": ganzhi,
@@ -196,6 +290,7 @@ class GanzhiStatisticsService:
             "medianChangePct": decimal_string(median(changes)) if changes else None,
             "bestChangePct": decimal_string(max(changes)) if changes else None,
             "worstChangePct": decimal_string(min(changes)) if changes else None,
+            "strength": strength_metrics(changes, ranges, threshold),
             "matches": list(reversed(matches)),
             "yearly": yearly_breakdown(matches) if period == "day" else [],
         }

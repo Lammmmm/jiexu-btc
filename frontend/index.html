@@ -5,7 +5,10 @@
   <title>节序 · BTC 看盘</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2316252e'/%3E%3Ctext x='8' y='29' font-size='28' fill='%237ae0c3'%3E节%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/calendar/calendar.css">
   <script defer src="/static/vendor/lightweight-charts.js"></script>
+  <script defer src="/static/vendor/fullcalendar.js"></script>
+  <script defer src="/static/vendor/fullcalendar.zh-cn.js"></script>
   <script type="module" src="/static/app.js"></script>
 </head>
 <body>
@@ -36,7 +39,7 @@
         </div>
         <div class="chart-options">
           <span id="period-description">UTC+8 自然日 · 00:00 至 23:59:59</span>
-          <div class="switches"><label><input id="ganzhi-toggle" type="checkbox" checked>干支</label><label><input id="term-toggle" type="checkbox" checked>节气</label></div>
+          <div class="switches"><label><input id="day14-toggle" type="checkbox">14号</label><label><input id="ganzhi-toggle" type="checkbox" checked>干支</label><label><input id="term-toggle" type="checkbox" checked>节气</label></div>
         </div>
         <div class="chart-wrap"><div id="chart" aria-label="BTC K线和成交量图表"></div><div id="chart-overlay" role="status">正在载入本地行情…</div></div>
         <div class="chart-caption"><span><i class="dot green"></i>上涨<i class="dot red"></i>下跌<i class="dot amber"></i>节气</span><span id="label-hint">缩放查看干支；点击 K 线固定详情</span></div>
@@ -54,12 +57,37 @@
         <span id="detail-state" class="badge">—</span>
         <dl class="period-dates"><div><dt>周期开始</dt><dd id="detail-start">—</dd></div><div><dt>周期结束</dt><dd id="detail-end">—</dd></div><div><dt>已含日线</dt><dd id="detail-count">—</dd></div></dl>
         <div class="section-label">OHLCV <span>原始精度</span></div>
-        <dl id="ohlcv" class="ohlcv"><div><dt>开盘 <small>O</small></dt><dd id="detail-open">—</dd></div><div><dt>最高 <small>H</small></dt><dd id="detail-high">—</dd></div><div><dt>最低 <small>L</small></dt><dd id="detail-low">—</dd></div><div><dt>收盘 <small>C</small></dt><dd id="detail-close">—</dd></div><div><dt>成交量 <small>BTC</small></dt><dd id="detail-volume">—</dd></div></dl>
+        <dl id="ohlcv" class="ohlcv"><div><dt>开盘 <small>O</small></dt><dd id="detail-open">—</dd></div><div><dt>最高 <small>H</small></dt><dd id="detail-high">—</dd></div><div><dt>最低 <small>L</small></dt><dd id="detail-low">—</dd></div><div><dt>收盘 <small>C</small></dt><dd id="detail-close">—</dd></div><div><dt>成交量 <small>BTC</small></dt><dd id="detail-volume">—</dd></div><div id="detail-amplitude-row" hidden><dt id="detail-amplitude-label">日内振幅</dt><dd id="detail-amplitude">—</dd></div></dl>
         <div id="calendar-detail"><div class="section-label">历法坐标 <span>本地数据库</span></div><dl class="calendar-fields"><div><dt id="detail-ganzhi-label">日干支</dt><dd id="detail-ganzhi" class="ganzhi">—</dd></div><div><dt>干支取值日</dt><dd id="detail-month">—</dd></div><div><dt>传统年</dt><dd id="detail-year">—</dd></div></dl></div>
         <p id="detail-warning" class="detail-warning"></p>
         <p class="rule-note">年、月、日分别显示对应干支；七日周期显示起始日干支。当前周期会随行情同步继续更新。</p>
       </aside>
     </div>
+
+    <section id="ganzhi-calendar-panel" class="panel ganzhi-calendar-panel" aria-labelledby="ganzhi-calendar-heading">
+      <div class="statistics-header">
+        <div><span class="eyebrow">GANZHI DAY CALENDAR</span><h2 id="ganzhi-calendar-heading">流日胜率日历</h2><p>日干支 · 历史方向与幅度 · 当日实际涨跌</p></div>
+        <span class="market-tag">日线 · UTC+8</span>
+      </div>
+      <div class="ganzhi-calendar-controls">
+        <label>大行情门槛<select id="ganzhi-calendar-threshold"><option value="2">≥ 2%</option><option value="3" selected>≥ 3%</option><option value="5">≥ 5%</option></select></label>
+        <label>统计样本<select id="ganzhi-calendar-window"><option value="all">全部历史</option><option value="recent3">近三年</option></select></label>
+        <span class="ganzhi-calendar-legend">典型幅度 <i class="strength-light"></i>低 <i class="strength-dark"></i>高 · 与普通 BTC 日线比较</span>
+      </div>
+      <p id="ganzhi-calendar-status" class="statistics-note" role="status" aria-live="polite">正在载入日历…</p>
+      <p id="ganzhi-calendar-benchmark" class="statistics-note"></p>
+      <div class="ganzhi-calendar-layout">
+        <div id="ganzhi-calendar" aria-label="按月查看日干支、历史胜率、典型幅度、大行情概率与当日实际涨跌幅"></div>
+        <div id="ganzhi-calendar-month-summary" class="ganzhi-calendar-month-summary" role="status" aria-live="polite">正在计算月度判断…</div>
+      </div>
+      <section id="ganzhi-calendar-strength-detail" class="ganzhi-calendar-strength-detail" aria-labelledby="ganzhi-calendar-strength-title" hidden>
+        <div class="statistics-result-heading"><h3 id="ganzhi-calendar-strength-title"></h3><span id="ganzhi-calendar-strength-scope" class="muted"></span></div>
+        <div id="ganzhi-calendar-strength-cards" class="ganzhi-calendar-strength-cards"></div>
+        <p class="statistics-note">上涨、下跌幅度中位数分别使用各自方向的样本；大涨率、大跌率都以全部有效样本为分母。日内振幅按（最高 − 最低）÷ 开盘计算。样本较少时，统计值可能变化较大。</p>
+      </section>
+      <p class="statistics-note">典型幅度 = 绝对涨跌幅中位数；大行情率 = 绝对涨跌幅达到门槛的次数 ÷ 有效样本数。底色越深，典型幅度相对普通 BTC 日线越高；红绿文字表示方向。默认按收盘 vs 开盘统计，跟随下方切换为收盘 vs 昨收。点击日期查看强度详情并筛选同干支日。</p>
+      <p class="statistics-note">历史上涨率或下跌率严格超过 50% 时显示占优方向。已完成且有效的日期另显示实际涨跌幅。月度正确率只核对有明确方向判断且有有效实际收盘的日期，实际平盘算未中；无方向判断不计入分母。全部历史和近三年均为当前样本的回看统计，历史频率与幅度不代表未来表现。</p>
+    </section>
 
     <section id="ganzhi-statistics" class="panel statistics-panel" aria-labelledby="statistics-heading">
       <div class="statistics-header">

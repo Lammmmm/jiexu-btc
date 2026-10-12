@@ -11,6 +11,19 @@ export function showDetails(candle,period,pinned=false) {
   set('detail-state',m.isComplete?'已收盘 · 数据完整':!m.isClosed?'形成中':'数据不完整 / 异常');
   document.getElementById('detail-state').className='badge'+(m.isComplete?'':' partial');
   for(const k of ['open','high','low','close','volume']) set('detail-'+k,candle[k]);
+  const amplitudeRow=document.getElementById('detail-amplitude-row');
+  amplitudeRow.hidden=period!=='day';
+  if(period==='day'){
+    const open=Number(candle.open),high=Number(candle.high),low=Number(candle.low);
+    const valid=[open,high,low].every(Number.isFinite)&&open>0&&low>=0&&high>=low;
+    set('detail-amplitude',valid?((high-low)/open*100).toFixed(2)+'%':'—');
+    set('detail-amplitude-label',m.isClosed?'日内振幅':'日内振幅 · 当前');
+    amplitudeRow.title='（最高价 − 最低价）÷ 开盘价 × 100%'+
+      (m.isClosed?'':'；本日尚未收盘，随行情更新');
+  }else{
+    set('detail-amplitude','—');
+    amplitudeRow.title='';
+  }
   document.getElementById('detail-close').className=Number(candle.close)>=Number(candle.open)?'positive':'negative';
   document.getElementById('calendar-detail').hidden=false;
   set('detail-ganzhi-label',{day:'日干支',week:'起始日干支',month:'月干支',year:'年干支'}[period]);

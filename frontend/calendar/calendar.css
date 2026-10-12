@@ -1,0 +1,121 @@
+.ganzhi-calendar-panel{margin-top:18px;padding:22px}
+.ganzhi-calendar-panel .statistics-header h2{margin:5px 0;font-size:19px}
+.ganzhi-calendar-panel .statistics-header p{margin:0;color:var(--muted);font-size:12px}
+.ganzhi-calendar-layout{position:relative}
+#ganzhi-calendar{
+  margin-top:15px;
+  --fc-page-bg-color:var(--panel);
+  --fc-neutral-bg-color:#172531;
+  --fc-border-color:var(--border);
+  --fc-today-bg-color:#2e332d;
+  --fc-button-bg-color:#203e3b;
+  --fc-button-border-color:#345e53;
+  --fc-button-hover-bg-color:#2d514a;
+  --fc-button-hover-border-color:#4e786f;
+  --fc-button-active-bg-color:#365e55;
+  --fc-button-active-border-color:#4e786f;
+}
+#ganzhi-calendar .fc-toolbar{gap:12px;min-height:78px}
+.ganzhi-calendar-month-summary{
+  position:absolute;top:15px;right:0;width:234px;min-height:70px;
+  display:flex;flex-direction:column;justify-content:center;gap:3px;
+  padding:8px 12px;border:1px solid var(--border);border-radius:8px;
+  background:#182833;color:var(--text);box-sizing:border-box;
+}
+.ganzhi-calendar-month-label{color:var(--muted);font-size:11px}
+.ganzhi-calendar-month-summary strong{font:600 16px Consolas,"Microsoft YaHei",sans-serif}
+.ganzhi-calendar-month-summary small{color:var(--muted);font-size:10px}
+
+#ganzhi-calendar .fc-toolbar-title{font-size:20px;color:var(--text)}
+#ganzhi-calendar .fc-button{font:12px "Microsoft YaHei",sans-serif}
+#ganzhi-calendar .fc-col-header-cell{padding:9px 0;background:#172531;color:var(--muted);font-size:12px;font-weight:400}
+#ganzhi-calendar .fc-daygrid-day{cursor:pointer;transition:background-color .15s;background:var(--ganzhi-strength-bg,transparent)}
+#ganzhi-calendar .fc-daygrid-day:hover{background:#1b2d39}
+#ganzhi-calendar .fc-daygrid-day-frame{min-height:186px}
+#ganzhi-calendar .fc-daygrid-day-top{justify-content:flex-start}
+#ganzhi-calendar .fc-daygrid-day-number{padding:8px 10px 0;color:var(--text);font:21px/1.1 Consolas,monospace}
+#ganzhi-calendar .fc-day-today{box-shadow:inset 0 0 0 1px #9a875d}
+#ganzhi-calendar .fc-day-today .fc-daygrid-day-number{color:#f1c880}
+#ganzhi-calendar .fc-day-other .fc-daygrid-day-number{color:#6b7b89}
+#ganzhi-calendar .fc-day-other .ganzhi-calendar-cell{opacity:.55}
+#ganzhi-calendar .ganzhi-calendar-selected{background:#2c3f3a!important;box-shadow:inset 0 0 0 2px #9ac7a3}
+.ganzhi-calendar-cell{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:3px 10px 10px;line-height:1.25}
+.ganzhi-calendar-ganzhi{font-size:15px;color:#dce9ed;font-weight:600}
+.ganzhi-calendar-term{font-size:11px;color:var(--amber)}
+.ganzhi-calendar-rate{margin-top:2px;font:12px Consolas,"Microsoft YaHei",sans-serif;color:var(--muted)}
+.ganzhi-calendar-rate{display:flex;flex-direction:column;gap:1px}
+.ganzhi-calendar-rate-line{display:block;white-space:nowrap}
+.ganzhi-calendar-rate strong{font-weight:600}
+.ganzhi-calendar-rate.direction-up strong{color:var(--green)}
+.ganzhi-calendar-rate.direction-down strong{color:var(--red)}
+.ganzhi-calendar-rate.direction-neutral .ganzhi-calendar-rate-line:first-child strong{color:var(--green)}
+.ganzhi-calendar-rate.direction-neutral .ganzhi-calendar-rate-line:last-child strong{color:var(--red)}
+.ganzhi-calendar-actual{display:block;font:12px Consolas,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted)}
+.ganzhi-calendar-actual strong{font-weight:600}
+.ganzhi-calendar-actual.actual-up strong{color:var(--green)}
+.ganzhi-calendar-actual.actual-down strong{color:var(--red)}
+.ganzhi-calendar-actual.actual-flat strong{color:var(--text)}
+@media(max-width:800px){
+  .ganzhi-calendar-panel{padding:16px}
+  .ganzhi-calendar-panel .statistics-header{align-items:flex-start}
+  .ganzhi-calendar-panel .statistics-header h2{font-size:17px}
+  .ganzhi-calendar-panel .statistics-header p{font-size:11px}
+  .ganzhi-calendar-layout{display:flex;flex-direction:column}
+  .ganzhi-calendar-month-summary{
+    position:static;order:-1;width:auto;min-height:58px;margin-top:12px;
+  }
+  #ganzhi-calendar .fc-toolbar{flex-wrap:wrap;gap:9px;min-height:0}
+  #ganzhi-calendar .fc-toolbar-title{font-size:17px}
+  #ganzhi-calendar .fc-daygrid-day-frame{min-height:224px;overflow:hidden}
+  #ganzhi-calendar .fc-daygrid-day-number{font-size:15px;padding:5px 4px 0}
+  .ganzhi-calendar-cell{gap:2px;padding:2px 3px 5px}
+  .ganzhi-calendar-ganzhi{font-size:11px}
+  .ganzhi-calendar-term{font-size:9px}
+  .ganzhi-calendar-rate,.ganzhi-calendar-actual{font-size:10px;max-width:100%;white-space:normal}
+  .ganzhi-calendar-rate-line{display:block}
+  .ganzhi-calendar-rate-label,.ganzhi-calendar-rate strong,
+  .ganzhi-calendar-actual-label,.ganzhi-calendar-actual strong{display:block}
+  .ganzhi-calendar-rate-label,.ganzhi-calendar-actual-label{font-size:9px}
+}
+
+
+.ganzhi-calendar-controls{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 18px;margin-top:18px}
+.ganzhi-calendar-controls label{display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--muted)}
+.ganzhi-calendar-controls select{min-width:120px;height:34px;padding:5px 9px;border:1px solid var(--border);border-radius:5px;background:#0e1721;color:var(--text);font:12px "Microsoft YaHei",sans-serif}
+.ganzhi-calendar-legend{display:flex;flex-wrap:wrap;align-items:center;gap:5px;padding-bottom:7px;color:var(--muted);font-size:11px}
+.ganzhi-calendar-legend i{width:18px;height:12px;border:1px solid #385269;border-radius:2px}
+.ganzhi-calendar-legend .strength-light{background:rgba(78,128,180,.05)}
+.ganzhi-calendar-legend .strength-dark{background:rgba(78,128,180,.235)}
+#ganzhi-calendar-benchmark{margin-top:5px}
+.ganzhi-calendar-amplitude,.ganzhi-calendar-large{font:12px Consolas,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted)}
+.ganzhi-calendar-amplitude strong{color:#bdd8ec;font-weight:600}
+.ganzhi-calendar-large strong{color:var(--text);font-weight:600}
+.ganzhi-calendar-samples{font:10px Consolas,"Microsoft YaHei",sans-serif;color:var(--muted)}
+.ganzhi-calendar-strength-detail{margin-top:20px}
+.ganzhi-calendar-strength-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:15px}
+.ganzhi-calendar-strength-cards>div{display:flex;flex-direction:column;gap:6px;padding:15px;background:#0e1721;border:1px solid var(--border);border-radius:7px;min-width:0}
+.ganzhi-calendar-strength-cards span,.ganzhi-calendar-strength-cards small{color:var(--muted);font-size:11px;line-height:1.6}
+.ganzhi-calendar-strength-cards strong{font:24px/1.3 Consolas,"Microsoft YaHei",sans-serif}
+@media(max-width:800px){
+  .ganzhi-calendar-controls{gap:12px 10px}
+  .ganzhi-calendar-controls label{width:calc(50% - 5px);min-width:0}
+  .ganzhi-calendar-controls select{width:100%;min-width:0}
+  .ganzhi-calendar-legend{padding-bottom:0;font-size:10px}
+  .ganzhi-calendar-amplitude,.ganzhi-calendar-large{font-size:10px;max-width:100%;white-space:normal}
+  .ganzhi-calendar-metric-label,.ganzhi-calendar-amplitude strong,.ganzhi-calendar-large strong{display:block}
+  .ganzhi-calendar-metric-label{font-size:9px}
+  .ganzhi-calendar-samples{font-size:9px}
+  .ganzhi-calendar-strength-detail .statistics-result-heading{align-items:flex-start;flex-direction:column;gap:5px}
+  .ganzhi-calendar-strength-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .ganzhi-calendar-strength-cards>div{padding:11px}
+  .ganzhi-calendar-strength-cards strong{font-size:22px}
+}
+@media(max-width:800px){
+  .ganzhi-calendar-amplitude .ganzhi-calendar-metric-label,
+  .ganzhi-calendar-large .ganzhi-calendar-metric-label{font-size:0}
+  .ganzhi-calendar-amplitude .ganzhi-calendar-metric-label::after{content:"幅度";font-size:9px}
+  .ganzhi-calendar-large .ganzhi-calendar-metric-label::after{content:"大行情";font-size:9px}
+}
+@media(max-width:800px){
+  .ganzhi-calendar-amplitude strong,.ganzhi-calendar-large strong,.ganzhi-calendar-actual strong{overflow-wrap:anywhere}
+}

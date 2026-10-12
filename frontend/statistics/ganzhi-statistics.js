@@ -74,12 +74,17 @@ export class GanzhiStatistics {
     this.$('statistics-empty').textContent='所选日期范围没有匹配'+this.unit+'线。';
     this.onHighlight(this.data?this.data.matches.map(r=>r.date):[]);
   }
-  refresh(){
-    if(this.query&&this.supported&&!this.loading) this.fetch();
-    if(this.rankQuery&&this.supported&&!this.rankLoading) this.fetchRankings(this.rankQuery);
+  async refresh(){
+    const updates=[];
+    if(this.query&&this.supported&&!this.loading) updates.push(this.fetch({background:true}));
+    if(this.rankQuery&&this.supported&&!this.rankLoading)
+      updates.push(this.fetchRankings(this.rankQuery,{background:true}));
+    return (await Promise.all(updates)).every(Boolean);
   }
   clear(){
     this.selectedDate=null;this.hideYearly();
+    this.$('statistics-results').setAttribute('aria-busy','false');
+    this.$('statistics-rankings').setAttribute('aria-busy','false');
     this.sequence++;this.abort?.abort();this.query=null;this.data=null;this.loading=false;
     this.rankSequence++;this.rankAbort?.abort();this.rankQuery=null;this.rankData=null;this.rankLoading=false;
     this.$('statistics-rankings').hidden=true;this.$('statistics-ranking-status').hidden=true;
@@ -91,28 +96,48 @@ export class GanzhiStatistics {
     this.$('statistics-status').className='statistics-note';
     this.onHighlight([]);
   }
-  async fetch(){
-    if(!this.query) return;
+  async selectCalendarDay(row,{scrollToStatistics=true}={}){
+    const basis=this.$('statistics-basis').value;
+    this.clear();
+    this.$('statistics-basis').value=basis;
+    this.$('statistics-ganzhi').value=row.ganzhi;
+    this.$('statistics-start').value=row.statisticsStart||'';
+    this.selectedDate=row.date;
+    this.query={period:'day',ganzhi:row.ganzhi,start:row.statisticsStart||'',end:'',basis};
+    await this.fetch();
+    if(scrollToStatistics) this.root.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  async fetch({background=false}={}){
+    if(!this.query) return true;
+    const keepContent=background&&Boolean(this.data);
     const sequence=++this.sequence;
-    this.abort?.abort();this.abort=new AbortController();this.loading=true;this.data=null;
-    this.$('statistics-results').hidden=true;this.hideYearly();this.onHighlight([]);
-    this.$('statistics-submit').disabled=true;this.$('statistics-submit').textContent='正在统计…';
-    this.$('statistics-status').textContent='正在核对已收盘'+this.unit+'线…';
-    this.$('statistics-status').className='statistics-note';
+    this.abort?.abort();this.abort=new AbortController();this.loading=true;
+    if(!keepContent){
+      this.data=null;
+      this.$('statistics-results').hidden=true;this.hideYearly();this.onHighlight([]);
+      this.$('statistics-submit').textContent='正在统计…';
+      this.$('statistics-status').textContent='正在核对已收盘'+this.unit+'线…';
+      this.$('statistics-status').className='statistics-note';
+    }
+    this.$('statistics-submit').disabled=true;
+    this.$('statistics-results').setAttribute('aria-busy','true');
     const params=new URLSearchParams(Object.entries(this.query).filter(([,v])=>v));
     try{
       const data=await this.api('/api/statistics/ganzhi?'+params,{signal:this.abort.signal});
-      if(sequence!==this.sequence) return;
+      if(sequence!==this.sequence) return false;
       this.data=data;this.render(data);
       if(this.supported) this.onHighlight(data.matches.map(r=>r.date));
+      return true;
     }catch(error){
-      if(sequence!==this.sequence||error.name==='AbortError') return;
-      this.$('statistics-status').textContent=error.message;
+      if(sequence!==this.sequence||error.name==='AbortError') return false;
+      this.$('statistics-status').textContent=(keepContent?'更新失败，仍显示上次数据：':'')+error.message;
       this.$('statistics-status').className='statistics-note statistics-error';
+      return false;
     }finally{
       if(sequence===this.sequence){
         this.loading=false;this.$('statistics-submit').disabled=false;
         this.$('statistics-submit').textContent='筛选统计';
+        this.$('statistics-results').setAttribute('aria-busy','false');
       }
     }
   }
@@ -124,26 +149,36 @@ export class GanzhiStatistics {
       basis:this.$('statistics-basis').value,
     };
   }
-  async fetchRankings(query){
+  async fetchRankings(query,{background=false}={}){
+    const keepContent=background&&Boolean(this.rankData);
     this.rankQuery={...query};
     const sequence=++this.rankSequence;
-    this.rankAbort?.abort();this.rankAbort=new AbortController();this.rankLoading=true;this.rankData=null;
-    this.$('statistics-rank').disabled=true;this.$('statistics-rank').textContent='正在遍历…';
-    this.$('statistics-rankings').hidden=true;
+    this.rankAbort?.abort();this.rankAbort=new AbortController();this.rankLoading=true;
     const status=this.$('statistics-ranking-status');status.hidden=false;
-    status.className='statistics-note';status.textContent='正在使用同一份行情快照统计全部 60 个干支…';
+    if(!keepContent){
+      this.rankData=null;
+      this.$('statistics-rank').textContent='正在遍历…';
+      this.$('statistics-rankings').hidden=true;
+      status.className='statistics-note';status.textContent='正在使用同一份行情快照统计全部 60 个干支…';
+    }
+    this.$('statistics-rank').disabled=true;
+    this.$('statistics-rankings').setAttribute('aria-busy','true');
     try{
       const params=new URLSearchParams(Object.entries(query).filter(([,v])=>v));
       const data=await this.api('/api/statistics/ganzhi/rankings?'+params,{signal:this.rankAbort.signal});
-      if(sequence!==this.rankSequence) return;
+      if(sequence!==this.rankSequence) return false;
       this.rankData=data;this.renderRankings(data);
+      return true;
     }catch(error){
-      if(sequence!==this.rankSequence||error.name==='AbortError') return;
-      status.textContent=error.message;status.className='statistics-note statistics-error';
+      if(sequence!==this.rankSequence||error.name==='AbortError') return false;
+      status.textContent=(keepContent?'更新失败，仍显示上次数据：':'')+error.message;
+      status.className='statistics-note statistics-error';
+      return false;
     }finally{
       if(sequence===this.rankSequence){
         this.rankLoading=false;this.$('statistics-rank').disabled=false;
         this.$('statistics-rank').textContent='遍历全部干支';
+        this.$('statistics-rankings').setAttribute('aria-busy','false');
       }
     }
   }
@@ -156,6 +191,7 @@ export class GanzhiStatistics {
     this.fetch();
   }
   renderRankings(data){
+    this.$('statistics-ranking-status').className='statistics-note';
     this.$('statistics-rankings').hidden=false;
     this.$('statistics-ranking-scope').textContent=
       (data.start||data.availableStart||'—')+' → '+(data.end||data.availableEnd||'—')+
@@ -185,6 +221,7 @@ export class GanzhiStatistics {
     }
   }
   render(data){
+    this.$('statistics-status').className='statistics-note';
     this.$('statistics-results').hidden=false;
     this.$('statistics-result-title').textContent=data.ganzhi+this.unit+' · 历史统计';
     this.$('statistics-sample-count').textContent=data.sampleCount;

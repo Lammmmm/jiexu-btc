@@ -10,10 +10,12 @@ if (-not (Test-Path -LiteralPath 'data\calendar.db')) {
     & .\.venv\Scripts\python.exe -m scripts.generate_calendar
     if ($LASTEXITCODE -ne 0) { throw 'Calendar generation failed.' }
 }
-if (-not (Test-Path -LiteralPath 'frontend\vendor\lightweight-charts.js')) {
+if (-not (Test-Path -LiteralPath 'frontend\vendor\lightweight-charts.js') -or
+    -not (Test-Path -LiteralPath 'frontend\vendor\fullcalendar.js') -or
+    -not (Test-Path -LiteralPath 'frontend\vendor\fullcalendar.zh-cn.js')) {
     npm ci --ignore-scripts
-    if ($LASTEXITCODE -ne 0) { throw 'Chart dependency installation failed.' }
+    if ($LASTEXITCODE -ne 0) { throw 'Frontend dependency installation failed.' }
     npm run vendor
-    if ($LASTEXITCODE -ne 0) { throw 'Chart vendoring failed.' }
+    if ($LASTEXITCODE -ne 0) { throw 'Frontend vendoring failed.' }
 }
 Write-Host 'Ready. Run .\start.ps1 or double-click start.cmd.'
