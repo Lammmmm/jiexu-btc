@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "research_tests": 16,
+  "observed_threshold_count_cells": 162,
+  "null_and_individual_p_values_recomputed": 2304,
+  "analytical_vs_montecarlo_checks": 720,
+  "simulations_per_method_basis": 19999,
+  "total_null_draws": 159992,
+  "production_rule_checks": 14022,
+  "current_cache_completed_candles_matched": 3352,
+  "production_changes": false
+}

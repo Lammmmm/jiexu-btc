@@ -1,0 +1,128 @@
+[
+  {
+    "basis": "oc",
+    "step": 1,
+    "groups": 25,
+    "success": 18,
+    "n": 25,
+    "pooled_rate": 0.72,
+    "groups_still55": 18
+  },
+  {
+    "basis": "oc",
+    "step": 5,
+    "groups": 25,
+    "success": 72,
+    "n": 125,
+    "pooled_rate": 0.576,
+    "groups_still55": 17
+  },
+  {
+    "basis": "oc",
+    "step": 10,
+    "groups": 25,
+    "success": 130,
+    "n": 250,
+    "pooled_rate": 0.52,
+    "groups_still55": 12
+  },
+  {
+    "basis": "oc",
+    "step": 15,
+    "groups": 25,
+    "success": 201,
+    "n": 375,
+    "pooled_rate": 0.536,
+    "groups_still55": 9
+  },
+  {
+    "basis": "oc",
+    "step": 20,
+    "groups": 25,
+    "success": 268,
+    "n": 500,
+    "pooled_rate": 0.536,
+    "groups_still55": 14
+  },
+  {
+    "basis": "oc",
+    "step": 24,
+    "groups": 5,
+    "success": 63,
+    "n": 120,
+    "pooled_rate": 0.525,
+    "groups_still55": 2
+  },
+  {
+    "basis": "oc",
+    "step": 30,
+    "groups": 0,
+    "success": 0,
+    "n": 0,
+    "pooled_rate": null,
+    "groups_still55": 0
+  },
+  {
+    "basis": "cc",
+    "step": 1,
+    "groups": 25,
+    "success": 17,
+    "n": 25,
+    "pooled_rate": 0.68,
+    "groups_still55": 17
+  },
+  {
+    "basis": "cc",
+    "step": 5,
+    "groups": 25,
+    "success": 71,
+    "n": 125,
+    "pooled_rate": 0.568,
+    "groups_still55": 16
+  },
+  {
+    "basis": "cc",
+    "step": 10,
+    "groups": 25,
+    "success": 126,
+    "n": 250,
+    "pooled_rate": 0.504,
+    "groups_still55": 11
+  },
+  {
+    "basis": "cc",
+    "step": 15,
+    "groups": 25,
+    "success": 196,
+    "n": 375,
+    "pooled_rate": 0.5226666666666666,
+    "groups_still55": 8
+  },
+  {
+    "basis": "cc",
+    "step": 20,
+    "groups": 25,
+    "success": 267,
+    "n": 500,
+    "pooled_rate": 0.534,
+    "groups_still55": 14
+  },
+  {
+    "basis": "cc",
+    "step": 24,
+    "groups": 5,
+    "success": 63,
+    "n": 120,
+    "pooled_rate": 0.525,
+    "groups_still55": 2
+  },
+  {
+    "basis": "cc",
+    "step": 30,
+    "groups": 0,
+    "success": 0,
+    "n": 0,
+    "pooled_rate": null,
+    "groups_still55": 0
+  }
+]

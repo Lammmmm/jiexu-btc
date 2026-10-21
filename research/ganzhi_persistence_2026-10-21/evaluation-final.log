@@ -1,0 +1,9 @@
+EVALUATED oc year_weekday
+EVALUATED oc year_weekday_regime
+EVALUATED oc week_block28
+EVALUATED oc weekly_rotation
+EVALUATED cc year_weekday
+EVALUATED cc year_weekday_regime
+EVALUATED cc week_block28
+EVALUATED cc weekly_rotation
+EVALUATION_DONE

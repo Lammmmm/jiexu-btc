@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "production_rule_checks": 14022,
+  "calendar_dates": 3353,
+  "training_validation_group_rows": 1080,
+  "current_cache_completed_candles_matched": 3352,
+  "databases_readonly": true,
+  "production_changes": false
+}

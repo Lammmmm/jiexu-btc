@@ -1,0 +1,14 @@
+{
+  "basis": "oc",
+  "method": "year_weekday",
+  "sampled_mappings": 512,
+  "original_neighbor_links_preserved_mean": 0.02098674865430622,
+  "constant_global_phase_maps": 0,
+  "sign_lag1_original": -0.0507760254460299,
+  "sign_lag1_null_mean": 0.001940124634865492,
+  "absolute_return_lag1_original": 0.274220467340722,
+  "absolute_return_lag1_null_mean": 0.10321454551103718,
+  "exact_year_weekday_totals": true,
+  "exact_regime_strata": false,
+  "caveat": "Conditional reference distribution; not a reconstructed price process"
+}

@@ -1,0 +1,9 @@
+{
+  "source": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "protocol": "182b4eb3811c47a381924f0e54fe59aa990d855d7d8f3d272666f2c80e1f5150",
+  "core": "83682f23bc2058e29615c0d07fb4cc2b484d6b777dd07457e3d6acef2f874eae",
+  "simulator": "b4e10f22b5c2a6882848438f608902108fd3d6399abfad4ad73aa81628f95a6f",
+  "basis": "oc",
+  "method": "week_block28",
+  "draws": 19999
+}

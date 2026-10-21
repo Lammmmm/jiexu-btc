@@ -1,0 +1,98 @@
+[
+  {
+    "basis": "oc",
+    "horizon": 10,
+    "policy": "overlap",
+    "windows": 332,
+    "unique_test_dates": 725,
+    "unique_groups": 41
+  },
+  {
+    "basis": "oc",
+    "horizon": 10,
+    "policy": "nonoverlap",
+    "windows": 37,
+    "unique_test_dates": 370,
+    "unique_groups": 26
+  },
+  {
+    "basis": "oc",
+    "horizon": 20,
+    "policy": "overlap",
+    "windows": 119,
+    "unique_test_dates": 695,
+    "unique_groups": 30
+  },
+  {
+    "basis": "oc",
+    "horizon": 20,
+    "policy": "nonoverlap",
+    "windows": 15,
+    "unique_test_dates": 300,
+    "unique_groups": 15
+  },
+  {
+    "basis": "oc",
+    "horizon": 30,
+    "policy": "overlap",
+    "windows": 0,
+    "unique_test_dates": 0,
+    "unique_groups": 0
+  },
+  {
+    "basis": "oc",
+    "horizon": 30,
+    "policy": "nonoverlap",
+    "windows": 0,
+    "unique_test_dates": 0,
+    "unique_groups": 0
+  },
+  {
+    "basis": "cc",
+    "horizon": 10,
+    "policy": "overlap",
+    "windows": 335,
+    "unique_test_dates": 754,
+    "unique_groups": 43
+  },
+  {
+    "basis": "cc",
+    "horizon": 10,
+    "policy": "nonoverlap",
+    "windows": 37,
+    "unique_test_dates": 370,
+    "unique_groups": 26
+  },
+  {
+    "basis": "cc",
+    "horizon": 20,
+    "policy": "overlap",
+    "windows": 120,
+    "unique_test_dates": 734,
+    "unique_groups": 32
+  },
+  {
+    "basis": "cc",
+    "horizon": 20,
+    "policy": "nonoverlap",
+    "windows": 15,
+    "unique_test_dates": 300,
+    "unique_groups": 15
+  },
+  {
+    "basis": "cc",
+    "horizon": 30,
+    "policy": "overlap",
+    "windows": 0,
+    "unique_test_dates": 0,
+    "unique_groups": 0
+  },
+  {
+    "basis": "cc",
+    "horizon": 30,
+    "policy": "nonoverlap",
+    "windows": 0,
+    "unique_test_dates": 0,
+    "unique_groups": 0
+  }
+]

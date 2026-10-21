@@ -1,0 +1,71 @@
+{
+  "study": "Independent same-Ganzhi same-direction persistence across nonoverlapping periods",
+  "created_utc": "2026-10-21T12:24:54.698226+00:00",
+  "scope": "Research only; no production calendar/statistics/API/trading changes. Parse frozen raw OHLC and calendar independently; do not import previous research analysis.",
+  "data": "Real repository Binance BTCUSDT spot UTC+8 daily candles, actual valid 2017 start to2026-10-20 latest closed; original anomalies/listing/unclosed/invalid previous-close rules. Same source hash as earlier data, not earlier conclusions.",
+  "splits": [
+    {
+      "id": "S1",
+      "train_start": "2017-01-01",
+      "train_end": "2022-12-31",
+      "test_start": "2023-01-01",
+      "test_end": "2026-10-20"
+    },
+    {
+      "id": "S2",
+      "train_start": "2017-01-01",
+      "train_end": "2020-12-31",
+      "test_start": "2021-01-01",
+      "test_end": "2022-12-31"
+    },
+    {
+      "id": "S3",
+      "train_start": "2021-01-01",
+      "train_end": "2023-12-31",
+      "test_start": "2024-01-01",
+      "test_end": "2026-10-20"
+    }
+  ],
+  "annual_rolling": "At each2021..2026 Jan1, train previous3complete calendar years; validate that calendar year (2026partial). Overlapping training periods; exploratory separate multiplicity family, not independent replications.",
+  "thresholds": [
+    55,
+    60,
+    65
+  ],
+  "direction": "sign(C-O) and sign(C-prior C) separate. Flat included in n. Decimal comparisons. Majority direction chosen on train only; exact tie ->no prediction. Integer100*k >= threshold*n. All60 rows exported per split/basis. Freeze direction and membership during validation.",
+  "main_endpoints": "3train thresholds x3validation thresholds x3splits x2basis =54 continued-count endpoints per null;4nulls=216 jointly Holm. Count is primary; ratio and exact-N conditional counts secondary, separately corrected216.",
+  "null_methods": {
+    "year_weekday": "IID shuffle full return bundles only within calendar-year x weekday strata; exact annual and weekday direction totals; breaks local serial order.",
+    "year_weekday_regime": "IID within year x weekday x causal lagged bull/bear/sideways/unknown. Keeps state-specific rates exactly; conditional test with original state covariates, not a reconstructed price path.",
+    "week_block28": "Within each calendar year permute complete28-calendar-day Monday-start blocks with all valid dates; leave partial/invalid blocks fixed. Exact year/weekday totals; retains within-block runs and magnitude clustering; cross-block links break.",
+    "weekly_rotation": "Within year rotate the ordered complete valid Monday-Sunday weeks by random whole-week offset, independent offsets per year; incomplete and invalid weeks fixed. Exact year/weekday totals, most long sequences retained except seams/gaps. Not one global60-label relabel."
+  },
+  "null_execution": "19999 simulations/method/basis. In EVERY trial rerun train selection and frozen-direction test counting for every split and threshold. Validation-only fixed-real-training-direction group inference also computed from same randomized validation outcomes. Shuffle indices represent return/sign/magnitude bundles; do not reconstruct false OHLC paths.",
+  "null_audit": "Check every mapping preserves validity/calendar-year/weekday and exact sign counts within strata; regime null additionally keeps causal regime. Report fraction preserved neighboring calendar links, lag1 sign and absolute-return correlation on sampled trials, distribution support. Unit test that global Ganzhi phase shift merely relabels and preserves persistence counts; do not use that invalid null.",
+  "empirical_p": "(1+number null statistic >= observed)/(B+1), one-sided excess persistence; MonteCarlo Wilson interval for tail probability. Pearson/Spearman positive association tails; negative association not interpreted as persistence.",
+  "individual_tests": "For all60 train-majority directions per main split, test validation success count vs randomized validation only holding actual trained direction fixed. Family3splits x2basis x60groups x4methods=1440 Holm; also show within-method360 and primary-split120 diagnostic correction. No selective testing only case-study winners.",
+  "benchmark": "Same validation BTC up/down baseline and year x weekday matched leave-one-Ganzhi-out baseline. Display raw k/n, exact sign totals, pointwise Wilson rate intervals. Calendar60-day block bootstrap5000 reps for per-group validation-rate and baseline-excess95% intervals; recompute matched leave-group-out benchmark in each draw.",
+  "correlations": "Pearson and Spearman for raw up-rate train/test, frozen train-majority success train/test, and frozen selected55/60/65 cohorts. 5cohorts x2stats x3splits x2basis=60 per null, Holm across240. Spearman ties average ranks; too few/constant ->unavailable, not0 significant.",
+  "classification": "Train55 candidates: persistent validation>=55; strong>=60; high>=65; reversal validation<50; marked reversal<=40. These descriptive labels do not themselves prove significance.",
+  "case_studies": [
+    "甲子",
+    "庚午",
+    "甲申",
+    "丙申",
+    "甲戌",
+    "乙亥",
+    "癸亥"
+  ],
+  "year_regime": "Export annual counts and per-candidate validation-year/regime success. Causal regime uses only previous valid common close vs trailing200close mean and90-observation return +/-10%; unknown before200 historical closes.",
+  "occurrence_windows": "For each Ganzhi, at every eligible occurrence use previous30 occurrences; select if same direction has>=18/30 successes, then freeze side for next10/20/30 occurrences. Only full future horizon allowed. Also fixed nonoverlap anchors30,30+H,..., whether or not prior anchor selected. All overlapping windows explicitly correlated.",
+  "rolling_null": "Repeat entire past30>=60% selection under all4nulls. Primary metric future success minus matched year-weekday BTC expectation;2basis x2supported horizons x2anchor policies x4nulls=32 Holm if horizons10/20 supported. Export horizon30 unavailable when no60-occurrence history. Hit rates/counts secondary descriptive.",
+  "survival": "S1 frozen train55 pool, cumulative same-direction validation success at1,5,10,15,20,24,30 future occurrences; no horizon selection; insufficient future horizons marked unavailable.",
+  "limits": "Previously examined historical source and user-named cases are exploratory, not fresh confirmation. Main split disjoint train/test, but different splits overlap each other and nulls share data; never multiply as independent evidence. No EV/volatility/PnL model recommendation.",
+  "seed": 202610216060,
+  "sources": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html",
+    "https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html"
+  ],
+  "pre_run_amendment": "Before any newly computed outcomes: also report180-calendar-day block interval sensitivity with3000 draws, to retain several same-Ganzhi appearances60days apart;60day5000draw main unchanged.",
+  "pre_run_null_caveat": "Before computing observed tables:28day aligned block shifts preserve Ganzhi index modulo4 (gcd28,60=4); explicitly a restrictive sensitivity null, not an unrestricted randomization. Weekly shifts have gcd7,60=1; use independent yearly offsets and audit nonconstant global phase. No60day block shuffling or one global phase shift as a test."
+}

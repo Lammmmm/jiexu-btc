@@ -1,0 +1,13 @@
+﻿basis,horizon,policy,available_anchor_windows,selected_windows,success,n,hit_rate,persistent60_windows,excess_rate,max_group_occurrences,status
+oc,10,overlap,1008,332,1740,3320,0.5240963855421686,149,0.009710146523599339,56,available
+oc,10,nonoverlap,120,37,199,370,0.5378378378378378,17,0.02527850782567789,56,available
+oc,20,overlap,408,119,1262,2380,0.5302521008403361,38,0.016953887824378434,56,available
+oc,20,nonoverlap,60,15,163,300,0.5433333333333333,5,0.028398645379777758,56,available
+oc,30,overlap,0,0,0,0,,0,,56,insufficient_complete_future_horizon
+oc,30,nonoverlap,0,0,0,0,,0,,56,insufficient_complete_future_horizon
+cc,10,overlap,1005,335,1749,3350,0.5220895522388059,149,0.008473227587252694,56,available
+cc,10,nonoverlap,120,37,199,370,0.5378378378378378,17,0.025278507825677893,56,available
+cc,20,overlap,405,120,1272,2400,0.53,39,0.017749392519583695,56,available
+cc,20,nonoverlap,60,15,163,300,0.5433333333333333,5,0.028398645379777765,56,available
+cc,30,overlap,0,0,0,0,,0,,56,insufficient_complete_future_horizon
+cc,30,nonoverlap,0,0,0,0,,0,,56,insufficient_complete_future_horizon

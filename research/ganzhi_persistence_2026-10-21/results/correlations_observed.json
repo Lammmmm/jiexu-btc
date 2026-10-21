@@ -1,0 +1,422 @@
+[
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": 0.14259301761490883
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": 0.17467533205860533
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": -0.16110458259490865
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": -0.09111712026140537
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": -0.2466399911378868
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": -0.14354446778910965
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": -0.4505344871362097
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": -0.4330979263045569
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": -0.08105331070389055
+  },
+  {
+    "split": "S1",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": 0.5
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": -0.09913085267798206
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": -0.15580103145027085
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": 0.03147229530289307
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": 0.00011057265620867683
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": 0.06948743786820775
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": 0.07887710603990121
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": 0.19716014838965704
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": 0.18967928297195355
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": 0.06260719214435745
+  },
+  {
+    "split": "S2",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": 0.14238909361056679
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": 0.11994830696583095
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": 0.123065499310942
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": -0.0572501271977121
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": -0.04959767088674519
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": -0.08116108031050738
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": -0.08031770745978059
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": -0.26954083666860623
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": -0.27461466533743234
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": -0.052727103723422014
+  },
+  {
+    "split": "S3",
+    "basis": "oc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": -0.0761335268237654
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": 0.15522398230184015
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": 0.18121300831718198
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": -0.15294616499465477
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": -0.07504713730006235
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": -0.20550954016943476
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": -0.06268465492474116
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": -0.4341172033915064
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": -0.3591695893257264
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": -0.08105331070389055
+  },
+  {
+    "split": "S1",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": 0.5
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": -0.08156459503418866
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": -0.13363037684360607
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": 0.013834090159966464
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": -0.016552657140475907
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": 0.05614139786278185
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": 0.07155907307141876
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": 0.18197742327759528
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": 0.18238291238914203
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": 0.04602496189872934
+  },
+  {
+    "split": "S2",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": 0.13101670625221798
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "pearson",
+    "value": 0.11994830696583095
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "raw_up_all",
+    "statistic": "spearman",
+    "value": 0.123065499310942
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "pearson",
+    "value": -0.0572501271977121
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "frozen_majority_all",
+    "statistic": "spearman",
+    "value": -0.04959767088674519
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "pearson",
+    "value": -0.08116108031050738
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected55",
+    "statistic": "spearman",
+    "value": -0.08031770745978059
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "pearson",
+    "value": -0.26954083666860623
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected60",
+    "statistic": "spearman",
+    "value": -0.27461466533743234
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "pearson",
+    "value": -0.052727103723422014
+  },
+  {
+    "split": "S3",
+    "basis": "cc",
+    "cohort": "selected65",
+    "statistic": "spearman",
+    "value": -0.0761335268237654
+  }
+]

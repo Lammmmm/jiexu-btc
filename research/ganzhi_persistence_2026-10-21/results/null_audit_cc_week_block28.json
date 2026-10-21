@@ -1,0 +1,14 @@
+{
+  "basis": "cc",
+  "method": "week_block28",
+  "sampled_mappings": 512,
+  "original_neighbor_links_preserved_mean": 0.9667600456450165,
+  "constant_global_phase_maps": 0,
+  "sign_lag1_original": -0.0492940025561676,
+  "sign_lag1_null_mean": -0.05097478321662134,
+  "absolute_return_lag1_original": 0.27593776510037016,
+  "absolute_return_lag1_null_mean": 0.2681698733741458,
+  "exact_year_weekday_totals": true,
+  "exact_regime_strata": false,
+  "caveat": "28day blocks additionally preserve g modulo4; not an unrestricted null"
+}

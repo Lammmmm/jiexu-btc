@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "records": [
+    {
+      "file": "REPORT.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "jiexu-btc｜六十甲子高胜率持续性与跨周期验证",
+        "tables": 22,
+        "rows": 209,
+        "textLength": 16682,
+        "images": [
+          {
+            "src": "results/null_counts_oc.png",
+            "ok": true
+          },
+          {
+            "src": "results/null_counts_cc.png",
+            "ok": true
+          },
+          {
+            "src": "results/individual_persistence.png",
+            "ok": true
+          },
+          {
+            "src": "results/case_yearly.png",
+            "ok": true
+          }
+        ],
+        "links": [
+          "GANZHI_DETAILS.html",
+          "REPRODUCE.html",
+          "results/main60_details.csv",
+          "results/null_persistence_tests.csv"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "GANZHI_DETAILS.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "六十甲子：全部训练、验证与持续性明细",
+        "tables": 18,
+        "rows": 1080,
+        "textLength": 61173,
+        "images": [],
+        "links": [
+          "REPORT.html",
+          "results/ganzhi_splits.csv"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "REPRODUCE.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "高胜率持续性研究：复现、字段与文件索引",
+        "tables": 1,
+        "rows": 21,
+        "textLength": 3738,
+        "images": [],
+        "links": [
+          "REPORT.html",
+          "GANZHI_DETAILS.html"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    }
+  ]
+}

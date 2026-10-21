@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-21T12:24:54.698226+00:00",
+  "git_base": "b328d2b1aecae37f3ecb3b22b611358873139062",
+  "source_sha256": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "protocol_sha256": "182b4eb3811c47a381924f0e54fe59aa990d855d7d8f3d272666f2c80e1f5150",
+  "research_dependencies": "research\\ganzhi_volatility_2026-10-21\\requirements-research-lock.txt",
+  "initial_protocol_sha256": "2c4d46af20ea354f8b31222a3d02fc86ff2b94605c4cfb37fae1b36935363412",
+  "dependency_lock_sha256": "f71dfd6e2a64a586a1994eccdf18b6e80ac52f52a51b383f5438bd8d184e7347"
+}

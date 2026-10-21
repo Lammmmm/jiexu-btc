@@ -1,0 +1,9 @@
+﻿basis,method,sampled_mappings,original_neighbor_links_preserved_mean,constant_global_phase_maps,sign_lag1_original,sign_lag1_null_mean,absolute_return_lag1_original,absolute_return_lag1_null_mean,exact_year_weekday_totals,exact_regime_strata,caveat
+oc,year_weekday,512,0.02098674865430622,0,-0.0507760254460299,0.001940124634865492,0.274220467340722,0.10321454551103718,True,False,Conditional reference distribution; not a reconstructed price process
+oc,year_weekday_regime,512,0.04896362888755981,0,-0.0507760254460299,-0.0009033081806648154,0.274220467340722,0.13484690507822006,True,True,Conditional reference distribution; not a reconstructed price process
+oc,week_block28,512,0.9667244505083734,0,-0.0507760254460299,-0.05278792189597349,0.274220467340722,0.2665482192998029,True,False,28day blocks additionally preserve g modulo4; not an unrestricted null
+oc,weekly_rotation,512,0.9903640382027511,0,-0.0507760254460299,-0.04902663442577536,0.274220467340722,0.27144985355457574,True,False,Conditional reference distribution; not a reconstructed price process
+cc,year_weekday,512,0.02072674255462436,0,-0.0492940025561676,0.0035540887760148994,0.27593776510037016,0.1062204993759204,True,False,Conditional reference distribution; not a reconstructed price process
+cc,year_weekday_regime,512,0.04932561358874589,0,-0.0492940025561676,0.0007929134238701186,0.27593776510037016,0.13526890233981748,True,True,Conditional reference distribution; not a reconstructed price process
+cc,week_block28,512,0.9667600456450165,0,-0.0492940025561676,-0.05097478321662134,0.27593776510037016,0.2681698733741458,True,False,28day blocks additionally preserve g modulo4; not an unrestricted null
+cc,weekly_rotation,512,0.990371754340018,0,-0.0492940025561676,-0.0475436806734984,0.27593776510037016,0.27319078347367953,True,False,Conditional reference distribution; not a reconstructed price process

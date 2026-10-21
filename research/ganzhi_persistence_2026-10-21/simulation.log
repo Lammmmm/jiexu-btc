@@ -1,0 +1,49 @@
+NULL_PROGRESS oc year_weekday 256 / 19999
+NULL_PROGRESS oc year_weekday 4352 / 19999
+NULL_PROGRESS oc year_weekday 8448 / 19999
+NULL_PROGRESS oc year_weekday 12544 / 19999
+NULL_PROGRESS oc year_weekday 16640 / 19999
+NULL_DONE oc year_weekday
+NULL_PROGRESS oc year_weekday_regime 256 / 19999
+NULL_PROGRESS oc year_weekday_regime 4352 / 19999
+NULL_PROGRESS oc year_weekday_regime 8448 / 19999
+NULL_PROGRESS oc year_weekday_regime 12544 / 19999
+NULL_PROGRESS oc year_weekday_regime 16640 / 19999
+NULL_DONE oc year_weekday_regime
+NULL_PROGRESS oc week_block28 256 / 19999
+NULL_PROGRESS oc week_block28 4352 / 19999
+NULL_PROGRESS oc week_block28 8448 / 19999
+NULL_PROGRESS oc week_block28 12544 / 19999
+NULL_PROGRESS oc week_block28 16640 / 19999
+NULL_DONE oc week_block28
+NULL_PROGRESS oc weekly_rotation 256 / 19999
+NULL_PROGRESS oc weekly_rotation 4352 / 19999
+NULL_PROGRESS oc weekly_rotation 8448 / 19999
+NULL_PROGRESS oc weekly_rotation 12544 / 19999
+NULL_PROGRESS oc weekly_rotation 16640 / 19999
+NULL_DONE oc weekly_rotation
+NULL_PROGRESS cc year_weekday 256 / 19999
+NULL_PROGRESS cc year_weekday 4352 / 19999
+NULL_PROGRESS cc year_weekday 8448 / 19999
+NULL_PROGRESS cc year_weekday 12544 / 19999
+NULL_PROGRESS cc year_weekday 16640 / 19999
+NULL_DONE cc year_weekday
+NULL_PROGRESS cc year_weekday_regime 256 / 19999
+NULL_PROGRESS cc year_weekday_regime 4352 / 19999
+NULL_PROGRESS cc year_weekday_regime 8448 / 19999
+NULL_PROGRESS cc year_weekday_regime 12544 / 19999
+NULL_PROGRESS cc year_weekday_regime 16640 / 19999
+NULL_DONE cc year_weekday_regime
+NULL_PROGRESS cc week_block28 256 / 19999
+NULL_PROGRESS cc week_block28 4352 / 19999
+NULL_PROGRESS cc week_block28 8448 / 19999
+NULL_PROGRESS cc week_block28 12544 / 19999
+NULL_PROGRESS cc week_block28 16640 / 19999
+NULL_DONE cc week_block28
+NULL_PROGRESS cc weekly_rotation 256 / 19999
+NULL_PROGRESS cc weekly_rotation 4352 / 19999
+NULL_PROGRESS cc weekly_rotation 8448 / 19999
+NULL_PROGRESS cc weekly_rotation 12544 / 19999
+NULL_PROGRESS cc weekly_rotation 16640 / 19999
+NULL_DONE cc weekly_rotation
+ALL_NULLS_DONE

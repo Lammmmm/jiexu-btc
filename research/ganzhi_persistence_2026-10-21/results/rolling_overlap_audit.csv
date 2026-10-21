@@ -1,0 +1,13 @@
+﻿basis,horizon,policy,windows,unique_test_dates,unique_groups
+oc,10,overlap,332,725,41
+oc,10,nonoverlap,37,370,26
+oc,20,overlap,119,695,30
+oc,20,nonoverlap,15,300,15
+oc,30,overlap,0,0,0
+oc,30,nonoverlap,0,0,0
+cc,10,overlap,335,754,43
+cc,10,nonoverlap,37,370,26
+cc,20,overlap,120,734,32
+cc,20,nonoverlap,15,300,15
+cc,30,overlap,0,0,0
+cc,30,nonoverlap,0,0,0

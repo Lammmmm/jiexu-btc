@@ -1,0 +1,14 @@
+{
+  "basis": "oc",
+  "method": "weekly_rotation",
+  "sampled_mappings": 512,
+  "original_neighbor_links_preserved_mean": 0.9903640382027511,
+  "constant_global_phase_maps": 0,
+  "sign_lag1_original": -0.0507760254460299,
+  "sign_lag1_null_mean": -0.04902663442577536,
+  "absolute_return_lag1_original": 0.274220467340722,
+  "absolute_return_lag1_null_mean": 0.27144985355457574,
+  "exact_year_weekday_totals": true,
+  "exact_regime_strata": false,
+  "caveat": "Conditional reference distribution; not a reconstructed price process"
+}
