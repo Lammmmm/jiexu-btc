@@ -39,6 +39,13 @@
 #ganzhi-calendar .fc-day-other .fc-daygrid-day-number{color:#6b7b89}
 #ganzhi-calendar .fc-day-other .ganzhi-calendar-cell{opacity:.55}
 #ganzhi-calendar .ganzhi-calendar-selected{background:#2c3f3a!important;box-shadow:inset 0 0 0 2px #9ac7a3}
+#ganzhi-calendar .ganzhi-calendar-big-up{--ganzhi-large-bg:rgba(53,187,140,.34);--ganzhi-large-border:#4de2af}
+#ganzhi-calendar .ganzhi-calendar-big-down{--ganzhi-large-bg:rgba(244,93,111,.30);--ganzhi-large-border:#ff8091}
+#ganzhi-calendar .ganzhi-calendar-big-up,
+#ganzhi-calendar .ganzhi-calendar-big-down{background:var(--ganzhi-large-bg)!important;box-shadow:inset 0 0 0 1px var(--ganzhi-large-border);transition:none}
+#ganzhi-calendar .ganzhi-calendar-selected:is(.ganzhi-calendar-big-up,.ganzhi-calendar-big-down){box-shadow:inset 0 0 0 2px #e0e8ed}
+#ganzhi-calendar .ganzhi-calendar-big-up .ganzhi-calendar-cell,
+#ganzhi-calendar .ganzhi-calendar-big-down .ganzhi-calendar-cell{opacity:1}
 .ganzhi-calendar-cell{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:3px 10px 10px;line-height:1.25}
 .ganzhi-calendar-ganzhi{font-size:15px;color:#dce9ed;font-weight:600}
 .ganzhi-calendar-term{font-size:11px;color:var(--amber)}
@@ -86,11 +93,13 @@
 .ganzhi-calendar-legend i{width:18px;height:12px;border:1px solid #385269;border-radius:2px}
 .ganzhi-calendar-legend .strength-light{background:rgba(78,128,180,.05)}
 .ganzhi-calendar-legend .strength-dark{background:rgba(78,128,180,.235)}
+.ganzhi-calendar-legend .large-move-up{background:rgba(53,187,140,.34);border-color:#4de2af}
+.ganzhi-calendar-legend .large-move-down{background:rgba(244,93,111,.30);border-color:#ff8091}
 #ganzhi-calendar-benchmark{margin-top:5px}
 .ganzhi-calendar-amplitude,.ganzhi-calendar-large{font:12px Consolas,"Microsoft YaHei",sans-serif;white-space:nowrap;color:var(--muted)}
 .ganzhi-calendar-amplitude strong{color:#bdd8ec;font-weight:600}
 .ganzhi-calendar-large strong{color:var(--text);font-weight:600}
-.ganzhi-calendar-samples{font:10px Consolas,"Microsoft YaHei",sans-serif;color:var(--muted)}
+.ganzhi-calendar-samples,.ganzhi-calendar-strength-samples{font:10px Consolas,"Microsoft YaHei",sans-serif;color:var(--muted)}
 .ganzhi-calendar-strength-detail{margin-top:20px}
 .ganzhi-calendar-strength-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:15px}
 .ganzhi-calendar-strength-cards>div{display:flex;flex-direction:column;gap:6px;padding:15px;background:#0e1721;border:1px solid var(--border);border-radius:7px;min-width:0}
@@ -104,7 +113,7 @@
   .ganzhi-calendar-amplitude,.ganzhi-calendar-large{font-size:10px;max-width:100%;white-space:normal}
   .ganzhi-calendar-metric-label,.ganzhi-calendar-amplitude strong,.ganzhi-calendar-large strong{display:block}
   .ganzhi-calendar-metric-label{font-size:9px}
-  .ganzhi-calendar-samples{font-size:9px}
+  .ganzhi-calendar-samples,.ganzhi-calendar-strength-samples{font-size:9px}
   .ganzhi-calendar-strength-detail .statistics-result-heading{align-items:flex-start;flex-direction:column;gap:5px}
   .ganzhi-calendar-strength-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .ganzhi-calendar-strength-cards>div{padding:11px}

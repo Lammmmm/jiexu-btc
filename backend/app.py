@@ -19,6 +19,7 @@ from backend.market.repository import MarketRepository
 from backend.market.updater import MarketDataService
 from backend.market.validation import DataIntegrityError
 from backend.period.engine import CustomWeekPeriod
+from backend.economic.service import EconomicCalendar
 
 logger = logging.getLogger(__name__)
 
@@ -62,18 +63,23 @@ def create_app(settings=None):
     charts = ChartService(market,calendar)
     coordinator = SyncCoordinator(market,settings)
     statistics = GanzhiStatisticsService(market,calendar)
+    economics = EconomicCalendar(ROOT / "data/us-economic-events.json", settings.market_db.parent / "us-economic-events.cache.json")
 
     @asynccontextmanager
     async def lifespan(app):
         if settings.auto_sync:
             worker = threading.Thread(target=coordinator.loop,daemon=True,name="binance-sync")
             worker.start()
+            economic_worker = threading.Thread(target=economics.loop, daemon=True, name="bls-calendar-sync")
+            economic_worker.start()
         yield
         coordinator.stop.set()
+        economics.stop.set()
 
     app = FastAPI(title="节序 · BTC 看盘 V1",lifespan=lifespan)
     app.add_middleware(TrustedHostMiddleware,allowed_hosts=["127.0.0.1","localhost","testserver","[::1]"])
     app.state.coordinator = coordinator
+    app.state.economics = economics
 
     @app.middleware("http")
     async def local_mutations_only(request:Request,call_next):
@@ -102,7 +108,9 @@ def create_app(settings=None):
         raw = market.all()
         last_sync = int(market.get_meta("last_sync_ms") or 0)
         now = int(time.time()*1000)
+        economic = economics.snapshot()
         return {
+            "economicCalendarVersion":economic["version"], "economicCalendarError":economic["error"],
             "syncing":coordinator.busy,"error":coordinator.error,"lastSync":last_sync or None,
             "stale":not last_sync or now-last_sync > settings.sync_seconds*3000,
             "count":len(raw),"firstDate":raw[0].period_id if raw else None,
@@ -118,6 +126,10 @@ def create_app(settings=None):
         if not coordinator.busy:
             threading.Thread(target=coordinator.sync,daemon=True,name="manual-sync").start()
         return {"accepted":True}
+
+    @app.get("/api/economic-events")
+    def economic_events():
+        return economics.snapshot()
 
     @app.get("/api/candles")
     def candles(period:Literal["day","week","month","year"]="day",anchor:date|None=None):
@@ -159,12 +171,13 @@ def create_app(settings=None):
                     **rate,
                     "actualDirection": actual.get("actualDirection"),
                     "actualChangePct": actual.get("actualChangePct"),
+                    "actualLargeMoveDirection": actual.get("actualLargeMoveDirection"),
                 })
             else:
                 days.append({"date": ds, "ganzhi": None, "solarTerm": None,
                              "upPct": None, "downPct": None, "sampleCount": 0,
                              "signalDirection": "none", "signalPct": None,
-                             "actualDirection": None, "actualChangePct": None,
+                             "actualDirection": None, "actualChangePct": None, "actualLargeMoveDirection": None,
                              "sampleStart": None, "sampleEnd": None, "strength": None})
         return {
             "start": str(start), "endExclusive": str(end), "basis": basis,

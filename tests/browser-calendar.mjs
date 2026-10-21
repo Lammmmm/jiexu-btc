@@ -70,7 +70,15 @@ try{
   await expect(cell.locator('.ganzhi-calendar-large')).toContainText(
     Number(day.strength.largeMove.probabilitiesPct.total).toFixed(1)+'%'
   );
-  await expect(cell.locator('.ganzhi-calendar-samples')).toHaveText('样本 '+day.sampleCount);
+  await expect(cell.locator('.ganzhi-calendar-samples')).toHaveText('方向样本 '+day.sampleCount);
+  assert.equal(day.strength.start,'2023-01-01');
+  assert.ok(day.strength.sampleStart>='2023-01-01');
+  assert.ok(day.strength.sampleCount<day.sampleCount);
+  assert.equal(day.strength.largeMove.sampleCount,day.strength.sampleCount);
+  await expect(cell.locator('.ganzhi-calendar-strength-samples')).toHaveText('幅度样本 '+day.strength.sampleCount);
+  await expect(page.locator('#ganzhi-calendar-benchmark')).toContainText('2023-01-01 起');
+  await expect(page.locator('#ganzhi-calendar-benchmark')).toContainText('幅度样本 '+first.benchmark.strength.sampleCount.toLocaleString()+' 根');
+
   await expect(page.locator('#ganzhi-calendar-benchmark')).toContainText(
     Number(first.benchmark.strength.medianAbsoluteChangePct).toFixed(2)+'%'
   );
@@ -111,6 +119,18 @@ try{
   await expect(page.locator('#ganzhi-calendar-strength-title')).toContainText(day.date+' · '+day.ganzhi);
   await expect(page.locator('#ganzhi-calendar-strength-cards>div')).toHaveCount(8);
   await expect(page.locator('#ganzhi-calendar-strength-cards')).toContainText('典型日内振幅');
+  const strengthCards=page.locator('#ganzhi-calendar-strength-cards>div');
+  for(const index of [0,1,2,3,4,5,6,7]) await expect(strengthCards.nth(index)).toContainText('2023-01-01 起');
+  await expect(strengthCards.nth(1)).toContainText(day.strength.largeMove.counts.total+' / '+day.strength.sampleCount+' 根');
+  await expect(strengthCards.nth(4)).toContainText(day.strength.largeMove.counts.up+' / '+day.strength.sampleCount+' 根');
+  await expect(strengthCards.nth(5)).toContainText(day.strength.largeMove.counts.down+' / '+day.strength.sampleCount+' 根');
+  await expect(page.locator('#ganzhi-calendar-strength-scope')).toContainText('幅度样本 '+day.strength.sampleCount+' 根');
+  const intradayCard=page.locator('#ganzhi-calendar-strength-cards>div').last();
+  await expect(intradayCard).toContainText(day.strength.intradayRangeStart+' 起');
+  await expect(intradayCard).toContainText('振幅样本 '+day.strength.intradayRangeSampleCount+' 根');
+  await expect(intradayCard.locator('strong')).toHaveText(
+    day.strength.medianIntradayRangePct==null?'—':Number(day.strength.medianIntradayRangePct).toFixed(2)+'%'
+  );
   check('点击日期展示强度详情，并保持同干支历史统计联动');
 
   const thresholdResponse=page.waitForResponse(r=>new URL(r.url()).pathname==='/api/calendar/days'&&
@@ -131,9 +151,15 @@ try{
   await page.locator('#ganzhi-calendar-window').selectOption('recent3');
   const recentData=await (await recentResponse).json();
   const recentDay=recentData.days.find(d=>d.date===day.date);
+  assert.equal(recentDay.strength.start,recentData.windowStart);
+  assert.equal(recentDay.strength.sampleCount,recentDay.sampleCount);
+  await expect(cell.locator('.ganzhi-calendar-strength-samples')).toHaveText('幅度样本 '+recentDay.strength.sampleCount);
+
   assert.ok(recentDay.sampleCount<day.sampleCount);
-  await expect(cell.locator('.ganzhi-calendar-samples')).toHaveText('样本 '+recentDay.sampleCount);
+  await expect(cell.locator('.ganzhi-calendar-samples')).toHaveText('方向样本 '+recentDay.sampleCount);
   await expect(page.locator('#ganzhi-calendar-strength-scope')).toContainText('近三年');
+  await expect(intradayCard).toContainText(recentData.windowStart+' 起');
+  await expect(intradayCard).toContainText('振幅样本 '+recentDay.strength.intradayRangeSampleCount+' 根');
   await expect(page.locator('#statistics-start')).toHaveValue(recentData.windowStart);
   await expect(page.locator('#statistics-sample-count')).toHaveText(String(recentDay.sampleCount));
   const resetWindow=page.waitForResponse(r=>new URL(r.url()).pathname==='/api/calendar/days'&&

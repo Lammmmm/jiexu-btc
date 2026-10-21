@@ -23,7 +23,8 @@ export class MarketChart {
     this.candles = [];
     this.byDate = new Map();
     this.highlightDates = new Set();
-    this.options = {period:'day',showDay14:false,showGanzhi:true,showTerms:true};
+    this.economicEvents = new Map();
+    this.options = {period:'day',showCPI:false,showNFP:false,showDay14:false,showGanzhi:true,showTerms:true};
     this.chart = L.createChart(container, {
       autoSize:true,
       layout:{background:{color:'#111c27'},textColor:'#8c9caa',fontSize:11,fontFamily:'Consolas, Microsoft YaHei, sans-serif',attributionLogo:true},
@@ -87,8 +88,25 @@ export class MarketChart {
       }
       if(this.options.period==='day'&&this.options.showDay14&&c.metadata.startDate.endsWith('-14'))
         point.wickColor='#f2c879';
+      if(this.options.period==='day'){
+        const events=this.economicEvents.get(c.metadata.startDate)||[];
+        const hasCPI=this.options.showCPI&&events.some(e=>e.kind==='cpi');
+        const hasNFP=this.options.showNFP&&events.some(e=>e.kind==='nfp');
+        if(hasCPI||hasNFP) point.wickColor=hasCPI&&hasNFP?'#e4c5ff':hasCPI?'#82baff':'#c5a1ff';
+      }
       return point;
     });
+  }
+  setEconomicEvents(events) {
+    const grouped=new Map();
+    for(const event of events){
+      if(!grouped.has(event.date)) grouped.set(event.date,[]);
+      grouped.get(event.date).push(event);
+    }
+    this.economicEvents=grouped;
+    if(this.options.showCPI||this.options.showNFP)
+      this.pricePoints=applySeriesData(this.series,this.candlePoints(),this.pricePoints);
+    this.scheduleMarkers();
   }
   setHighlightDates(dates) {
     const next=new Set(dates);
@@ -104,7 +122,7 @@ export class MarketChart {
   }
   paintMarkers(){
     cancelAnimationFrame(this.markerFrame);
-    const markers=buildMarkers(this.candles,this.chart.timeScale().getVisibleLogicalRange(),this.container.clientWidth-80,this.options);
+    const markers=buildMarkers(this.candles,this.chart.timeScale().getVisibleLogicalRange(),this.container.clientWidth-80,{...this.options,economicEvents:this.economicEvents});
     const key=JSON.stringify(markers);
     if(key===this.markerKey) return;
     this.markerKey=key;this.markerApi.setMarkers(markers);
@@ -114,7 +132,7 @@ export class MarketChart {
     this.markerFrame=requestAnimationFrame(()=>this.paintMarkers());
   }
   setOptions(options) {
-    const repaintCandles='showDay14' in options&&options.showDay14!==this.options.showDay14;
+    const repaintCandles=['showDay14','showCPI','showNFP'].some(key=>key in options&&options[key]!==this.options[key]);
     Object.assign(this.options,options);
     if(repaintCandles) this.pricePoints=applySeriesData(this.series,this.candlePoints(),this.pricePoints);
     this.scheduleMarkers();

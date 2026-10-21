@@ -51,6 +51,9 @@ backend/
     repository.py          SQLite 原始日线缓存
     updater.py             增量刷新、缺日检测与补齐
     validation.py          重复/缺日/OHLC/时区验证
+  economic/
+    bls.py                  BLS官方档案与ICS日历，icalendar解析
+    service.py              本地公布日期缓存和后台更新
   calendar/
     repository.py          固定 Calendar DB 只读查询
     service.py             历法查询、日线日期关联
@@ -66,9 +69,11 @@ frontend/
   vendor/                   本地图表库、Apache License、NOTICE
 data/
   market.db                 唯一行情源：原始日线
+  us-economic-events.json   2017年起CPI/非农官方公布日期快照
   calendar.db               1900-01-01 至 2100-12-31 固定历法
   calendar_source/          历法原始源码包、MIT License、生成清单与校验值
 scripts/
+  sync_economic_calendar.py BLS公布日期缓存更新
   sync_market.py            命令行历史/增量下载
   generate_calendar.py      一次性离线生成历法
   verify_live_market.py     真实行情独立复核
@@ -86,7 +91,7 @@ setup.ps1 / start.ps1 / start.cmd
 
 ## 2. 技术栈
 
-- Python 3.11+、FastAPI 0.115.12、Uvicorn 0.34.2、httpx 0.28.1。
+- Python 3.11+、FastAPI 0.115.12、Uvicorn 0.34.2、httpx 0.28.1、icalendar 6.3.2。
 - Python sqlite3；OHLCV 在数据库中保存十进制字符串，聚合使用 Decimal。
 - 原生 JavaScript 模块 + **TradingView Lightweight Charts 5.2.1**；不是 Pine Script，也不是官网 Widget。
 - lunar-python **1.4.8** 只用于离线数据生成及测试；生产 `backend/` 没有对该库的导入。
@@ -262,11 +267,11 @@ Lightweight Charts 使用 [Apache 2.0](https://github.com/tradingview/lightweigh
 
 ## 流日强度统计
 
-日历在方向概率之外显示典型幅度（逐次绝对涨跌幅的中位数）、大行情率及同干支有效样本数。门槛可选 2%、3%、5%，默认 3%；大行情包含绝对涨跌幅达到门槛的日期。颜色深浅以典型幅度相对同窗口普通 BTC 日线的比例表示，不用红绿色深浅混淆方向与强度。
+日历在方向概率之外显示典型幅度（逐次绝对涨跌幅的中位数）、大行情率及同干支样本数。方向概率默认保留 2017 年上线以来的有效历史；所有幅度历史统计统一只使用 2023 年 1 月 1 日（含）起的有效 K 线，包括典型幅度、上涨时中位涨幅、下跌时中位跌幅、带符号平均涨跌幅、典型日内振幅、大行情率、大涨率、大跌率及普通 BTC 日线对照。日线和月线筛选统计的平均、中位、最高及最低涨跌幅也使用此下限，月线按周期开始日期取样；方向计数、涨跌概率、逐年方向胜率与历史明细仍保留原方向范围。
 
-点击日期会在日历下方展开强度详情：上涨和下跌各自的幅度中位数、大涨率、大跌率、带符号平均涨跌幅及典型日内振幅。上涨、下跌的中位数仅用各自方向样本；大涨、大跌、大行情概率都用全部有效样本作分母。日内振幅为（最高 − 最低）÷ 开盘，与收盘涨跌口径区别展示。
+门槛可选 2%、3%、5%，默认 3%；大行情包含绝对涨跌幅达到门槛的日期。大行情率、大涨率、大跌率的分子和分母都使用 2023 年起范围内全部有效样本；上涨、下跌幅度中位数分别用该范围内各自方向样本。日内振幅为（最高 − 最低）÷ 开盘 × 100%。日历格分别显示方向样本和幅度样本；详情卡片标明起点和样本数，没有符合范围的幅度样本时显示“—”。蓝色底色深浅以典型幅度相对同范围普通 BTC 日线的比例表示。已收盘且有效日期的实际绝对涨跌幅达到当前 2%、3% 或 5% 门槛（含等于）时，日历格持续显示上涨绿色或下跌红色；悬停和选中保留该底色，选中另显示描边。此颜色按当天实际结果判断，并随收盘/开盘、收盘/昨收口径和门槛同步更新；未收盘、源异常及无实际结果日期不高亮。服务端按 Decimal 原始精度返回 actualLargeMoveDirection，避免舍入导致误判，且不受 2023 年起的历史幅度窗口限制。
 
-“全部历史 / 近三年”同时作用于日历方向概率、强度指标、月度判断核对和普通 BTC 日线对照。近三年以最后同步时间的 UTC+8 日期减三年为起点（2 月 29 日回退至 2 月 28 日）；切换月份不改变历史窗口。点击流日后，下方已有干支日筛选也沿用这一窗口。实际日涨跌幅独立于窗口，旧日期仍展示其已收盘实际结果。
+“全部历史 / 近三年”以及下方日期筛选保持原有作用，幅度统计额外与 2023 年起的范围取交集。近三年以最后同步时间的 UTC+8 日期减三年为起点（2 月 29 日回退至 2 月 28 日）；切换月份不改变历史窗口。点击流日后，下方已有干支日筛选也沿用这一窗口。每根历史 K 线的实际涨跌幅、图表 OHLCV 和单根振幅保留原始真实值，旧日期仍展示其已收盘实际结果。
 
 仅使用现有有效已收盘样本，继续排除未收盘、源异常、上市首日以及昨收不可用的记录；所有计算先使用 Decimal 原始精度，再格式化输出，门槛分类不使用舍入后的涨跌幅。无有效样本显示“—”，不填零。现有统计用于按当前样本回看；未增加滚动预测回测。
 
@@ -277,3 +282,20 @@ Lightweight Charts 使用 [Apache 2.0](https://github.com/tradingview/lightweigh
 行情同步后，日历、强度详情、筛选统计、逐年胜率和排行榜在新数据返回前保留现有内容，不清空日历或临时隐藏结果，也不取消 K 线筛选高亮。刷新保留阅读位置和图表缩放；相同行情跳过重绘，末根价格变化和新增 K 线使用 Lightweight Charts 的增量更新，历史修正仍完整更新。
 
 短暂刷新失败时保留上次成功的数据并显示更新失败提示，后续状态轮询会重试。只有切换周期或主动改变统计条件时展示对应的加载状态。`npm run test:refresh` 模拟慢响应、失败恢复、无变化行情、新增 K 线与历史修正（需先启动本地服务）。
+
+## 美国 CPI / 非农公布日标注
+
+日线图右上角加入 CPI、非农勾选项，默认关闭。CPI 用蓝色向下箭头和影线、非农用紫色向下箭头和影线，标在每次公布日的 K 线上；取消勾选恢复。与14号、干支、节气和干支筛选高亮并存，不删除其他 K 线，非日线周期禁用这两个开关。缩放后只更新可见标注，缩得很远时保留箭头并隐藏拥挤文字。点击或悬停对应 K 线，侧栏显示北京时间和 BLS 官方发布原文链接。
+
+已调研 GitHub 上的 [AKShare](https://github.com/akfamily/akshare)、[investpy](https://github.com/alvarobartt/investpy) 和 [Trading Economics](https://github.com/tradingeconomics/tradingeconomics-python)。本功能仅需要精确的发布日期，采用 [icalendar 6.3.2](https://github.com/collective/icalendar) 解析 BLS 官方 ICS，并用官方档案确认历史实际发布；无需付费账户或 API Key，没有按固定星期或固定号数推算日期。
+
+- CPI 历史：[BLS CPI档案](https://www.bls.gov/bls/news-release/cpi.htm)。
+- 非农历史：[BLS Employment Situation档案](https://www.bls.gov/bls/news-release/empsit.htm)，不是 ADP 就业或失业救济申请。
+- 官方日历：[BLS ICS](https://www.bls.gov/schedule/news_release/bls.ics)。
+- 取档案链接文件名中的实际公布日，不取数据所属月份。历史发布时刻为美国东部08:30，按 America/New_York 时区处理夏令时，映射到 UTC+8 日线，分别是北京时间20:30 / 21:30。
+- 档案确认的实际发布优先于计划日历，延期/取消的旧计划不混入历史标注。当前日及未来计划保留“计划”字样；未来没有行情 K 线时不创建价格或虚拟 K 线。已过去且未获档案确认的计划日期不会继续标注。
+- 项目附带2017年开始的官方日期快照 data/us-economic-events.json，离线即可显示。默认后台每6小时更新；失败保留已核实缓存并30分钟后重试，不阻塞行情加载。-NoSync 不联网更新。
+- BLS 对机器访问返回403等网络错误时，使用 Jina 公共文本阅读服务获取同一官方页面；校验 URL Source 与 ICS 发布者，原始来源链接始终为 BLS。缓存记录访问渠道，数据接口 /api/economic-events 提供版本、更新时间和状态。
+- 手动更新本地缓存：python -m scripts.sync_economic_calendar。重建随项目分发的快照：python -m scripts.sync_economic_calendar --seed。
+
+经济事件浏览器验收：npm run test:economic-events；离线数据与时区验证：python -m pytest tests/test_economic_events.py -q。

@@ -179,3 +179,27 @@ def test_month_api_and_integrity(months, calendar):
         assert client.get("/api/statistics/ganzhi/rankings", params={"period": "month"}).status_code == 409
     with pytest.raises(DataIntegrityError):
         service.summarize("丁酉", period="month")
+
+
+def test_month_magnitudes_use_2023_onward_but_direction_keeps_old_months(months, calendar):
+    from statistics import median
+    repo, service, raw = months
+    repo.upsert([replace(row, high=D(200), low=D(1)) for row in raw if row.period_id < "2023-01-01"])
+    gz = calendar.get("2024-09-07")["ganzhi_month"]
+    result = service.summarize(gz, period="month")
+    modern = [match for match in result["matches"] if match["included"] and match["date"] >= "2023-01-01"]
+    old = [match for match in result["matches"] if match["included"] and match["date"] < "2023-01-01"]
+    assert old and modern
+    strength = result["strength"]
+    assert result["sampleCount"] == len(old) + len(modern)
+    assert strength["start"] == "2023-01-01"
+    assert strength["sampleCount"] == len(modern)
+    assert strength["sampleStart"] == min(match["date"] for match in modern)
+    assert strength["sampleEnd"] == max(match["date"] for match in modern)
+    assert strength["medianIntradayRangePct"] == "40.000000"
+    changes = [(D(match["close"]) / D(match["baseline"]) - 1) * 100 for match in modern]
+    assert D(result["averageChangePct"]) == (sum(changes) / len(changes)).quantize(D("0.000001"))
+    assert D(result["medianChangePct"]) == median(changes).quantize(D("0.000001"))
+    assert D(result["bestChangePct"]) == max(changes).quantize(D("0.000001"))
+    assert D(result["worstChangePct"]) == min(changes).quantize(D("0.000001"))
+    assert strength["largeMove"]["sampleCount"] == len(modern)

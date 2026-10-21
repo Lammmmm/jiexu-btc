@@ -233,7 +233,7 @@ export class GanzhiStatistics {
     const scope=(data.start||data.availableStart||'—')+' → '+(data.end||data.availableEnd||'—');
     this.$('statistics-scope').textContent=scope+' · '+this.basisLabel(data.basis);
     this.$('statistics-summary').textContent=
-      '平均涨跌 '+signed(data.averageChangePct)+'　中位数 '+signed(data.medianChangePct)+
+      '幅度统计：'+data.strength.start+' 起 · 幅度样本 '+data.strength.sampleCount+' 根　平均涨跌 '+signed(data.averageChangePct)+'　中位数 '+signed(data.medianChangePct)+
       '　最高涨跌 '+signed(data.bestChangePct)+'　最低涨跌 '+signed(data.worstChangePct);
     const excluded=Object.entries(data.excluded).filter(([,n])=>n).map(([k,n])=>reasons[k]+' '+n+' 根');
     const time=data.asOf?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(data.asOf)):'尚无成功同步';

@@ -20,3 +20,14 @@ footer{display:flex;justify-content:space-between;gap:16px;padding:25px 0;color:
 .statistics-yearly .statistics-table-wrap{margin-top:12px;max-height:440px}
 .statistics-yearly .statistics-year-active td{background:#254036}
 .statistics-yearly #statistics-yearly-title{color:var(--text);margin-top:4px}
+
+/* Official release-day overlays share the existing daily chart controls. */
+.dot.cpi{background:#82baff}.dot.nfp{background:#c5a1ff}
+.economic-calendar-note{margin:0;padding:0 20px 10px;color:var(--amber);font-size:11px}
+#economic-detail-list{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+#economic-detail-list li{display:flex;justify-content:space-between;gap:8px;font-size:11px}
+#economic-detail-list a{color:var(--text);text-decoration:none}
+#economic-detail-list a:hover{text-decoration:underline}
+#economic-detail-list .economic-time{color:var(--muted);white-space:nowrap}
+.switches{flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:800px){.chart-options{flex-wrap:wrap}.chart-options .switches{width:100%;gap:13px;justify-content:flex-end}.economic-calendar-note{padding:0 12px 10px}}

@@ -9,7 +9,8 @@
     "test:statistics": "node tests/browser-statistics.mjs",
     "test:month-statistics": "node tests/browser-month-statistics.mjs",
     "test:calendar": "node tests/browser-calendar.mjs",
-    "test:refresh": "node tests/browser-refresh.mjs"
+    "test:refresh": "node tests/browser-refresh.mjs",
+    "test:economic-events": "node tests/browser-economic-events.mjs"
   },
   "dependencies": {
     "fullcalendar": "6.1.21",

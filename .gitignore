@@ -21,3 +21,6 @@ artifacts/*
 data/*.building.db
 
 *.lnk
+
+data/us-economic-events.cache.json
+data/us-economic-events.cache.tmp

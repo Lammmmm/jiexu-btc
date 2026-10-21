@@ -142,9 +142,9 @@ export class GanzhiCalendar {
       if(selected&&this.selectionScope!==basis+':'+(payload.windowStart||''))
         this.notifySelection(selected);
       const base=payload.benchmark;
-      this.benchmark.textContent='普通 BTC 日线 · 典型幅度 '+magnitudePct(base.strength.medianAbsoluteChangePct)+
-        ' · 大行情率 '+pct(base.strength.largeMove.probabilitiesPct.total)+
-        '（≥'+payload.thresholdPct+'%） · 样本 '+base.sampleCount.toLocaleString()+' 根';
+      this.benchmark.textContent='普通 BTC 日线 · '+base.strength.start+' 起 · 幅度样本 '+
+        base.strength.sampleCount.toLocaleString()+' 根 · 典型幅度 '+magnitudePct(base.strength.medianAbsoluteChangePct)+
+        ' · 大行情率 '+pct(base.strength.largeMove.probabilitiesPct.total)+'（≥'+payload.thresholdPct+'%）';
       this.paintMonthSummary(monthJudgement(payload.days,payload.asOf,month),month);
       const counted=payload.days.filter(row=>row.ganzhi).length;
       this.status.textContent='已显示 '+counted+' 天 · '+(basis==='open'?'收盘 vs 开盘':'收盘 vs 昨收')+
@@ -184,23 +184,24 @@ export class GanzhiCalendar {
       row.date+' · '+row.ganzhi+'日 · 强度详情';
     document.getElementById('ganzhi-calendar-strength-scope').textContent=
       (this.payload.window==='all'?'全部历史':'近三年')+' · '+
-      (this.payload.basis==='open'?'收盘 vs 开盘':'收盘 vs 昨收')+' · 有效样本 '+row.sampleCount+' 根'+
-      (row.sampleStart?' · '+row.sampleStart+' → '+row.sampleEnd:'');
+      (this.payload.basis==='open'?'收盘 vs 开盘':'收盘 vs 昨收')+' · '+strength.start+' 起 · 幅度样本 '+strength.sampleCount+' 根'+
+      (strength.sampleStart?' · '+strength.sampleStart+' → '+strength.sampleEnd:'');
     const metrics=[
       ['典型幅度',magnitudePct(strength.medianAbsoluteChangePct),
-        '绝对涨跌幅中位数 · 普通日线 '+magnitudePct(base.strength.medianAbsoluteChangePct),''],
+        strength.start+' 起 · 绝对涨跌幅中位数 · 样本 '+strength.sampleCount+' 根 · 普通日线 '+magnitudePct(base.strength.medianAbsoluteChangePct),''],
       ['大行情率',pct(large.probabilitiesPct.total),
-        '|涨跌幅| ≥'+large.thresholdPct+'% · '+large.counts.total+' / '+row.sampleCount+
+        large.start+' 起 · |涨跌幅| ≥'+large.thresholdPct+'% · '+large.counts.total+' / '+large.sampleCount+
         ' 根 · 普通日线 '+pct(base.strength.largeMove.probabilitiesPct.total),''],
-      ['上涨时中位涨幅',actualPct(strength.upMedianChangePct),'上涨样本 '+strength.upSampleCount+' 根','positive'],
-      ['下跌时中位跌幅',actualPct(strength.downMedianChangePct),'下跌样本 '+strength.downSampleCount+' 根','negative'],
+      ['上涨时中位涨幅',actualPct(strength.upMedianChangePct),strength.start+' 起 · 上涨样本 '+strength.upSampleCount+' 根','positive'],
+      ['下跌时中位跌幅',actualPct(strength.downMedianChangePct),strength.start+' 起 · 下跌样本 '+strength.downSampleCount+' 根','negative'],
       ['大涨率',pct(large.probabilitiesPct.up),
-        '涨幅 ≥'+large.thresholdPct+'% · '+large.counts.up+' / '+row.sampleCount+' 根','positive'],
+        large.start+' 起 · 涨幅 ≥'+large.thresholdPct+'% · '+large.counts.up+' / '+large.sampleCount+' 根','positive'],
       ['大跌率',pct(large.probabilitiesPct.down),
-        '跌幅 ≤−'+large.thresholdPct+'% · '+large.counts.down+' / '+row.sampleCount+' 根','negative'],
-      ['平均涨跌幅',actualPct(strength.averageChangePct),'全部有效样本的带符号均值',''],
+        large.start+' 起 · 跌幅 ≤−'+large.thresholdPct+'% · '+large.counts.down+' / '+large.sampleCount+' 根','negative'],
+      ['平均涨跌幅',actualPct(strength.averageChangePct),strength.start+' 起 · 样本 '+strength.sampleCount+' 根的带符号均值',''],
       ['典型日内振幅',magnitudePct(strength.medianIntradayRangePct),
-        '最高最低价差 ÷ 开盘的中位数 · 普通日线 '+magnitudePct(base.strength.medianIntradayRangePct),''],
+        strength.intradayRangeStart+' 起 · 振幅样本 '+strength.intradayRangeSampleCount+
+        ' 根 · 普通日线 '+magnitudePct(base.strength.medianIntradayRangePct),''],
     ];
     const cards=metrics.map(([label,value,note,className])=>{
       const card=document.createElement('div');
@@ -249,6 +250,9 @@ export class GanzhiCalendar {
     const content=cell.querySelector('.ganzhi-calendar-cell');
     if(!content) return;
     const row=this.rows.get(date);
+    const actualLargeMove=row?.actualChangePct!=null?row.actualLargeMoveDirection:null;
+    cell.classList.toggle('ganzhi-calendar-big-up',actualLargeMove==='up');
+    cell.classList.toggle('ganzhi-calendar-big-down',actualLargeMove==='down');
     cell.classList.toggle('ganzhi-calendar-selected',date===this.selectedDate);
     const renderKey=JSON.stringify([row,this.payload?.benchmark.strength.medianAbsoluteChangePct,this.payload?.thresholdPct]);
     if(content.renderKey===renderKey) return;
@@ -302,8 +306,10 @@ export class GanzhiCalendar {
     };
     metric('ganzhi-calendar-amplitude','典型幅度',magnitudePct(row.strength?.medianAbsoluteChangePct));
     metric('ganzhi-calendar-large','大行情率',pct(row.strength?.largeMove.probabilitiesPct.total));
+    const strengthSample=document.createElement('span');strengthSample.className='ganzhi-calendar-strength-samples';
+    strengthSample.textContent='幅度样本 '+row.strength.sampleCount;content.append(strengthSample);
     const sample=document.createElement('span');sample.className='ganzhi-calendar-samples';
-    sample.textContent='样本 '+row.sampleCount;content.append(sample);
+    sample.textContent='方向样本 '+row.sampleCount;content.append(sample);
     if(row.actualChangePct!==null){
       const actual=document.createElement('span');
       actual.className='ganzhi-calendar-actual actual-'+row.actualDirection;
@@ -317,8 +323,10 @@ export class GanzhiCalendar {
     }
     cell.title=date+' '+row.ganzhi+'；历史上涨率 '+pct(row.upPct)+
       '，下跌率 '+pct(row.downPct)+'；典型幅度（绝对值中位数） '+magnitudePct(row.strength?.medianAbsoluteChangePct)+
-      '；大行情率 '+pct(row.strength?.largeMove.probabilitiesPct.total)+'（≥'+this.payload.thresholdPct+'%）'+
-      '；有效样本 '+row.sampleCount+' 根'+
-      (row.actualChangePct===null?'':'；当日实际涨跌幅 '+actualPct(row.actualChangePct));
+      '；大行情率 '+pct(row.strength?.largeMove.probabilitiesPct.total)+'（≥'+this.payload.thresholdPct+'% · '+
+      row.strength.largeMove.start+' 起 · 大行情样本 '+row.strength.largeMove.sampleCount+' 根）'+
+      '；方向有效样本 '+row.sampleCount+' 根；幅度样本 '+row.strength.sampleCount+' 根（'+row.strength.start+' 起）'+
+      (row.actualChangePct===null?'':'；当日实际涨跌幅 '+actualPct(row.actualChangePct))+
+      (actualLargeMove?'；已完成大行情：'+(actualLargeMove==='up'?'上涨常亮绿色':'下跌常亮红色'):'');
   }
 }

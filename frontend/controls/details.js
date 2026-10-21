@@ -1,5 +1,5 @@
 const set = (id,text) => {document.getElementById(id).textContent=text;};
-export function showDetails(candle,period,pinned=false) {
+export function showDetails(candle,period,pinned=false,economicEvents=[]) {
   const m=candle.metadata;
   const label = m.displayGanzhi ?? '—';
   const suffix = {day:'日',week:' · 七日',month:'月',year:'年'}[period];
@@ -23,6 +23,19 @@ export function showDetails(candle,period,pinned=false) {
   }else{
     set('detail-amplitude','—');
     amplitudeRow.title='';
+  }
+  const economicPanel=document.getElementById('economic-detail');
+  economicPanel.hidden=period!=='day'||!economicEvents.length;
+  const economicList=document.getElementById('economic-detail-list');
+  economicList.replaceChildren();
+  if(period==='day') for(const event of economicEvents){
+    const row=document.createElement('li'),link=document.createElement('a'),when=document.createElement('span');
+    link.textContent=event.label+(event.status==='scheduled'?' · 计划':'');
+    link.href=event.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';
+    when.className='economic-time';
+    when.textContent=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(event.releaseAt));
+    row.title='美国东部 '+event.releaseAtEt+'；北京时间 '+event.releaseAtShanghai+'；BLS官方来源';
+    row.append(link,when);economicList.append(row);
   }
   document.getElementById('detail-close').className=Number(candle.close)>=Number(candle.open)?'positive':'negative';
   document.getElementById('calendar-detail').hidden=false;

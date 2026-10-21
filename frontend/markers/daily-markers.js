@@ -32,6 +32,14 @@ export function buildMarkers(candles, range, width, options) {
         shape:'circle', size:1, text:pixelsPerBar*28>=40?'14号':'',
       });
     }
+    for(const event of options.economicEvents?.get(m.startDate)||[]){
+      if(!(event.kind==='cpi'?options.showCPI:options.showNFP)) continue;
+      markers.push({
+        id:event.id,time:m.startDate,position:'aboveBar',
+        color:event.kind==='cpi'?'#82baff':'#c5a1ff',shape:'arrowDown',size:1,
+        text:pixelsPerBar*7>=35?(event.label+(event.status==='scheduled'?'·计划':'')):'',
+      });
+    }
     if (options.showTerms && m.solar_term && (i-lastTermIndex)*pixelsPerBar >= 45) {
       markers.push({time:m.startDate, position:'aboveBar', color:'#d8b570', shape:'circle', size:0.6, text:m.solar_term});
       lastTermIndex = i;

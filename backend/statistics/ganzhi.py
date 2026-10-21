@@ -9,13 +9,15 @@ from backend.calendar.service import CalendarService
 from backend.market.validation import DataIntegrityError, validate_daily
 from backend.timeutils import DAY_MS, local_date
 
+STRENGTH_START = "2023-01-01"
+
 EXCLUSION_REASONS = ("unclosed", "source_anomaly", "listing_day", "invalid_previous_close", "incomplete_period")
 
 def decimal_string(value):
     return format(value.quantize(Decimal("0.000001")), "f") if value is not None else None
 
 
-def strength_metrics(changes, ranges, threshold):
+def strength_metrics(changes, ranges, threshold, *, sample_start, sample_dates):
     """Keep Decimal precision through threshold classification and aggregation."""
     count = len(changes)
     up = [change for change in changes if change > 0]
@@ -25,13 +27,25 @@ def strength_metrics(changes, ranges, threshold):
     def probability(n):
         return decimal_string(Decimal(n) / count * 100) if count else None
     return {
+        "start": sample_start,
+        "sampleCount": count,
+        "sampleStart": sample_dates[0] if sample_dates else None,
+        "sampleEnd": sample_dates[-1] if sample_dates else None,
         "medianAbsoluteChangePct": decimal_string(median([abs(change) for change in changes])) if count else None,
         "averageChangePct": decimal_string(sum(changes, Decimal(0)) / count) if count else None,
         "upMedianChangePct": decimal_string(median(up)) if up else None,
         "downMedianChangePct": decimal_string(median(down)) if down else None,
         "upSampleCount": len(up), "downSampleCount": len(down),
         "medianIntradayRangePct": decimal_string(median(ranges)) if ranges else None,
+        "intradayRangeStart": sample_start,
+        "intradayRangeSampleCount": len(ranges),
+        "intradayRangeSampleStart": sample_dates[0] if sample_dates else None,
+        "intradayRangeSampleEnd": sample_dates[-1] if sample_dates else None,
         "largeMove": {
+            "start": sample_start,
+            "sampleCount": count,
+            "sampleStart": sample_dates[0] if sample_dates else None,
+            "sampleEnd": sample_dates[-1] if sample_dates else None,
             "thresholdPct": str(threshold),
             "counts": {"up": large_up, "down": large_down, "total": large_up + large_down},
             "probabilitiesPct": {
@@ -165,9 +179,13 @@ class GanzhiStatisticsService:
             # Actual candles are independent of the selected historical sample window.
             for match in full["matches"]:
                 if match["included"] and str(start) <= match["date"] < str(end):
+                    # Classify the finalized move before display rounding, regardless
+                    # of the selected historical strength window.
+                    change = (Decimal(match["close"]) / Decimal(match["baseline"]) - 1) * 100
                     actual[match["date"]] = {
                         "actualDirection": match["direction"],
                         "actualChangePct": match["changePct"],
+                        "actualLargeMoveDirection": "up" if change >= threshold else "down" if change <= -threshold else None,
                     }
         return {
             "asOf": as_of, "window": window,
@@ -235,6 +253,8 @@ class GanzhiStatisticsService:
         excluded = dict.fromkeys(EXCLUSION_REASONS, 0)
         changes = []
         ranges = []
+        strength_dates = []
+        strength_start = max(STRENGTH_START, str(start)) if start else STRENGTH_START
         matches = []
         entries = enumerate(joined) if ganzhi is None else groups.get(ganzhi, [])
         for i, candle in entries:
@@ -258,8 +278,12 @@ class GanzhiStatisticsService:
                 direction = "up" if candle.close > baseline else "down" if candle.close < baseline else "flat"
                 change = (candle.close / baseline - 1) * 100
                 counts[direction] += 1
-                changes.append(change)
-                ranges.append((candle.high - candle.low) / candle.open * 100)
+                # Direction uses the full selected history. All return magnitude
+                # and high-low statistics share the independent 2023-onward sample.
+                if ds >= strength_start:
+                    changes.append(change)
+                    ranges.append((candle.high - candle.low) / candle.open * 100)
+                    strength_dates.append(ds)
             matches.append({
                 "date": ds, "endDate": candle.metadata.get("endDate", ds),
                 "periodId": candle.period_id, "ganzhi": ganzhi,
@@ -286,11 +310,12 @@ class GanzhiStatisticsService:
             "counts": counts, "probabilitiesPct": probabilities,
             "sampleStart": included_dates[0] if included_dates else None,
             "sampleEnd": included_dates[-1] if included_dates else None,
-            "averageChangePct": decimal_string(sum(changes, Decimal(0)) / sample_count) if sample_count else None,
+            "averageChangePct": decimal_string(sum(changes, Decimal(0)) / len(changes)) if changes else None,
             "medianChangePct": decimal_string(median(changes)) if changes else None,
             "bestChangePct": decimal_string(max(changes)) if changes else None,
             "worstChangePct": decimal_string(min(changes)) if changes else None,
-            "strength": strength_metrics(changes, ranges, threshold),
+            "strength": strength_metrics(
+                changes, ranges, threshold, sample_start=strength_start, sample_dates=strength_dates),
             "matches": list(reversed(matches)),
             "yearly": yearly_breakdown(matches) if period == "day" else [],
         }

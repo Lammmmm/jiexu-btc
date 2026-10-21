@@ -152,6 +152,8 @@ def test_calendar_strength_distribution_and_thresholds(tmp_path, calendar, daily
         assert strength["upSampleCount"] == 2
         assert strength["downSampleCount"] == 2
         assert strength["medianIntradayRangePct"] == "40.000000"
+        assert strength["intradayRangeStart"] == "2023-01-01"
+        assert strength["intradayRangeSampleCount"] == 5
         assert strength["largeMove"]["counts"] == {"up": 1, "down": 2, "total": 3}
         assert strength["largeMove"]["probabilitiesPct"] == {
             "up": "20.000000", "down": "40.000000", "total": "60.000000",
@@ -169,6 +171,7 @@ def test_calendar_strength_distribution_and_thresholds(tmp_path, calendar, daily
         day = client.get("/api/calendar/days", params=params).json()["days"][0]
         assert day["sampleCount"] == 4
         assert day["strength"]["medianAbsoluteChangePct"] == "2.000000"
+        assert day["strength"]["intradayRangeSampleCount"] == 4
         assert day["strength"]["largeMove"]["probabilitiesPct"]["total"] == "50.000000"
 
 
@@ -191,6 +194,13 @@ def test_calendar_strength_classifies_before_rounding(tmp_path, calendar, daily_
         large = result["days"][0]["strength"]["largeMove"]
         assert large["counts"] == {"up": 1, "down": 1, "total": 2}
         assert large["probabilitiesPct"]["total"] == "50.000000"
+        targets = [row.period_id for row in rows if row.metadata["ganzhi_day"] == ganzhi]
+        for target, direction in zip(targets, (None, "up", "down", None)):
+            end = str(date.fromordinal(date.fromisoformat(target).toordinal() + 1))
+            day = client.get("/api/calendar/days", params={"start": target, "end": end}).json()["days"][0]
+            assert day["actualLargeMoveDirection"] == direction
+            above = client.get("/api/calendar/days", params={"start": target, "end": end, "threshold": 5}).json()["days"][0]
+            assert above["actualLargeMoveDirection"] is None
 
 
 def test_calendar_recent_window_preserves_old_actuals(tmp_path, calendar, daily_factory):
@@ -203,6 +213,11 @@ def test_calendar_recent_window_preserves_old_actuals(tmp_path, calendar, daily_
         full = client.get("/api/calendar/days", params=params).json()
         recent = client.get("/api/calendar/days", params={**params, "window": "recent3"}).json()
         assert recent["windowStart"] == "2023-01-03"
+        assert recent["days"][0]["strength"]["intradayRangeStart"] == recent["windowStart"]
+        assert recent["benchmark"]["strength"]["intradayRangeStart"] == recent["windowStart"]
+        assert recent["days"][0]["strength"]["start"] == recent["windowStart"]
+        assert recent["days"][0]["strength"]["sampleCount"] == recent["days"][0]["sampleCount"]
+        assert recent["days"][0]["strength"]["largeMove"]["sampleCount"] == recent["days"][0]["sampleCount"]
         day = recent["days"][0]
         expected = client.get("/api/statistics/ganzhi", params={
             "ganzhi": day["ganzhi"], "start": recent["windowStart"],
@@ -214,3 +229,139 @@ def test_calendar_recent_window_preserves_old_actuals(tmp_path, calendar, daily_
         assert day["actualChangePct"] == full["days"][0]["actualChangePct"]
         assert day["actualChangePct"] is not None
         assert recent["benchmark"]["sampleCount"] == (date(2026, 1, 3) - date(2023, 1, 3)).days
+
+
+def test_strength_uses_2023_onward_without_changing_direction_samples(tmp_path, calendar, daily_factory):
+    repo = MarketRepository(tmp_path / "strength-cutoff.db")
+    target = "2023-01-01"
+    ganzhi = calendar.get(target)["ganzhi_day"]
+    rows = []
+    for row in daily_factory("2022-07-05", "2023-03-31"):
+        early = row.period_id < target
+        matched = row.metadata["ganzhi_day"] == ganzhi
+        close = Decimal(150) if early and matched else Decimal(100)
+        if row.period_id == "2022-12-31":
+            close = Decimal(110)  # Previous-close mode may read outside the strength window.
+        if row.period_id == target:
+            close = Decimal(103)
+        elif row.period_id == "2023-03-02":
+            close = Decimal(95)
+        high = Decimal(150) if early else Decimal(106) if row.period_id == "2023-03-02" else Decimal(104)
+        low = Decimal(50) if early else Decimal(90) if row.period_id == "2023-03-02" else Decimal(98)
+        rows.append(replace(row, open=Decimal(100), high=high, low=low, close=close))
+    repo.upsert(rows)
+    repo.set_meta("last_sync_ms", day_start(date(2023, 4, 1)))
+    with TestClient(create_app(Settings(market_db=repo.path, auto_sync=False))) as client:
+        params = {"start": target, "end": "2023-01-02"}
+        result = client.get("/api/calendar/days", params=params).json()
+        day = result["days"][0]
+        strength = day["strength"]
+        # Three pre-2023 +50% returns/ranges belong only to the direction sample.
+        assert day["sampleCount"] == 5
+        assert day["upPct"] == "80.000000"
+        assert strength["start"] == "2023-01-01"
+        assert strength["sampleCount"] == 2
+        assert strength["sampleStart"] == "2023-01-01"
+        assert strength["sampleEnd"] == "2023-03-02"
+        assert strength["medianAbsoluteChangePct"] == "4.000000"
+        assert strength["averageChangePct"] == "-1.000000"
+        assert strength["upMedianChangePct"] == "3.000000"
+        assert strength["downMedianChangePct"] == "-5.000000"
+        assert strength["upSampleCount"] == strength["downSampleCount"] == 1
+        assert strength["medianIntradayRangePct"] == "11.000000"
+        assert strength["intradayRangeStart"] == strength["start"]
+        assert strength["intradayRangeSampleCount"] == 2
+        assert strength["intradayRangeSampleStart"] == strength["sampleStart"]
+        assert strength["intradayRangeSampleEnd"] == strength["sampleEnd"]
+        large = strength["largeMove"]
+        assert large["start"] == strength["start"]
+        assert large["sampleCount"] == 2
+        assert large["counts"] == {"up": 1, "down": 1, "total": 2}
+        assert large["probabilitiesPct"] == {"up": "50.000000", "down": "50.000000", "total": "100.000000"}
+        benchmark = result["benchmark"]["strength"]
+        assert benchmark["medianIntradayRangePct"] == "6.000000"
+        assert benchmark["start"] == "2023-01-01"
+        assert benchmark["sampleCount"] == benchmark["largeMove"]["sampleCount"] == 90
+        assert benchmark["sampleStart"] == "2023-01-01"
+        assert benchmark["sampleEnd"] == "2023-03-31"
+
+        summary = client.get("/api/statistics/ganzhi", params={"ganzhi": ganzhi}).json()
+        assert summary["sampleCount"] == 5
+        assert summary["averageChangePct"] == "-1.000000"
+        assert summary["medianChangePct"] == "-1.000000"
+        assert summary["bestChangePct"] == "3.000000"
+        assert summary["worstChangePct"] == "-5.000000"
+        assert summary["strength"] == strength
+        ranking = client.get("/api/statistics/ganzhi/rankings").json()
+        ranked = next(row for row in ranking["upRanking"] if row["ganzhi"] == ganzhi)
+        assert ranked["strength"] == strength
+        assert ranked["probabilitiesPct"] == summary["probabilitiesPct"]
+
+        threshold5 = client.get("/api/calendar/days", params={**params, "threshold": 5}).json()["days"][0]["strength"]["largeMove"]
+        assert threshold5["sampleCount"] == 2
+        assert threshold5["counts"] == {"up": 0, "down": 1, "total": 1}
+        assert threshold5["probabilitiesPct"]["total"] == "50.000000"
+
+        filtered = client.get("/api/statistics/ganzhi", params={
+            "ganzhi": ganzhi, "start": "2023-01-02", "end": "2023-03-02",
+        }).json()["strength"]
+        assert filtered["start"] == "2023-01-02"
+        assert filtered["sampleCount"] == 1
+        assert filtered["sampleStart"] == filtered["sampleEnd"] == "2023-03-02"
+        assert filtered["medianAbsoluteChangePct"] == "5.000000"
+        assert filtered["medianIntradayRangePct"] == "16.000000"
+
+        previous = client.get("/api/calendar/days", params={**params, "basis": "previous_close"}).json()["days"][0]
+        assert previous["sampleCount"] == 4  # First cached day has no previous close.
+        assert previous["upPct"] == "50.000000"
+        assert previous["strength"]["sampleCount"] == 2
+        assert previous["strength"]["upSampleCount"] == 0
+        assert previous["strength"]["downSampleCount"] == 2
+        assert previous["strength"]["medianIntradayRangePct"] == strength["medianIntradayRangePct"]
+        assert previous["strength"]["largeMove"]["probabilitiesPct"]["down"] == "100.000000"
+        assert previous["actualChangePct"] == "-6.363636"
+        assert previous["actualLargeMoveDirection"] == "down"
+
+        old = client.get("/api/calendar/days", params={
+            "start": "2022-09-03", "end": "2022-09-04",
+        }).json()["days"][0]
+        assert old["ganzhi"] == ganzhi
+        assert old["actualChangePct"] == "50.000000"
+        assert old["actualLargeMoveDirection"] == "up"
+        assert old["strength"] == strength
+
+        only_old = client.get("/api/statistics/ganzhi", params={
+            "ganzhi": ganzhi, "end": "2022-12-31",
+        }).json()
+        assert only_old["sampleCount"] == 3
+        assert only_old["probabilitiesPct"]["up"] == "100.000000"
+        assert only_old["strength"]["sampleCount"] == 0
+        assert only_old["averageChangePct"] is None
+        assert only_old["medianChangePct"] is None
+        assert only_old["bestChangePct"] is None
+        assert only_old["worstChangePct"] is None
+
+
+def test_strength_has_no_samples_before_2023(tmp_path, calendar, daily_factory):
+    repo = MarketRepository(tmp_path / "early-strength.db")
+    repo.upsert(daily_factory("2022-07-05", "2022-12-31"))
+    repo.set_meta("last_sync_ms", day_start(date(2023, 1, 1)))
+    with TestClient(create_app(Settings(market_db=repo.path, auto_sync=False))) as client:
+        result = client.get("/api/calendar/days", params={
+            "start": "2022-09-03", "end": "2022-09-04",
+        }).json()
+        day = result["days"][0]
+        assert day["sampleCount"] > 0
+        assert day["upPct"] is not None
+        assert day["actualChangePct"] is not None
+        for strength in (day["strength"], result["benchmark"]["strength"]):
+            assert strength["start"] == "2023-01-01"
+            assert strength["sampleCount"] == strength["intradayRangeSampleCount"] == 0
+            assert strength["sampleStart"] is None
+            assert strength["sampleEnd"] is None
+            for metric in ("medianAbsoluteChangePct", "averageChangePct", "upMedianChangePct",
+                           "downMedianChangePct", "medianIntradayRangePct"):
+                assert strength[metric] is None
+            assert strength["largeMove"]["sampleCount"] == 0
+            assert strength["largeMove"]["counts"] == {"up": 0, "down": 0, "total": 0}
+            assert strength["largeMove"]["probabilitiesPct"] == {"up": None, "down": None, "total": None}
