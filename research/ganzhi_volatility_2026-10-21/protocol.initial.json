@@ -1,0 +1,127 @@
+{
+  "study": "Ganzhi volatility incremental prediction, independent of direction EV",
+  "created_utc": "2026-10-21T07:20:08.434046+00:00",
+  "scope": "Research only. No production code/API/calendar changes.",
+  "primary_test_start": "2023-01-01",
+  "extended_test_start": "2021-01-01",
+  "backcast_start": "2018-07-01",
+  "decision": "Target day starts minus 60s, source candle close strictly before decision; normally through d-2.",
+  "common_valid": "Both OC and CC valid, excluding listing, source anomalies, invalid prior source, unclosed. All targets/models share this training/evaluation set; descriptive tables additionally retain own-validity counts.",
+  "continuous_targets": [
+    "abs_oc",
+    "abs_cc",
+    "range"
+  ],
+  "binary_targets": {
+    "oc2": [
+      "abs_oc",
+      "0.02"
+    ],
+    "oc3": [
+      "abs_oc",
+      "0.03"
+    ],
+    "oc5": [
+      "abs_oc",
+      "0.05"
+    ],
+    "cc2": [
+      "abs_cc",
+      "0.02"
+    ],
+    "cc3": [
+      "abs_cc",
+      "0.03"
+    ],
+    "cc5": [
+      "abs_cc",
+      "0.05"
+    ],
+    "range5": [
+      "range",
+      "0.05"
+    ],
+    "range10": [
+      "range",
+      "0.10"
+    ]
+  },
+  "exact_event_classification": "Decimal source prices, no rounded float thresholds.",
+  "models": {
+    "A": "expanding unconditional",
+    "B30": "last30 calendar day mean/Beta(1,1) rate",
+    "C7": "last7 calendar day",
+    "C14": "last14 calendar day",
+    "C90": "last90 calendar day",
+    "C365": "last365 calendar day",
+    "Cewma": "exponential mean/event rate half-life14 days",
+    "C": "multiscale state regression",
+    "D": "same Ganzhi expanding shrink20 toward global",
+    "D_raw": "same Ganzhi raw, Beta(1,1) for events",
+    "D_2023": "2023+ same Ganzhi shrink20 toward 2023+ global; unavailable until >=30 recent global samples, earlier fallback D",
+    "E30": "B30 plus regularized Ganzhi effect on honest historical B30 residuals",
+    "E": "C plus regularized Ganzhi effect on honest historical C residuals",
+    "F": "C-style state plus weekday; strict-vintage macro omitted where historical announced schedule not provable",
+    "G": "F plus regularized Ganzhi residual effect",
+    "F_retro": "state+weekday+actual CPI/NFP publication dates, conditional retrospective macro sensitivity, NOT full point-in-time predictive claim",
+    "G_retro": "F_retro plus Ganzhi effect; same limitation"
+  },
+  "base_features": "Past target lag1 and mean7,14,30,90; past range mean7,30 and past abs_oc mean7,30. Log features, 1e-6 floor. Event targets add past target rates7,30,90 with Beta(1,1) smoothing and logit transform.",
+  "continuous_fit": "ridge log(y+1e-6), conditional mean via training-only smearing; no claim mean optimizes MAE.",
+  "binary_fit": "ridge logistic Newton IRLS; intercept unpenalized; probability clip[1e-5,1-1e-5].",
+  "base_fit_window_days": 1095,
+  "refit": "monthly with available train labels; features update daily",
+  "base_alpha_candidates": [
+    1,
+    10,
+    100
+  ],
+  "base_validation": "last252 eligible feature rows divided into3 forward blocks84; train strictly before fold start minus60s; min180 train rows; select by squared error for continuous/logloss for binary.",
+  "group_regularization": [
+    20,
+    60,
+    180,
+    "off"
+  ],
+  "group_effect_window_days": 1095,
+  "group_fit": "Monthly using earlier genuinely OOS baseline residual forecasts; continuous shrunken group residual minus pooled residual. Binary group penalized offset logistic effect, frequency-centered; no fitted in-sample baseline residuals.",
+  "group_validation": "3 chronological validation blocks within last252 honest historical predictions. For each fold fit offsets using only labels closed before first validation date minus60s. Choose MSE/Brier. off wins exact ties.",
+  "group_alert_elevated": "G continuous >F by20%, or probability G-F >=5 percentage points; only precomputed predictions form mask.",
+  "alert_fractions": [
+    0.1,
+    0.2
+  ],
+  "online_alert": "Compare current forecast to90/80 percentile of its own last365-day previously issued forecasts; same retrospective fraction top10/20 also shown as ranking diagnostic.",
+  "main_pairs": [
+    [
+      "B30",
+      "E30"
+    ],
+    [
+      "B30",
+      "E"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "F",
+      "G"
+    ]
+  ],
+  "primary_statistics": "3 continuous MSE/MAE plus8 binary Brier/LogLoss =22 endpoints x4pairs=88; same-day paired circular bootstrap block60,20000 replicates, Holm across88. Relative skill uses matched mean loss.",
+  "bootstrap_blocks": [
+    14,
+    180
+  ],
+  "bootstrap_sensitivity_reps": 10000,
+  "seed": 2026102103,
+  "descriptive_permutation": "Conditional omnibus across60 labels after controlling year, weekday and multiscale state. Independent circular rotations within each year preserve local clustering and year distribution. Global phase shift is invalid because60-day shift just relabels. 9999 main; within-year shuffled14/28-day blocks1999 sensitivity; 22 full/recent target hypotheses Holm.",
+  "group_uncertainty": "Year-matched group-vs-overall differences; year cluster t using effective annual masses. 60x11x2windows=1320 Holm/BH tests; OOS group E-C/G-F loss differences separate1320-test family. Few years and serial dependence limit coverage.",
+  "robustness": "Unmodified source primary. Training-only95/99percentile cap using past training; continuous99% cap and binary event unchanged. Independently rerun primary predictors excluding training years2020/2021/2022 one at time. Raw target scores unchanged. Descriptive delete-extreme-year and top1% diagnostics separate from tradable filters.",
+  "cutoff_design": "Compare D vs D_2023 and group estimators A/B/C/D; evaluate whether2023 cutoff improves OOS intensity predictions, not prove2017 direction frequency forecasts.",
+  "development_recommendation": "A stable independent value / B descriptive correlation only / C no proved independent predictive value. Determined from actual runs, no forced positive.",
+  "macro_limitation": "Final publication dates lack pre-announcement vintage; retrospective flags only in explicitly labeled sensitivity, never substituted into strict primary F/G.",
+  "no_trading_pnl": "Volatility forecasts have no direction; no synthetic trading profitability claim without executable option/derivative data."
+}

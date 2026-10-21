@@ -1,0 +1,91 @@
+{
+  "source_sha256": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "raw_n": 3353,
+  "counts": {
+    "oc": {
+      "n": 3348,
+      "first": "2017-08-18",
+      "last": "2026-10-20",
+      "n_2023": 1389
+    },
+    "cc": {
+      "n": 3345,
+      "first": "2017-08-18",
+      "last": "2026-10-20",
+      "n_2023": 1389
+    },
+    "common": {
+      "n": 3345,
+      "first": "2017-08-18",
+      "last": "2026-10-20",
+      "n_2023": 1389
+    }
+  },
+  "exclusions": {
+    "oc": [
+      {
+        "date": "2017-08-17",
+        "reason": "listing_day"
+      },
+      {
+        "date": "2018-02-08",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2020-02-19",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2020-12-21",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2026-10-21",
+        "reason": "unclosed"
+      }
+    ],
+    "cc": [
+      {
+        "date": "2017-08-17",
+        "reason": "listing_day"
+      },
+      {
+        "date": "2018-02-08",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2018-02-09",
+        "reason": "invalid_previous_close"
+      },
+      {
+        "date": "2020-02-19",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2020-02-20",
+        "reason": "invalid_previous_close"
+      },
+      {
+        "date": "2020-12-21",
+        "reason": "source_anomaly"
+      },
+      {
+        "date": "2020-12-22",
+        "reason": "invalid_previous_close"
+      },
+      {
+        "date": "2026-10-21",
+        "reason": "unclosed"
+      }
+    ]
+  },
+  "actual_macro_release_flags": [
+    109.0,
+    109.0
+  ],
+  "provably_preknown_macro_schedule_flags": [
+    0.0,
+    0.0
+  ],
+  "macro_vintage": "No valid historical pre-announcement version before most OOS dates; primaryF/G weekday-only. RetroF/G conditional only."
+}

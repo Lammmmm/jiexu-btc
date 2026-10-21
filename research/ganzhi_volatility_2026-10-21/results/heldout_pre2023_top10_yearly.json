@@ -1,0 +1,398 @@
+[
+  {
+    "target": "abs_oc",
+    "year": "2023",
+    "n_high": 62,
+    "high_mean": 0.016035028413766268,
+    "rest_mean": 0.014572000469446064,
+    "high_residual": 0.0014799588614738317,
+    "rest_residual": -0.0003017945893504973
+  },
+  {
+    "target": "abs_oc",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.022805020848303777,
+    "rest_mean": 0.018729142276574486,
+    "high_residual": 0.0034349386880996686,
+    "rest_residual": -0.00020462502886231388
+  },
+  {
+    "target": "abs_oc",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.018197276685918275,
+    "rest_mean": 0.01417739450103352,
+    "high_residual": 0.0027501053858254377,
+    "rest_residual": -0.0017051542517140254
+  },
+  {
+    "target": "abs_oc",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.016344859503856977,
+    "rest_mean": 0.016222392615097305,
+    "high_residual": 0.0006015716211531539,
+    "rest_residual": 0.0007516943796483435
+  },
+  {
+    "target": "abs_cc",
+    "year": "2023",
+    "n_high": 62,
+    "high_mean": 0.016030999006615032,
+    "rest_mean": 0.014574373914244822,
+    "high_residual": 0.0014681874350653424,
+    "rest_residual": -0.0003152148220235818
+  },
+  {
+    "target": "abs_cc",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.02280501925859154,
+    "rest_mean": 0.01872918641850954,
+    "high_residual": 0.0034318481609059387,
+    "rest_residual": -0.00021271776295406092
+  },
+  {
+    "target": "abs_cc",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.018197330667447373,
+    "rest_mean": 0.014177431385468871,
+    "high_residual": 0.002749856367674519,
+    "rest_residual": -0.0017062383422254048
+  },
+  {
+    "target": "abs_cc",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.01634476458249766,
+    "rest_mean": 0.0162223931617863,
+    "high_residual": 0.0006001135432471659,
+    "rest_residual": 0.0007502567101212207
+  },
+  {
+    "target": "range",
+    "year": "2023",
+    "n_high": 61,
+    "high_mean": 0.032415737452229414,
+    "rest_mean": 0.03249528916897151,
+    "high_residual": 1.4117603342693679e-05,
+    "rest_residual": -0.00116388428780372
+  },
+  {
+    "target": "range",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.04065578426154287,
+    "rest_mean": 0.04044209351381497,
+    "high_residual": -0.00045626239766031156,
+    "rest_residual": -0.0005139602316057714
+  },
+  {
+    "target": "range",
+    "year": "2025",
+    "n_high": 60,
+    "high_mean": 0.03307646756188477,
+    "rest_mean": 0.033169629694794235,
+    "high_residual": -0.00050326601738912,
+    "rest_residual": -0.001090300782215292
+  },
+  {
+    "target": "range",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.03430374268234424,
+    "rest_mean": 0.03222804427988763,
+    "high_residual": 0.0007776329935169687,
+    "rest_residual": -0.0011399947913747243
+  },
+  {
+    "target": "oc2",
+    "year": "2023",
+    "n_high": 60,
+    "high_mean": 0.2,
+    "rest_mean": 0.23278688524590163,
+    "high_residual": -0.07490916382734011,
+    "rest_residual": -0.04800304769461148
+  },
+  {
+    "target": "oc2",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.3968253968253968,
+    "rest_mean": 0.38613861386138615,
+    "high_residual": 0.06377530837908428,
+    "rest_residual": 0.06421614688267965
+  },
+  {
+    "target": "oc2",
+    "year": "2025",
+    "n_high": 62,
+    "high_mean": 0.3225806451612903,
+    "rest_mean": 0.26732673267326734,
+    "high_residual": 0.020255648420708986,
+    "rest_residual": -0.025901607860903474
+  },
+  {
+    "target": "oc2",
+    "year": "2026",
+    "n_high": 47,
+    "high_mean": 0.2553191489361702,
+    "rest_mean": 0.3008130081300813,
+    "high_residual": -0.07534320374440147,
+    "rest_residual": -0.0019450110409463205
+  },
+  {
+    "target": "oc3",
+    "year": "2023",
+    "n_high": 62,
+    "high_mean": 0.14516129032258066,
+    "rest_mean": 0.13861386138613863,
+    "high_residual": -0.014999031897850233,
+    "rest_residual": -0.022005309867149894
+  },
+  {
+    "target": "oc3",
+    "year": "2024",
+    "n_high": 62,
+    "high_mean": 0.20967741935483872,
+    "rest_mean": 0.21710526315789475,
+    "high_residual": 0.004879883642526489,
+    "rest_residual": 0.009011855451229608
+  },
+  {
+    "target": "oc3",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.16393442622950818,
+    "rest_mean": 0.11842105263157894,
+    "high_residual": -0.004642179923014656,
+    "rest_residual": -0.04573878027327144
+  },
+  {
+    "target": "oc3",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.14583333333333334,
+    "rest_mean": 0.13877551020408163,
+    "high_residual": -0.010168450729952575,
+    "rest_residual": -0.013323215485980247
+  },
+  {
+    "target": "oc5",
+    "year": "2023",
+    "n_high": 61,
+    "high_mean": 0.06557377049180328,
+    "rest_mean": 0.046052631578947366,
+    "high_residual": 0.00208338522550952,
+    "rest_residual": -0.017565324615868957
+  },
+  {
+    "target": "oc5",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.14285714285714285,
+    "rest_mean": 0.056105610561056105,
+    "high_residual": 0.05784646077904236,
+    "rest_residual": -0.02489377939008295
+  },
+  {
+    "target": "oc5",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.03278688524590164,
+    "rest_mean": 0.019736842105263157,
+    "high_residual": -0.0127968548970367,
+    "rest_residual": -0.03200740688231047
+  },
+  {
+    "target": "oc5",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.020833333333333332,
+    "rest_mean": 0.05714285714285714,
+    "high_residual": -0.02549275567151772,
+    "rest_residual": 0.010399313325758516
+  },
+  {
+    "target": "cc2",
+    "year": "2023",
+    "n_high": 60,
+    "high_mean": 0.2,
+    "rest_mean": 0.23278688524590163,
+    "high_residual": -0.07486988718380592,
+    "rest_residual": -0.04802634558469653
+  },
+  {
+    "target": "cc2",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.3968253968253968,
+    "rest_mean": 0.38613861386138615,
+    "high_residual": 0.06378307444076121,
+    "rest_residual": 0.06421763358682137
+  },
+  {
+    "target": "cc2",
+    "year": "2025",
+    "n_high": 62,
+    "high_mean": 0.3225806451612903,
+    "rest_mean": 0.26732673267326734,
+    "high_residual": 0.020260218369884845,
+    "rest_residual": -0.025911680562589464
+  },
+  {
+    "target": "cc2",
+    "year": "2026",
+    "n_high": 47,
+    "high_mean": 0.2553191489361702,
+    "rest_mean": 0.3008130081300813,
+    "high_residual": -0.07533430579313927,
+    "rest_residual": -0.001940131024539717
+  },
+  {
+    "target": "cc3",
+    "year": "2023",
+    "n_high": 61,
+    "high_mean": 0.14754098360655737,
+    "rest_mean": 0.13815789473684212,
+    "high_residual": -0.012448236595698802,
+    "rest_residual": -0.02338951222156117
+  },
+  {
+    "target": "cc3",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.2222222222222222,
+    "rest_mean": 0.2145214521452145,
+    "high_residual": 0.016072660382242535,
+    "rest_residual": 0.00607095312992283
+  },
+  {
+    "target": "cc3",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.18032786885245902,
+    "rest_mean": 0.11513157894736842,
+    "high_residual": 0.010821340477176008,
+    "rest_residual": -0.049772676940778394
+  },
+  {
+    "target": "cc3",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.125,
+    "rest_mean": 0.14285714285714285,
+    "high_residual": -0.02860891289852366,
+    "rest_residual": -0.009708560175820384
+  },
+  {
+    "target": "cc5",
+    "year": "2023",
+    "n_high": 61,
+    "high_mean": 0.06557377049180328,
+    "rest_mean": 0.046052631578947366,
+    "high_residual": 0.0020674963219537755,
+    "rest_residual": -0.01756465210189931
+  },
+  {
+    "target": "cc5",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.14285714285714285,
+    "rest_mean": 0.056105610561056105,
+    "high_residual": 0.057850554099840974,
+    "rest_residual": -0.02488919989488175
+  },
+  {
+    "target": "cc5",
+    "year": "2025",
+    "n_high": 61,
+    "high_mean": 0.03278688524590164,
+    "rest_mean": 0.019736842105263157,
+    "high_residual": -0.012803427561095506,
+    "rest_residual": -0.032012862747201665
+  },
+  {
+    "target": "cc5",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.020833333333333332,
+    "rest_mean": 0.05714285714285714,
+    "high_residual": -0.025492187489585507,
+    "rest_residual": 0.010399886907925942
+  },
+  {
+    "target": "range5",
+    "year": "2023",
+    "n_high": 61,
+    "high_mean": 0.11475409836065574,
+    "rest_mean": 0.13157894736842105,
+    "high_residual": -0.06525551237270866,
+    "rest_residual": -0.01905144757882542
+  },
+  {
+    "target": "range5",
+    "year": "2024",
+    "n_high": 62,
+    "high_mean": 0.22580645161290322,
+    "rest_mean": 0.24342105263157895,
+    "high_residual": -0.03504088634701475,
+    "rest_residual": -0.0016245768774696369
+  },
+  {
+    "target": "range5",
+    "year": "2025",
+    "n_high": 62,
+    "high_mean": 0.1774193548387097,
+    "rest_mean": 0.10891089108910891,
+    "high_residual": 0.025495104449077204,
+    "rest_residual": -0.0475549153301295
+  },
+  {
+    "target": "range5",
+    "year": "2026",
+    "n_high": 48,
+    "high_mean": 0.16666666666666666,
+    "rest_mean": 0.13877551020408163,
+    "high_residual": 0.015261691493431121,
+    "rest_residual": -0.0030096796593759843
+  },
+  {
+    "target": "range10",
+    "year": "2023",
+    "n_high": 62,
+    "high_mean": 0.016129032258064516,
+    "rest_mean": 0.026402640264026403,
+    "high_residual": -0.011512699194816277,
+    "rest_residual": 0.0008828506459407638
+  },
+  {
+    "target": "range10",
+    "year": "2024",
+    "n_high": 63,
+    "high_mean": 0.031746031746031744,
+    "rest_mean": 0.009900990099009901,
+    "high_residual": -0.005163403989184728,
+    "rest_residual": -0.0305489749163887
+  },
+  {
+    "target": "range10",
+    "year": "2025",
+    "n_high": 62,
+    "high_mean": 0.016129032258064516,
+    "rest_mean": 0.009900990099009901,
+    "high_residual": -0.003920855392508757,
+    "rest_residual": -0.010557899968474057
+  },
+  {
+    "target": "range10",
+    "year": "2026",
+    "n_high": 47,
+    "high_mean": 0.0,
+    "rest_mean": 0.012195121951219513,
+    "high_residual": -0.010002150378025989,
+    "rest_residual": -0.0026178524464063875
+  }
+]

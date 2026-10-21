@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "tests": 14,
+  "framework": "pytest",
+  "last_observed_output": "14 passed in 6.65s",
+  "includes": "future mutation; Decimal thresholds; sklearn ridge/logistic; weighted ROC/AP ties; known macro vintage; exact warning quota"
+}

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 840,
+  "formal_strength_start": "2023-01-01",
+  "source": "frozen snapshot only; formal database not written"
+}

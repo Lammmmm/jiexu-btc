@@ -1,0 +1,11 @@
+{
+  "source_sha256": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "protocol_sha256": "2e330a34d0f07868d267def08606a6c086b0a9a5b135fab843a8af25bae017a7",
+  "git_head": "304628df3ee37eea3b63bdbe85592c13c22db52e",
+  "first": "2017-08-17",
+  "last": "2026-10-21",
+  "raw_count": 3353,
+  "captured_utc": "2026-10-21T07:20:08.491956+00:00",
+  "last_sync_ms": "1792567173948",
+  "initial_protocol_sha256": "b5e3d63045aa3b6804f2ec79d10378b25c2174c905815a0c0784064b6385197c"
+}

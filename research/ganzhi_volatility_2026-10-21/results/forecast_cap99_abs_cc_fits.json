@@ -1,0 +1,6602 @@
+[
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "C",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 225,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 225,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 225,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 0,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 0,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 0,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 0,
+    "train_end": "2018-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "C",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 256,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 256,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": null,
+    "train_n": 256,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 31,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 31,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 31,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-08",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 31,
+    "train_end": "2018-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006233934768127618,
+    "train_n": 287,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006295333687152453,
+    "train_n": 287,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.000625686390194183,
+    "train_n": 287,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 62,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 62,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 62,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 62,
+    "train_end": "2018-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00044815554691644876,
+    "train_n": 317,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00045629491892017443,
+    "train_n": 317,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00045530791681157074,
+    "train_n": 317,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 92,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 92,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 92,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 92,
+    "train_end": "2018-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004919694135866919,
+    "train_n": 348,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005039246732336256,
+    "train_n": 348,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005038879747344011,
+    "train_n": 348,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 123,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 123,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 123,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 123,
+    "train_end": "2018-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00060851556167317,
+    "train_n": 378,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000609644561987148,
+    "train_n": 378,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006103787663790433,
+    "train_n": 378,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 153,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 153,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 153,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2018-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 153,
+    "train_end": "2018-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006226034278889203,
+    "train_n": 409,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006264030634246412,
+    "train_n": 409,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006305028900294204,
+    "train_n": 409,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "group_C",
+    "lambda_value": 20,
+    "train_n": 184,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 184,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 184,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-01",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 184,
+    "train_end": "2018-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005676224462740088,
+    "train_n": 440,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005748955979849597,
+    "train_n": 440,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005778962830484952,
+    "train_n": 440,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 215,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 215,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 215,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 215,
+    "train_end": "2019-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005408742091420641,
+    "train_n": 468,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005451189198444672,
+    "train_n": 468,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005487512419777535,
+    "train_n": 468,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 243,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 243,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 243,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-03",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 243,
+    "train_end": "2019-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00045722302334693033,
+    "train_n": 499,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00046142280389786284,
+    "train_n": 499,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00046412530804191394,
+    "train_n": 499,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 274,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 274,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 274,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-04",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 274,
+    "train_end": "2019-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004784247580997321,
+    "train_n": 529,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00048040866665596647,
+    "train_n": 529,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00048508528211277743,
+    "train_n": 529,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "group_C",
+    "lambda_value": 20,
+    "train_n": 304,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 304,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 304,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-05",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 304,
+    "train_end": "2019-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006157088440014592,
+    "train_n": 560,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006244399463031612,
+    "train_n": 560,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006245177738070672,
+    "train_n": 560,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 335,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 335,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 335,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-06",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 335,
+    "train_end": "2019-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006939710197148243,
+    "train_n": 590,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006962093658117599,
+    "train_n": 590,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006982859926405449,
+    "train_n": 590,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 365,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 365,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 365,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 365,
+    "train_end": "2019-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007042888188081752,
+    "train_n": 621,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007105288940934743,
+    "train_n": 621,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007113613786885116,
+    "train_n": 621,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 396,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 396,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 396,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-08",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 396,
+    "train_end": "2019-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006380737537830763,
+    "train_n": 652,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006475633668558821,
+    "train_n": 652,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.000644898191172568,
+    "train_n": 652,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 427,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 427,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 427,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 427,
+    "train_end": "2019-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006646381947343968,
+    "train_n": 682,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006644154231216042,
+    "train_n": 682,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006613872332766303,
+    "train_n": 682,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 457,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 457,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 457,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 457,
+    "train_end": "2019-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.000750693947772536,
+    "train_n": 713,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007536043431786981,
+    "train_n": 713,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007515622827713245,
+    "train_n": 713,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 488,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 488,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 488,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 488,
+    "train_end": "2019-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.000774610429910397,
+    "train_n": 743,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007787076686614759,
+    "train_n": 743,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007787311240906278,
+    "train_n": 743,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 518,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 518,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 518,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2019-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 518,
+    "train_end": "2019-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007146220930124318,
+    "train_n": 774,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007181912178091746,
+    "train_n": 774,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007196608271395538,
+    "train_n": 774,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 549,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 549,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 549,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 549,
+    "train_end": "2019-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006198630324225618,
+    "train_n": 805,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006179497759762978,
+    "train_n": 805,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006168602935129348,
+    "train_n": 805,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 580,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 580,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 580,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 580,
+    "train_end": "2020-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005645113255738155,
+    "train_n": 832,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000565335840301026,
+    "train_n": 832,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.000566347698146104,
+    "train_n": 832,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 607,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 607,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 607,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-03",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 607,
+    "train_end": "2020-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007244095603485938,
+    "train_n": 863,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007277367646480993,
+    "train_n": 863,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007270884251445542,
+    "train_n": 863,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 638,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 638,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 638,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-04",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 638,
+    "train_end": "2020-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007513506981988179,
+    "train_n": 893,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007521854084394571,
+    "train_n": 893,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007499497952482564,
+    "train_n": 893,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 668,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 668,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 668,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-05",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 668,
+    "train_end": "2020-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007605940050208333,
+    "train_n": 924,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007662079456414638,
+    "train_n": 924,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007694868110646458,
+    "train_n": 924,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 699,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 699,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 699,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-06",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 699,
+    "train_end": "2020-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0007081072990578159,
+    "train_n": 954,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0007146269757172222,
+    "train_n": 954,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0007152170527356282,
+    "train_n": 954,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 729,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 729,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 729,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 729,
+    "train_end": "2020-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0006288386177496078,
+    "train_n": 985,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006333611437214308,
+    "train_n": 985,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006316420533830785,
+    "train_n": 985,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 760,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 760,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 760,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-08",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 760,
+    "train_end": "2020-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0006055651077236022,
+    "train_n": 1016,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006081821983141005,
+    "train_n": 1016,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.000606700078706213,
+    "train_n": 1016,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 791,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 791,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 791,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 791,
+    "train_end": "2020-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0005889706347536435,
+    "train_n": 1046,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005939993237041477,
+    "train_n": 1046,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005958522026188301,
+    "train_n": 1046,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 821,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 821,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 821,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 821,
+    "train_end": "2020-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0005987251041577588,
+    "train_n": 1077,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006008297775223988,
+    "train_n": 1077,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006014869020338858,
+    "train_n": 1077,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 852,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 852,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 852,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 852,
+    "train_end": "2020-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0003917756918113803,
+    "train_n": 1091,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0003867123068898303,
+    "train_n": 1091,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00038731830689160484,
+    "train_n": 1091,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 882,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 882,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 882,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2020-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 882,
+    "train_end": "2020-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0003940841310528352,
+    "train_n": 1089,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0003963903289711433,
+    "train_n": 1089,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00040157054019655954,
+    "train_n": 1089,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 911,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 911,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 911,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 911,
+    "train_end": "2020-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0006005267611753217,
+    "train_n": 1089,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0005782268062450718,
+    "train_n": 1089,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.000583143620988531,
+    "train_n": 1089,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 942,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 942,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 942,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 942,
+    "train_end": "2021-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0007053502412703698,
+    "train_n": 1091,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.000684519625293048,
+    "train_n": 1091,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0006908172747997395,
+    "train_n": 1091,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 970,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 970,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 970,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-03",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 970,
+    "train_end": "2021-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.000805059068706491,
+    "train_n": 1091,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0007826756004668096,
+    "train_n": 1091,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0007905307523394541,
+    "train_n": 1091,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1001,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1001,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1001,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-04",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1001,
+    "train_end": "2021-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0008261307825588051,
+    "train_n": 1091,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.000810058589303493,
+    "train_n": 1091,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0008154621803024205,
+    "train_n": 1091,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1031,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1031,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1031,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-05",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1031,
+    "train_end": "2021-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0010090734860528298,
+    "train_n": 1091,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0009846714787923678,
+    "train_n": 1091,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0009945157010147578,
+    "train_n": 1091,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1062,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1062,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1062,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-06",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 1062,
+    "train_end": "2021-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0011647918169468503,
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0011321993826591,
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.001142160793128493,
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0011973508690562575,
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0011652238209614288,
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0011770860934746967,
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-08",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0011264346513519222,
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0010928570461815085,
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0011058502638394,
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "C",
+    "alpha": 10,
+    "cv_loss": 0.0009511322040939714,
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0009258281974175715,
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.0009326388223010322,
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0008602614871193709,
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0008265997526599726,
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.0008340903733261038,
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0008053720099936561,
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0007734283763441355,
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.0007791730118942428,
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2021-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00082803678090961,
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0007915889463779429,
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.0008012428645757959,
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2021-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0007145229251661942,
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0006869999045481216,
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.0006926891227477599,
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005993973122284417,
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005714505147674652,
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005729868792730681,
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-03",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006421335142383036,
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0006169058572016217,
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0006190731265471962,
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-04",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005733907285253549,
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005437380537532912,
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005457148849681225,
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-05",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005594596684205573,
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005322259341518484,
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005364222402405689,
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-06",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005956410221675907,
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005744000476606197,
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005755511687427347,
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0006079903032342377,
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005810993118307166,
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005808488608440868,
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-08",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005500922383960175,
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0005266703231335591,
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005267558673373241,
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0005390674208537804,
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000518746633740325,
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0005193068597686534,
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004892982050073686,
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00046830916959458754,
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00046951357467813566,
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004601636665492451,
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004430663163082381,
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004441974782437159,
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2022-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004366194042076309,
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004211553484566781,
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004221503264001915,
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-01",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 1091,
+    "train_end": "2022-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004615021269954245,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00045722277079733034,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00045817767546954064,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-02",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1091,
+    "train_end": "2023-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00038339283718005724,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0003739498236625658,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0003747682802156728,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-03",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004974093893348011,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000490641256305493,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004909252761254253,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-04",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00048102487290223415,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004757896652589135,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00047564298416786913,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "group_C",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-05",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004396910232196251,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004348377971957184,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.000433659748792503,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-06",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.000477886626528594,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004707641271226023,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004703096735068466,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-07",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00041386725922789376,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004075788383439639,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004067596757553389,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-08",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1093,
+    "train_end": "2023-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0004269567845941333,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0004200157513473338,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0004196583111871754,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-09",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0003862911961552971,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00037349300737615613,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0003738891966111244,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-10",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00037998383070968244,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0003684733692640195,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0003692045190799494,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-11",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1093,
+    "train_end": "2023-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002477549830265921,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002384250815339379,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002403008243493589,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2023-12",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 1093,
+    "train_end": "2023-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00023482454579370354,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0002270779084709529,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00022862750594315645,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2023-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.0002248602060239853,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.00021383301231118394,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.00021554484401331737,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-02",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00022480941268260578,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00021003611242878742,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00021090020880561717,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-03",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-02-29"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002527986299551951,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00023124670366622503,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00023220199013888865,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-04",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00025495575595123034,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002368256236155534,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00023989377611127388,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-05",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002605976832532605,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002390866464783932,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00024057181098543457,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-06",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002764108245831866,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002544980502256134,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00025496508682057347,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-07",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00025507401815078387,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.00023277097764373225,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002345133188190883,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-08",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00028509787225022463,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002613261625517344,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002617958245637605,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "group_C",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-09",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002868756464484103,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000266108485831655,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00027057523079676696,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-10",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2024-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.000282167817776059,
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.0002607990877035343,
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00026476991549334437,
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-11",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00026815923971600856,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.00025195715987458614,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.00025431449391208674,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2024-12",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2024-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "C",
+    "alpha": 10,
+    "cv_loss": 0.00026657068479941036,
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "F",
+    "alpha": 1,
+    "cv_loss": 0.0002459983905057167,
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "F_retro",
+    "alpha": 10,
+    "cv_loss": 0.000249126484075243,
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2024-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00026595846023359473,
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "F",
+    "alpha": 10,
+    "cv_loss": 0.00024243440349371005,
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "F_retro",
+    "alpha": 1,
+    "cv_loss": 0.00024234492109390888,
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002684476311217257,
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002519580801751645,
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002543387883268257,
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-03",
+    "model": "group_B30",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002829961751019853,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00026947876491681627,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002709981078929775,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-04",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00026741489672938465,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002512077387088669,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002516258610796049,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-05",
+    "model": "group_B30",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2025-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00024923790200682256,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00023673598009135908,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00023777847270292746,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-06",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002451425878290877,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002343399760094156,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00023347018656649066,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "group_F_retro",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-07",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002103237154974983,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00020004442445152384,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0001993673959823942,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "group_C",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-08",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00019137118919569727,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00018409870847843683,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00018456327603811405,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-09",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00016921359356352475,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0001666335427407186,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00016735239342429852,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "group_F",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "group_F_retro",
+    "lambda_value": 20,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-10",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "C",
+    "alpha": 1,
+    "cv_loss": 0.00017095801751940555,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00016732867969109752,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00016958611558702,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "group_C",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "group_F",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "group_F_retro",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-11",
+    "model": "group_B30",
+    "lambda_value": 60,
+    "train_n": 1095,
+    "train_end": "2025-10-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00016387110106897275,
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00015978248731559193,
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0001590681891542947,
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2025-12",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-11-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00016595721333790365,
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.000158633267007995,
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00015826653488615957,
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-01",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2025-12-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00016669106237203173,
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00015827442107052133,
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0001576194592211062,
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "group_F",
+    "lambda_value": 180,
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-02",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-01-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00020113074690486098,
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0001951990450632125,
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0001956655042980638,
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-03",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-02-28"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002094207578999234,
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00020270697379786855,
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00020367000448508622,
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-04",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-03-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00022699301813735055,
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00021706357066728484,
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00021712426136786365,
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-05",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-04-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00022648884401418109,
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002175913795892382,
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00021795056236432336,
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-06",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-05-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00024557963704501125,
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002318984478655577,
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00023215913431394073,
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-07",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-06-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00022015032006161126,
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00020488682025328515,
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.0002073396903286064,
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-08",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-07-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.00021236279225887706,
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.00019846648165400174,
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00020003705043296412,
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-09",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-08-31"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "C",
+    "alpha": 100,
+    "cv_loss": 0.0002309766291468554,
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "F",
+    "alpha": 100,
+    "cv_loss": 0.0002169412278403291,
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "F_retro",
+    "alpha": 100,
+    "cv_loss": 0.00021835326336767978,
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "group_C",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "group_F",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "group_F_retro",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  },
+  {
+    "variant": "cap99",
+    "target": "abs_cc",
+    "month": "2026-10",
+    "model": "group_B30",
+    "lambda_value": "off",
+    "train_n": 1095,
+    "train_end": "2026-09-30"
+  }
+]

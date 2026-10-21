@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "feature_scalar_fields": 6027,
+  "baseline_and_count_fields": 4851,
+  "sklearn_monthly_predictions": 48,
+  "total_prediction_rows": 396253,
+  "extended_days": 2119,
+  "main_days": 1389,
+  "models": 17,
+  "targets": 11,
+  "all_training_closes_before_prediction": true,
+  "all_targets_models_identical_test_dates": true,
+  "all_60_groups": true
+}

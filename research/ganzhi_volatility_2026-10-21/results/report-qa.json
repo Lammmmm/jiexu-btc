@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "records": [
+    {
+      "file": "REPORT.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "title": "jiexu-btc｜六十甲子与 BTC 波动强度独立研究报告",
+        "tables": 32,
+        "rows": 435,
+        "images": [
+          {
+            "src": "results/model_rmse.png",
+            "ok": true
+          },
+          {
+            "src": "results/incremental_effects.png",
+            "ok": true
+          },
+          {
+            "src": "results/calibration.png",
+            "ok": true
+          }
+        ],
+        "localLinks": [
+          "GANZHI_APPENDIX.html",
+          "results/sixty_ganzhi_statistics.csv",
+          "results/model_comparison.csv",
+          "REPRODUCE.html"
+        ],
+        "textLength": 32300
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "GANZHI_APPENDIX.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "title": "六十干支完整统计与样本外验证附表",
+        "tables": 17,
+        "rows": 1020,
+        "images": [],
+        "localLinks": [
+          "REPORT.html",
+          "results/sixty_ganzhi_statistics.csv",
+          "results/ganzhi_descriptive.csv",
+          "results/ganzhi_oos.csv"
+        ],
+        "textLength": 98694
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "REPRODUCE.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "title": "波动强度研究：复现、字段和输出索引",
+        "tables": 1,
+        "rows": 13,
+        "images": [],
+        "localLinks": [
+          "REPORT.html",
+          "GANZHI_APPENDIX.html"
+        ],
+        "textLength": 4063
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    }
+  ]
+}

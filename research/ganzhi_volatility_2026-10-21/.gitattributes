@@ -1,0 +1,2 @@
+# Preserve the bytes used by the study's SHA-256 audit and cache stamps.
+* -text whitespace=cr-at-eol

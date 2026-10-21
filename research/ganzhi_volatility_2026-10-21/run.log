@@ -1,0 +1,38 @@
+Forecast complete raw abs_oc
+Forecast complete raw abs_cc
+Forecast complete raw range
+Forecast complete raw oc2
+Forecast complete raw oc3
+Forecast complete raw oc5
+Forecast complete raw cc2
+Forecast complete raw cc3
+Forecast complete raw cc5
+Forecast complete raw range5
+Forecast complete raw range10
+Main paired bootstrap 60
+Main paired bootstrap 14
+Main paired bootstrap 180
+Traceback (most recent call last):
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\run_study.py", line 78, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\run_study.py", line 63, in main
+    raw.to_csv(ROOT/"results/predictions.csv.gz",index=False,compression="gzip")
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\io\common.py", line 765, in get_handle
+    handle = gzip.GzipFile(  # type: ignore[assignment]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'D:\\work\\pythonProject\\��ѧk��\\research\\ganzhi_volatility_2026-10-21\\results\\predictions.csv.gz'
