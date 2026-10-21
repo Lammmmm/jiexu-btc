@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "independent_scalar_gate_decisions": 4238,
+  "selected_prediction_rows": 437954,
+  "decimal_target_fields": 437954,
+  "score_and_pair_checks": 550,
+  "unit_tests": 12,
+  "all_prediction_dates_identical_across_models": true,
+  "all_source_prices_and_gate_counts_verified": true,
+  "formal_logic_modified": false
+}

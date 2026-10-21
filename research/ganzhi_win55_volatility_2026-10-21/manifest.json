@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-21T11:08:22.147592+00:00",
+  "git_base": "bdeb1a9e5ea1e669305a1ed3fe1ca76d2a18f7b9",
+  "protocol_sha256": "8b86ad6dc71441d2daace7b81e5df381338046e1d79b52acc61971def85a2e31",
+  "base_directory": "ganzhi_volatility_2026-10-21",
+  "inputs": {
+    "snapshot.json": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+    "protocol.json": "2e330a34d0f07868d267def08606a6c086b0a9a5b135fab843a8af25bae017a7",
+    "engine.py": "47be0b30ebd39e2bca44134a8e37584cb6a8c0084d9e495dde06fb30eb1b2d29",
+    "evaluate.py": "5bf5dc82735e8c77cec48a1418cdd4a6bec7acbf2c0238229f34242c5139d8ed",
+    "association.py": "fed50e1c612d8148ba408c639a45a5df77fc0378a88bca71a42a0d6b50d1918b",
+    "risk_diagnostics.py": "3b07a0730a0fdf5651b32cbbff20e6f44aa67c6eee344d136b48d4e58ce4ad7f",
+    "results/predictions.csv.gz": "b5a467ef56f773860e33f0534a75ea516becee73ee9281eae5a419abdca0e1c6",
+    "results/predictions_cap99.csv.gz": "1ea96cfe4b46e1826d17fca59e747cf3df52aca2a759c66e3625d99782f69272",
+    "results/predictions_omit_2020.csv.gz": "9e277210f12d6ab24a095374f94c86c4112ac1e29dcffbf133fe50ae89346753",
+    "results/predictions_omit_2021.csv.gz": "43e5f9c909a695f3fe41191bf6f105a35b042d35b99daaf8e6d96d636526c033",
+    "results/predictions_omit_2022.csv.gz": "c782272c49a2b944793ce5b8530c6b18fd019df3caa366e07eb51799c79e0ca1",
+    "results/causal_features.npz": "d4c6d999a447a0971d1137ccc95dc9d586d156a441e23362cb99298646f5bc21",
+    "requirements-research-lock.txt": "f71dfd6e2a64a586a1994eccdf18b6e80ac52f52a51b383f5438bd8d184e7347"
+  }
+}

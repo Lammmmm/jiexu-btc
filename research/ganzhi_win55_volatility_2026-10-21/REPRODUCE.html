@@ -1,0 +1,119 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>REPRODUCE</title><style>*{box-sizing:border-box}body{margin:0;background:#eef2f7;color:#233246;font:15px/1.85 "Microsoft YaHei",sans-serif}main{max-width:1320px;margin:24px auto;padding:34px 42px;background:#fff;border:1px solid #d8e1eb;border-radius:10px}h1{font-size:27px;color:#173f65}h2{margin-top:38px;padding-top:20px;border-top:1px solid #e2e8f0;color:#234d70}h3{font-size:18px}p,li{overflow-wrap:anywhere}a{color:#226cb0}.table-wrap{overflow-x:auto;margin:20px 0;border:1px solid #dce4ed}table{border-collapse:collapse;width:100%;font-size:12px;white-space:nowrap}th,td{padding:8px 11px;text-align:left;border-bottom:1px solid #e6edf4}th{background:#edf3f8}tr:nth-child(even){background:#f8fafc}img{display:block;max-width:100%;height:auto;margin:25px auto}pre{overflow-x:auto;padding:16px;background:#edf2f7}code{font:13px Consolas,monospace}@media(max-width:700px){main{margin:0;padding:17px 14px;border:0}h1{font-size:23px}body{font-size:14px}}</style></head><body><main><h1>≥55% 流日研究：复现说明</h1>
+<p><a href="REPORT.html">完整报告</a> · <a href="GANZHI_APPENDIX.html">六十干支附表</a></p>
+<h2>研究范围</h2>
+<p>本目录只新增研究文件。父研究 <code>../ganzhi_volatility_2026-10-21</code> 必须完整存在，其中的真实冻结行情、干支标签、代码及逐日预测按 manifest.json 哈希核对。方向筛选从 2017 年实际可用日 K 起，绝不改成 2023 起方向筛选。父研究最新已收盘日为 2026-10-20；当天未收盘日不参与筛选或评分。</p>
+<p><code>protocol.json</code> 在读取新筛选结果前固定 55% 规则和推断方案。收益和事件口径不变，模型和超参数不重新优化。父研究的月度滚动、训练内选择和逐日输入详见其 REPRODUCE.md；本轮复用的是它当时已发布的无泄漏预测，重新执行测试日筛选和评分，而非在筛选样本上训练新的模型。</p>
+<h2>运行</h2>
+<p>在仓库根目录使用 Python 3.12。可以复用父研究环境，或创建新环境并安装父研究的 requirements-research-lock.txt：</p>
+<pre><code class="language-powershell">$rp = '.\research\ganzhi_volatility_2026-10-21\.venv\Scripts\python.exe'
+&amp; $rp research/ganzhi_win55_volatility_2026-10-21/study.py
+&amp; $rp -m pytest research/ganzhi_win55_volatility_2026-10-21/test_study.py -q --junitxml=research/ganzhi_win55_volatility_2026-10-21/results/unit-tests.xml
+&amp; $rp research/ganzhi_win55_volatility_2026-10-21/verify.py
+&amp; .\.venv\Scripts\python.exe research/ganzhi_win55_volatility_2026-10-21/verify_production_rules.py
+&amp; $rp research/ganzhi_win55_volatility_2026-10-21/make_report.py
+</code></pre>
+<p>父研究输出缺失时，应先按照其复现说明完整重跑，不可替换为全样本回看预测。CSV 使用 UTF-8 BOM；概率和幅度用小数，0.01 表示 1%。MAE/RMSE 是幅度，MSE/Brier 是平方量。Log Loss 使用自然对数。正的 relative_improvement 为误差下降，rmse_improvement 只用于连续目标；不能混用二者。</p>
+<h2>主要输出</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>文件</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>daily_ganzhi_candles_2017.csv</td>
+<td>2017 起所有 3,348 根有效开收盘口径日 K，原始 OHLCV、干支、时区、昨收有效标记；昨收有效 3,345 根</td>
+</tr>
+<tr>
+<td>selection_daily.csv</td>
+<td>4,238 条 basis/date 决策，含当时同干支样本量、上涨/下跌/平盘计数、55% 入选侧、严格历史收盘界限和实际后验方向</td>
+</tr>
+<tr>
+<td>ganzhi_direction_pools.csv</td>
+<td>2022 年底固定池和最新描述池，两个口径各 60 干支；当前池绝未用于回测筛选</td>
+</tr>
+<tr>
+<td>selected_predictions.csv.gz</td>
+<td>437,954 条入选 basis/date/target/model 预测，由入选键与父研究预测精确合并</td>
+</tr>
+<tr>
+<td>model_comparison.csv</td>
+<td>主区间 374 个模型/口径/目标组合；完整误差、概率和前 10%/20% 排序指标</td>
+</tr>
+<tr>
+<td>model_comparison_extended.csv</td>
+<td>扩展区间 2021 起</td>
+</tr>
+<tr>
+<td>paired_60.csv</td>
+<td>主 176 项配对检验，原日历 60 日区块、20,000 次、Holm</td>
+</tr>
+<tr>
+<td>paired_14.csv / paired_180.csv</td>
+<td>区块长度敏感性，各 10,000 次</td>
+</tr>
+<tr>
+<td>yearly_models.csv / regime_models.csv</td>
+<td>各年及事前可知市场环境</td>
+</tr>
+<tr>
+<td>direction_validation.csv / direction_yearly.csv</td>
+<td>方向筛选自身样本外命中、训练胜率、同日 BTC 多数方向基准</td>
+</tr>
+<tr>
+<td>long_short_models.csv / paired_long_short.csv</td>
+<td>做多和做空侧单列</td>
+</tr>
+<tr>
+<td>frozen_model_comparison.csv / frozen_paired.csv</td>
+<td>2022 年底固定名单</td>
+</tr>
+<tr>
+<td>robustness_comparison.csv / robustness_paired.csv</td>
+<td>99 分位封顶及训练剔除 2020/21/22 年，原始测试结果不删</td>
+</tr>
+<tr>
+<td>sixty_ganzhi_statistics.csv</td>
+<td>120 行完整 60 干支 ×2方向口径，合并父研究全部历史/2023 起幅度及本次入选统计</td>
+</tr>
+<tr>
+<td>ganzhi_selected_oos.csv</td>
+<td>2,134 项有入选记录的逐干支样本外差异、年度聚类区间、Holm及稳定性规则</td>
+</tr>
+<tr>
+<td>historical_selected_ranking.csv</td>
+<td>当前入选池的历史描述排行，不是通过验证的赢家排行</td>
+</tr>
+<tr>
+<td>calibration.csv / online_alerts.csv</td>
+<td>概率校准及只用历史预测形成阈值的实际报警</td>
+</tr>
+<tr>
+<td>elevated_predictions.csv</td>
+<td>干支模型比基准明显提高风险预测时的真实结果</td>
+</tr>
+<tr>
+<td>ranking_intervals.csv</td>
+<td>64 项 ROC-AUC / PR-AUC 增量区块检验</td>
+</tr>
+<tr>
+<td>conditional_permutation.csv</td>
+<td>固定入选路径、控制年份/状态/星期/宏观后的探索性年内旋转检验，不是精确自适应零假设</td>
+</tr>
+<tr>
+<td>audit.json / independent_verification.json / unit-tests.xml</td>
+<td>实际执行与独立核验</td>
+</tr>
+<tr>
+<td>production_rules_verification.json</td>
+<td>正式历法与方向统计只读核对，共 4,553 项</td>
+</tr>
+</tbody>
+</table></div>
+<p><code>side=1</code> 是历史偏多，<code>side=-1</code> 是历史偏空，<code>side=0</code> 是无方向或汇总行，依文件上下文区分。<code>history_n</code> 始终是预测前可用样本；<code>actual_side</code>、<code>correct</code> 仅用于事后评分，不能输入筛选。<code>group_n</code> 是父模型共同训练集计数，可能与采用各自有效性口径的 <code>history_n</code> 差几根，二者用途不同。</p>
+<h2>推断限制</h2>
+<p>主 bootstrap 沿原日历抽取区块，未入选日保留零权重，同时重抽选择指示与配对损失，使用入选分母的比值；不能压缩入选日期再当连续日。它对已经实现的预测/筛选路径做误差推断，不会每次重训整个预测器和筛选器。逐干支年度聚类只有四年，区间近似且功效有限。</p>
+<p>主家族 176 项、长短家族 352 项、稳健性家族 704 项、逐干支家族 2,134 项和排序家族 64 项分别校正。所有追加检验均属探索，不能将各家族最有利的结果拼成确认性结论。宏观最终日期没有历史事前版本，F_retro/G_retro 不能宣称可执行预测。没有模拟交易 PnL。</p>
+<p>报告新增图表可本地打开 REPORT.html；Markdown 可直接在 GitHub 阅读。独立测试涵盖未来收益扰动、55% 原始精度、2017 数据起点、固定池、日历区块、所有模型同日和逐日合并。QA 脚本另需 Node/Playwright 与 Edge，只验证报告显示，不参与数值研究。</p></main></body></html>

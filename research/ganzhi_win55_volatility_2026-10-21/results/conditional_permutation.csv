@@ -1,0 +1,23 @@
+﻿basis,target,n,groups,partial_group_fraction,null95,p,permutations,caveat,p_holm
+oc,abs_oc,720,48,0.06366982503639078,0.09766694964970997,0.6106,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,abs_cc,720,48,0.06359779793156581,0.096931441656347,0.6128,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,range,720,48,0.06717546751897722,0.09107916635421828,0.3718,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,oc2,720,48,0.06683895317187591,0.08997872916546588,0.5284,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,oc3,720,48,0.06469163436112925,0.09153493072243662,0.559,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,oc5,720,48,0.0712405901674943,0.09476120020031718,0.2918,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,cc2,720,48,0.06629177320897951,0.09097537641031833,0.525,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,cc3,720,48,0.06305238741540439,0.09092568423008934,0.6106,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,cc5,720,48,0.07281344832904502,0.09458572696257055,0.2668,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,range5,720,48,0.05505007642741525,0.08737647539314189,0.764,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+oc,range10,720,48,0.05844641667085341,0.11464647285354952,0.513,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,abs_oc,739,49,0.0623518680779872,0.09720806295065054,0.6394,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,abs_cc,739,49,0.06231553278331121,0.09543472364470351,0.6552,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,range,739,49,0.06785817111241813,0.09121337607393856,0.3662,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,oc2,739,49,0.06554745707947039,0.09011382549297477,0.5566,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,oc3,739,49,0.056704113713540526,0.09121235303453924,0.7888,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,oc5,739,49,0.07218723446353385,0.0916605204875779,0.2446,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,cc2,739,49,0.065017444920676,0.08941649528761439,0.57,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,cc3,739,49,0.05519711939396966,0.09155068962508248,0.822,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,cc5,739,49,0.07365941653420766,0.09310430935357226,0.2402,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,range5,739,49,0.05252323395340073,0.08623565182236062,0.8212,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0
+cc,range10,739,49,0.05822941926758734,0.11107368187606464,0.5316,4999,"Exploratory fixed-selected-path conditional association; not exact adaptive-selection null, not a forecast-validation test",1.0

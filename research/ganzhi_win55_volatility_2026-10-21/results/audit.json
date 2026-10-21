@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha256": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "parent_predictions_rows": 396253,
+  "selected_predictions_rows": 437954,
+  "all_models_same_selected_dates": true,
+  "source_and_cache_hashes_verified": true,
+  "selection_history_closed_before_decision": true,
+  "source_last_closed": "2026-10-20",
+  "macro_vintage_known_valid_days": 0,
+  "created_utc": "2026-10-21T11:23:04.846848+00:00"
+}

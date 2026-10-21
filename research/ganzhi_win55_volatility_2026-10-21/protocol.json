@@ -1,0 +1,61 @@
+{
+  "study": "Win-rate >=55% Ganzhi selected-date volatility validation",
+  "created_utc": "2026-10-21T11:08:22.147592+00:00",
+  "phase": "Research only; no production code/API/UI changes",
+  "source": "Same frozen real UTC+8 Binance snapshot as prior study; through 2026-10-20 closed day",
+  "threshold_numerator": 55,
+  "threshold_denominator": 100,
+  "direction_definitions": {
+    "oc": "sign(C-O)",
+    "cc": "sign(C-previous C)"
+  },
+  "selector": "For each target day and Ganzhi, expanding own-valid closed history from 2017. Include if 100*up>=55*n or 100*down>=55*n. Flat in denominator; exact Decimal source comparison. No fitted threshold, minimum n or lookback search.",
+  "primary": "Rolling selector using historical closes strictly before target UTC+8 day start; models trained on all eligible history as before; identical pre-existing OOS predictions scored on the selected dates.",
+  "retraining": "No model retuning on selected test outcomes. Selection gates evaluation and alerts, not the historical training sample. Narrowing training as well would be a different untested hypothesis.",
+  "test_start": "2023-01-01",
+  "extended_start": "2021-01-01",
+  "test_end": "2026-10-20",
+  "frozen_sensitivity": "Choose Ganzhi and preferred direction once at 2023-01-01 using only pre2023 closes; evaluate 2023+ fixed pool",
+  "targets": "All 11 original targets reported for each selector. Primary aligned interpretations: oc selector -> abs_oc,oc2/3/5,range5/10; cc selector -> abs_cc,cc2/3/5,range5/10. Cross-outcome rows diagnostic only.",
+  "models": "All 17 original models and fixed parameters; original raw/cap99/omit2020/21/22 OOS prediction caches verified by hashes",
+  "pairs": [
+    [
+      "B30",
+      "E30"
+    ],
+    [
+      "B30",
+      "E"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "F",
+      "G"
+    ]
+  ],
+  "primary_family": "2 selectors x (3 continuous MSE+MAE +8 events Brier+LogLoss) x4pairs =176; Holm jointly including cross-outcome endpoints",
+  "bootstrap": "Circular blocks on original full calendar, including unselected dates with zero numerator/denominator contribution. Never compress gaps. Ratio estimate resamples selection indicator with paired losses. Pointwise95% intervals; centered two-sided block-bootstrap p; Holm176.",
+  "main_block": 60,
+  "main_reps": 20000,
+  "sensitivity_blocks": [
+    14,
+    180
+  ],
+  "sensitivity_reps": 10000,
+  "subgroups": "Long vs short, yearly, causal close vs prior200-close moving average x prior30-day drift +/-20%; subgroup claims exploratory with separate Holm family.",
+  "robustness": "Use already-run predictors trained with cap99 continuous targets or omitting each training year2020/21/22, score same raw outcomes and primary rolling selector; add selected long/short and frozen-pool sensitivities",
+  "permutation": "Exploratory within-year rotations of state-adjusted raw residuals, selected-date group contrasts; 4999 rotations. Fixed selected path not re-estimated in null, so not an exact significance test for the adaptive selection algorithm.",
+  "direction_validation": "Selected preferred-direction hit rate, long/short separately; historical selection rate is not a future success guarantee. Compare majority-BTC causal direction baseline on same selected dates; no trading PnL.",
+  "alerts": "Same selected-date top10/20% forecast quota diagnostic, plus actual online threshold from past365 calendar days of previously selected predictions (>=60 required).",
+  "group_tests": "Year-cluster t intervals on selected OOS paired loss improvements; Holm across all available selector x60group x11target x2pair tests; few years limit coverage.",
+  "macro": "Main F/G omit unprovably pre-known historical CPI/NFP dates; F_retro/G_retro only retrospective conditional sensitivity.",
+  "adaptive_research_caveat": "55% restriction requested after all-Ganzhi study outcomes were seen. This is additional exploratory research on same historical period, not a pristine new confirmation holdout. Future untouched data needed for a positive result.",
+  "seed": 20261021055,
+  "sources": [
+    "https://otexts.com/fpp3/tscv.html",
+    "https://www.statsmodels.org/stable/generated/statsmodels.stats.multitest.multipletests.html"
+  ]
+}

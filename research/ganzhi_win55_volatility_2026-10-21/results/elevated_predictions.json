@@ -1,0 +1,662 @@
+[
+  {
+    "basis": "oc",
+    "target": "abs_oc",
+    "reference": "C",
+    "candidate": "E",
+    "n": 5,
+    "actual_mean": 0.018301911561780917,
+    "baseline_mean": 0.0089349037118522,
+    "group_forecast_mean": 0.01099803104871066
+  },
+  {
+    "basis": "oc",
+    "target": "abs_oc",
+    "reference": "F",
+    "candidate": "G",
+    "n": 15,
+    "actual_mean": 0.00954886361350889,
+    "baseline_mean": 0.010027210751548768,
+    "group_forecast_mean": 0.012611849843856332
+  },
+  {
+    "basis": "oc",
+    "target": "abs_oc",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 16,
+    "actual_mean": 0.009625888176348907,
+    "baseline_mean": 0.009666915832131626,
+    "group_forecast_mean": 0.012219660825428219
+  },
+  {
+    "basis": "oc",
+    "target": "abs_cc",
+    "reference": "C",
+    "candidate": "E",
+    "n": 5,
+    "actual_mean": 0.01830190716786128,
+    "baseline_mean": 0.00894532749342054,
+    "group_forecast_mean": 0.011007209345050001
+  },
+  {
+    "basis": "oc",
+    "target": "abs_cc",
+    "reference": "F",
+    "candidate": "G",
+    "n": 15,
+    "actual_mean": 0.009547376660723552,
+    "baseline_mean": 0.010035975732391041,
+    "group_forecast_mean": 0.01262003290166758
+  },
+  {
+    "basis": "oc",
+    "target": "abs_cc",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 15,
+    "actual_mean": 0.009886713396975713,
+    "baseline_mean": 0.009482824907211114,
+    "group_forecast_mean": 0.012038828183298439
+  },
+  {
+    "basis": "oc",
+    "target": "range",
+    "reference": "C",
+    "candidate": "E",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "oc",
+    "target": "range",
+    "reference": "F",
+    "candidate": "G",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "oc",
+    "target": "range",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "oc",
+    "target": "oc2",
+    "reference": "C",
+    "candidate": "E",
+    "n": 27,
+    "actual_mean": 0.3333333333333333,
+    "baseline_mean": 0.3333506744746855,
+    "group_forecast_mean": 0.4093225488486963
+  },
+  {
+    "basis": "oc",
+    "target": "oc2",
+    "reference": "F",
+    "candidate": "G",
+    "n": 28,
+    "actual_mean": 0.39285714285714285,
+    "baseline_mean": 0.34938995853496496,
+    "group_forecast_mean": 0.4230441083190544
+  },
+  {
+    "basis": "oc",
+    "target": "oc2",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.4166666666666667,
+    "baseline_mean": 0.3359505219022269,
+    "group_forecast_mean": 0.41237924421872557
+  },
+  {
+    "basis": "oc",
+    "target": "oc3",
+    "reference": "C",
+    "candidate": "E",
+    "n": 21,
+    "actual_mean": 0.23809523809523808,
+    "baseline_mean": 0.24603217201120542,
+    "group_forecast_mean": 0.3202453796342783
+  },
+  {
+    "basis": "oc",
+    "target": "oc3",
+    "reference": "F",
+    "candidate": "G",
+    "n": 24,
+    "actual_mean": 0.2916666666666667,
+    "baseline_mean": 0.2831180980953342,
+    "group_forecast_mean": 0.3581421186161404
+  },
+  {
+    "basis": "oc",
+    "target": "oc3",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.25,
+    "baseline_mean": 0.2717558917987601,
+    "group_forecast_mean": 0.3478987603359234
+  },
+  {
+    "basis": "oc",
+    "target": "oc5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11618238953046744,
+    "group_forecast_mean": 0.1807135783639143
+  },
+  {
+    "basis": "oc",
+    "target": "oc5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11960906163403119,
+    "group_forecast_mean": 0.18568681203610304
+  },
+  {
+    "basis": "oc",
+    "target": "oc5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.1048543716538339,
+    "group_forecast_mean": 0.1701622811331766
+  },
+  {
+    "basis": "oc",
+    "target": "cc2",
+    "reference": "C",
+    "candidate": "E",
+    "n": 27,
+    "actual_mean": 0.3333333333333333,
+    "baseline_mean": 0.33342800484304497,
+    "group_forecast_mean": 0.40930721807049664
+  },
+  {
+    "basis": "oc",
+    "target": "cc2",
+    "reference": "F",
+    "candidate": "G",
+    "n": 27,
+    "actual_mean": 0.4074074074074074,
+    "baseline_mean": 0.3574020019580552,
+    "group_forecast_mean": 0.4310007484021036
+  },
+  {
+    "basis": "oc",
+    "target": "cc2",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.4166666666666667,
+    "baseline_mean": 0.3359647995680515,
+    "group_forecast_mean": 0.4122735131385462
+  },
+  {
+    "basis": "oc",
+    "target": "cc3",
+    "reference": "C",
+    "candidate": "E",
+    "n": 22,
+    "actual_mean": 0.22727272727272727,
+    "baseline_mean": 0.24745152580166174,
+    "group_forecast_mean": 0.3208532937567909
+  },
+  {
+    "basis": "oc",
+    "target": "cc3",
+    "reference": "F",
+    "candidate": "G",
+    "n": 22,
+    "actual_mean": 0.2727272727272727,
+    "baseline_mean": 0.2787376194394622,
+    "group_forecast_mean": 0.3519604244010583
+  },
+  {
+    "basis": "oc",
+    "target": "cc3",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 23,
+    "actual_mean": 0.2608695652173913,
+    "baseline_mean": 0.2757437712279337,
+    "group_forecast_mean": 0.35090178671181965
+  },
+  {
+    "basis": "oc",
+    "target": "cc5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11618283979384393,
+    "group_forecast_mean": 0.18077383825213833
+  },
+  {
+    "basis": "oc",
+    "target": "cc5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.10864469265041217,
+    "group_forecast_mean": 0.17665187978209562
+  },
+  {
+    "basis": "oc",
+    "target": "cc5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.10484100027003532,
+    "group_forecast_mean": 0.1701094676563266
+  },
+  {
+    "basis": "oc",
+    "target": "range5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 7,
+    "actual_mean": 0.14285714285714285,
+    "baseline_mean": 0.2075772214088715,
+    "group_forecast_mean": 0.28006708053801616
+  },
+  {
+    "basis": "oc",
+    "target": "range5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 18,
+    "actual_mean": 0.05555555555555555,
+    "baseline_mean": 0.28002664373680003,
+    "group_forecast_mean": 0.3552014985158375
+  },
+  {
+    "basis": "oc",
+    "target": "range5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 20,
+    "actual_mean": 0.05,
+    "baseline_mean": 0.27126771825425616,
+    "group_forecast_mean": 0.343925156234494
+  },
+  {
+    "basis": "oc",
+    "target": "range10",
+    "reference": "C",
+    "candidate": "E",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "oc",
+    "target": "range10",
+    "reference": "F",
+    "candidate": "G",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "oc",
+    "target": "range10",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 1,
+    "actual_mean": 0.0,
+    "baseline_mean": 0.1710844016421231,
+    "group_forecast_mean": 0.2455049005714183
+  },
+  {
+    "basis": "cc",
+    "target": "abs_oc",
+    "reference": "C",
+    "candidate": "E",
+    "n": 5,
+    "actual_mean": 0.018301911561780917,
+    "baseline_mean": 0.0089349037118522,
+    "group_forecast_mean": 0.01099803104871066
+  },
+  {
+    "basis": "cc",
+    "target": "abs_oc",
+    "reference": "F",
+    "candidate": "G",
+    "n": 15,
+    "actual_mean": 0.00954886361350889,
+    "baseline_mean": 0.010027210751548768,
+    "group_forecast_mean": 0.012611849843856332
+  },
+  {
+    "basis": "cc",
+    "target": "abs_oc",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 16,
+    "actual_mean": 0.009625888176348907,
+    "baseline_mean": 0.009666915832131626,
+    "group_forecast_mean": 0.012219660825428219
+  },
+  {
+    "basis": "cc",
+    "target": "abs_cc",
+    "reference": "C",
+    "candidate": "E",
+    "n": 5,
+    "actual_mean": 0.01830190716786128,
+    "baseline_mean": 0.00894532749342054,
+    "group_forecast_mean": 0.011007209345050001
+  },
+  {
+    "basis": "cc",
+    "target": "abs_cc",
+    "reference": "F",
+    "candidate": "G",
+    "n": 15,
+    "actual_mean": 0.009547376660723552,
+    "baseline_mean": 0.010035975732391041,
+    "group_forecast_mean": 0.01262003290166758
+  },
+  {
+    "basis": "cc",
+    "target": "abs_cc",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 15,
+    "actual_mean": 0.009886713396975713,
+    "baseline_mean": 0.009482824907211114,
+    "group_forecast_mean": 0.012038828183298439
+  },
+  {
+    "basis": "cc",
+    "target": "range",
+    "reference": "C",
+    "candidate": "E",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "cc",
+    "target": "range",
+    "reference": "F",
+    "candidate": "G",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "cc",
+    "target": "range",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "cc",
+    "target": "oc2",
+    "reference": "C",
+    "candidate": "E",
+    "n": 27,
+    "actual_mean": 0.3333333333333333,
+    "baseline_mean": 0.3333506744746855,
+    "group_forecast_mean": 0.4093225488486963
+  },
+  {
+    "basis": "cc",
+    "target": "oc2",
+    "reference": "F",
+    "candidate": "G",
+    "n": 28,
+    "actual_mean": 0.39285714285714285,
+    "baseline_mean": 0.34938995853496496,
+    "group_forecast_mean": 0.4230441083190544
+  },
+  {
+    "basis": "cc",
+    "target": "oc2",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.4166666666666667,
+    "baseline_mean": 0.3359505219022269,
+    "group_forecast_mean": 0.41237924421872557
+  },
+  {
+    "basis": "cc",
+    "target": "oc3",
+    "reference": "C",
+    "candidate": "E",
+    "n": 21,
+    "actual_mean": 0.23809523809523808,
+    "baseline_mean": 0.24603217201120542,
+    "group_forecast_mean": 0.3202453796342783
+  },
+  {
+    "basis": "cc",
+    "target": "oc3",
+    "reference": "F",
+    "candidate": "G",
+    "n": 24,
+    "actual_mean": 0.2916666666666667,
+    "baseline_mean": 0.2831180980953342,
+    "group_forecast_mean": 0.3581421186161404
+  },
+  {
+    "basis": "cc",
+    "target": "oc3",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.25,
+    "baseline_mean": 0.2717558917987601,
+    "group_forecast_mean": 0.3478987603359234
+  },
+  {
+    "basis": "cc",
+    "target": "oc5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11618238953046744,
+    "group_forecast_mean": 0.1807135783639143
+  },
+  {
+    "basis": "cc",
+    "target": "oc5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11960906163403119,
+    "group_forecast_mean": 0.18568681203610304
+  },
+  {
+    "basis": "cc",
+    "target": "oc5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.1048543716538339,
+    "group_forecast_mean": 0.1701622811331766
+  },
+  {
+    "basis": "cc",
+    "target": "cc2",
+    "reference": "C",
+    "candidate": "E",
+    "n": 27,
+    "actual_mean": 0.3333333333333333,
+    "baseline_mean": 0.33342800484304497,
+    "group_forecast_mean": 0.40930721807049664
+  },
+  {
+    "basis": "cc",
+    "target": "cc2",
+    "reference": "F",
+    "candidate": "G",
+    "n": 27,
+    "actual_mean": 0.4074074074074074,
+    "baseline_mean": 0.3574020019580552,
+    "group_forecast_mean": 0.4310007484021036
+  },
+  {
+    "basis": "cc",
+    "target": "cc2",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 24,
+    "actual_mean": 0.4166666666666667,
+    "baseline_mean": 0.3359647995680515,
+    "group_forecast_mean": 0.4122735131385462
+  },
+  {
+    "basis": "cc",
+    "target": "cc3",
+    "reference": "C",
+    "candidate": "E",
+    "n": 22,
+    "actual_mean": 0.22727272727272727,
+    "baseline_mean": 0.24745152580166174,
+    "group_forecast_mean": 0.3208532937567909
+  },
+  {
+    "basis": "cc",
+    "target": "cc3",
+    "reference": "F",
+    "candidate": "G",
+    "n": 22,
+    "actual_mean": 0.2727272727272727,
+    "baseline_mean": 0.2787376194394622,
+    "group_forecast_mean": 0.3519604244010583
+  },
+  {
+    "basis": "cc",
+    "target": "cc3",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 23,
+    "actual_mean": 0.2608695652173913,
+    "baseline_mean": 0.2757437712279337,
+    "group_forecast_mean": 0.35090178671181965
+  },
+  {
+    "basis": "cc",
+    "target": "cc5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 9,
+    "actual_mean": 0.1111111111111111,
+    "baseline_mean": 0.11618283979384393,
+    "group_forecast_mean": 0.18077383825213833
+  },
+  {
+    "basis": "cc",
+    "target": "cc5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.10864469265041217,
+    "group_forecast_mean": 0.17665187978209562
+  },
+  {
+    "basis": "cc",
+    "target": "cc5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 8,
+    "actual_mean": 0.125,
+    "baseline_mean": 0.10484100027003532,
+    "group_forecast_mean": 0.1701094676563266
+  },
+  {
+    "basis": "cc",
+    "target": "range5",
+    "reference": "C",
+    "candidate": "E",
+    "n": 7,
+    "actual_mean": 0.14285714285714285,
+    "baseline_mean": 0.2075772214088715,
+    "group_forecast_mean": 0.28006708053801616
+  },
+  {
+    "basis": "cc",
+    "target": "range5",
+    "reference": "F",
+    "candidate": "G",
+    "n": 18,
+    "actual_mean": 0.05555555555555555,
+    "baseline_mean": 0.28002664373680003,
+    "group_forecast_mean": 0.3552014985158375
+  },
+  {
+    "basis": "cc",
+    "target": "range5",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 20,
+    "actual_mean": 0.05,
+    "baseline_mean": 0.27126771825425616,
+    "group_forecast_mean": 0.343925156234494
+  },
+  {
+    "basis": "cc",
+    "target": "range10",
+    "reference": "C",
+    "candidate": "E",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "cc",
+    "target": "range10",
+    "reference": "F",
+    "candidate": "G",
+    "n": 0,
+    "actual_mean": null,
+    "baseline_mean": null,
+    "group_forecast_mean": null
+  },
+  {
+    "basis": "cc",
+    "target": "range10",
+    "reference": "F_retro",
+    "candidate": "G_retro",
+    "n": 1,
+    "actual_mean": 0.0,
+    "baseline_mean": 0.1710844016421231,
+    "group_forecast_mean": 0.2455049005714183
+  }
+]

@@ -1,0 +1,2 @@
+# Preserve research audit hashes across Windows and Unix checkouts.
+* -text whitespace=cr-at-eol

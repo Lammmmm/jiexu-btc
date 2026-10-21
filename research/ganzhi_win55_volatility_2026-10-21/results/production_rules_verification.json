@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 4553,
+  "calendar_label_checks": 3353,
+  "direction_pool_checks": 240,
+  "direction_history_start": "2017-08-18",
+  "calendar_connection": "SQLite mode=ro",
+  "market_source": "frozen snapshot; no market database writes"
+}

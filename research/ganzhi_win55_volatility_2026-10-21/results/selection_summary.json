@@ -1,0 +1,50 @@
+[
+  {
+    "basis": "oc",
+    "start": "2021-01-01",
+    "total_n": 2119,
+    "selected_n": 1150,
+    "fraction": 0.5427088249174139,
+    "selected_groups": 59,
+    "long_n": 815,
+    "short_n": 335,
+    "training_n_min": 19,
+    "training_n_max": 55
+  },
+  {
+    "basis": "oc",
+    "start": "2023-01-01",
+    "total_n": 1389,
+    "selected_n": 720,
+    "fraction": 0.5183585313174947,
+    "selected_groups": 48,
+    "long_n": 520,
+    "short_n": 200,
+    "training_n_min": 32,
+    "training_n_max": 55
+  },
+  {
+    "basis": "cc",
+    "start": "2021-01-01",
+    "total_n": 2119,
+    "selected_n": 1192,
+    "fraction": 0.5625294950448325,
+    "selected_groups": 59,
+    "long_n": 836,
+    "short_n": 356,
+    "training_n_min": 19,
+    "training_n_max": 55
+  },
+  {
+    "basis": "cc",
+    "start": "2023-01-01",
+    "total_n": 1389,
+    "selected_n": 739,
+    "fraction": 0.5320374370050396,
+    "selected_groups": 49,
+    "long_n": 536,
+    "short_n": 203,
+    "training_n_min": 32,
+    "training_n_max": 55
+  }
+]

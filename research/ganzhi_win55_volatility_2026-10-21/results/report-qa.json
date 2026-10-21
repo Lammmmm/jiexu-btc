@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "records": [
+    {
+      "file": "REPORT.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "jiexu-btc｜胜率 ≥55% 流日的波动预测复核报告",
+        "tables": 17,
+        "rows": 323,
+        "textLength": 20450,
+        "images": [
+          {
+            "src": "results/direction_validation.png",
+            "ok": true
+          },
+          {
+            "src": "results/incremental_effects.png",
+            "ok": true
+          }
+        ],
+        "links": [
+          "GANZHI_APPENDIX.html",
+          "REPRODUCE.html",
+          "results/selection_daily.csv",
+          "results/daily_ganzhi_candles_2017.csv"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "GANZHI_APPENDIX.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "≥55% 筛选：六十干支逐项附表",
+        "tables": 16,
+        "rows": 1478,
+        "textLength": 93121,
+        "images": [],
+        "links": [
+          "REPORT.html",
+          "results/sixty_ganzhi_statistics.csv",
+          "results/selection_daily.csv"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "file": "REPRODUCE.html",
+      "desktop": {
+        "width": 1440,
+        "viewport": 1440,
+        "heading": "≥55% 流日研究：复现说明",
+        "tables": 1,
+        "rows": 22,
+        "textLength": 3155,
+        "images": [],
+        "links": [
+          "REPORT.html",
+          "GANZHI_APPENDIX.html"
+        ]
+      },
+      "mobile": {
+        "width": 390,
+        "viewport": 390
+      }
+    }
+  ]
+}

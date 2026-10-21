@@ -1,0 +1,33 @@
+SELECTION [{"basis": "oc", "start": "2021-01-01", "total_n": 2119, "selected_n": 1150, "fraction": 0.5427088249174139, "selected_groups": 59, "long_n": 815, "short_n": 335, "training_n_min": 19, "training_n_max": 55}, {"basis": "oc", "start": "2023-01-01", "total_n": 1389, "selected_n": 720, "fraction": 0.5183585313174947, "selected_groups": 48, "long_n": 520, "short_n": 200, "training_n_min": 32, "training_n_max": 55}, {"basis": "cc", "start": "2021-01-01", "total_n": 2119, "selected_n": 1192, "fraction": 0.5625294950448325, "selected_groups": 59, "long_n": 836, "short_n": 356, "training_n_min": 19, "training_n_max": 55}, {"basis": "cc", "start": "2023-01-01", "total_n": 1389, "selected_n": 739, "fraction": 0.5320374370050396, "selected_groups": 49, "long_n": 536, "short_n": 203, "training_n_min": 32, "training_n_max": 55}]
+PAIRED 60
+PAIRED 14
+PAIRED 180
+D:\work\pythonProject\��ѧk��\research\ganzhi_win55_volatility_2026-10-21\study.py:381: DtypeWarning: Columns (18) have mixed types. Specify dtype option on import or set low_memory=False.
+  v=pd.read_csv(BASE/('results/predictions_'+variant+'.csv.gz'));audit_predictions(v,d)
+ROBUSTNESS cap99
+ROBUSTNESS omit_2020
+ROBUSTNESS omit_2021
+ROBUSTNESS omit_2022
+PERMUTATION oc abs_oc
+PERMUTATION oc abs_cc
+PERMUTATION oc range
+PERMUTATION oc oc2
+PERMUTATION oc oc3
+PERMUTATION oc oc5
+PERMUTATION oc cc2
+PERMUTATION oc cc3
+PERMUTATION oc cc5
+PERMUTATION oc range5
+PERMUTATION oc range10
+PERMUTATION cc abs_oc
+PERMUTATION cc abs_cc
+PERMUTATION cc range
+PERMUTATION cc oc2
+PERMUTATION cc oc3
+PERMUTATION cc oc5
+PERMUTATION cc cc2
+PERMUTATION cc cc3
+PERMUTATION cc cc5
+PERMUTATION cc range5
+PERMUTATION cc range10
+WIN55_STUDY_DONE
