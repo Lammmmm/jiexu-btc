@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-21T11:42:48.993228+00:00",
+  "git_base": "89b0eca9d9a5c877c72e1dc743a1088b503e986a",
+  "protocol_sha256": "1a76c7a29a8319341f034a955233e1d8b340bc755747c49677809437bf05995f",
+  "base_directory": "ganzhi_volatility_2026-10-21",
+  "inputs": {
+    "snapshot.json": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+    "engine.py": "47be0b30ebd39e2bca44134a8e37584cb6a8c0084d9e495dde06fb30eb1b2d29",
+    "evaluate.py": "5bf5dc82735e8c77cec48a1418cdd4a6bec7acbf2c0238229f34242c5139d8ed",
+    "association.py": "fed50e1c612d8148ba408c639a45a5df77fc0378a88bca71a42a0d6b50d1918b",
+    "results/causal_features.npz": "d4c6d999a447a0971d1137ccc95dc9d586d156a441e23362cb99298646f5bc21",
+    "protocol.json": "2e330a34d0f07868d267def08606a6c086b0a9a5b135fab843a8af25bae017a7",
+    "requirements-research-lock.txt": "f71dfd6e2a64a586a1994eccdf18b6e80ac52f52a51b383f5438bd8d184e7347"
+  },
+  "previous_inputs": {
+    "study.py": "77d0eecf73db6c7924837d49107b37d0808b2a5e6258ed5e551cf16a3cb572e2"
+  }
+}

@@ -1,0 +1,31 @@
+SIMPLE_DONE 2017-10-17 361350
+Forecast complete raw abs_oc
+Forecast complete raw abs_cc
+Forecast complete raw range
+Forecast complete raw oc2
+Forecast complete raw oc3
+Forecast complete raw oc5
+Forecast complete raw cc2
+Forecast complete raw cc3
+Forecast complete raw cc5
+Forecast complete raw range5
+Forecast complete raw range10
+Traceback (most recent call last):
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_range_2017_2026-10-21\study.py", line 247, in <module>
+    with threadpool_limits(limits=1):main()
+                                     ^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_range_2017_2026-10-21\study.py", line 228, in main
+    padded,sel_padded=calendar_pad(full,sel)
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_range_2017_2026-10-21\study.py", line 203, in calendar_pad
+    dates=pd.date_range(pred.date.min(),pred.date.max(),freq='D').strftime('%Y-%m-%d')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\core\indexes\datetimes.py", line 1008, in date_range
+    dtarr = DatetimeArray._generate_range(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\work\pythonProject\��ѧk��\research\ganzhi_volatility_2026-10-21\.venv\Lib\site-packages\pandas\core\arrays\datetimes.py", line 424, in _generate_range
+    start = Timestamp(start)
+            ^^^^^^^^^^^^^^^^
+  File "timestamps.pyx", line 1865, in pandas._libs.tslibs.timestamps.Timestamp.__new__
+  File "conversion.pyx", line 364, in pandas._libs.tslibs.conversion.convert_to_tsobject
+TypeError: Expected unicode, got numpy.str_

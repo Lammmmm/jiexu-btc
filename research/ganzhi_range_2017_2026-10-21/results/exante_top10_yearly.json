@@ -1,0 +1,290 @@
+[
+  {
+    "basis": "oc",
+    "year": "2019",
+    "metric": "actual_range",
+    "n_high": 45,
+    "n_rest": 168,
+    "high_mean": 0.04465616085655925,
+    "rest_mean": 0.05222167433448582
+  },
+  {
+    "basis": "oc",
+    "year": "2020",
+    "metric": "actual_range",
+    "n_high": 49,
+    "n_rest": 216,
+    "high_mean": 0.046020873307090863,
+    "rest_mean": 0.04895253509835568
+  },
+  {
+    "basis": "oc",
+    "year": "2021",
+    "metric": "actual_range",
+    "n_high": 36,
+    "n_rest": 201,
+    "high_mean": 0.0701783876814011,
+    "rest_mean": 0.07076871547793676
+  },
+  {
+    "basis": "oc",
+    "year": "2022",
+    "metric": "actual_range",
+    "n_high": 31,
+    "n_rest": 162,
+    "high_mean": 0.04990187988514207,
+    "rest_mean": 0.04795615430712757
+  },
+  {
+    "basis": "oc",
+    "year": "2023",
+    "metric": "actual_range",
+    "n_high": 31,
+    "n_rest": 156,
+    "high_mean": 0.031982490053470314,
+    "rest_mean": 0.031679679188589396
+  },
+  {
+    "basis": "oc",
+    "year": "2024",
+    "metric": "actual_range",
+    "n_high": 32,
+    "n_rest": 156,
+    "high_mean": 0.04116141901765319,
+    "rest_mean": 0.042290124182525445
+  },
+  {
+    "basis": "oc",
+    "year": "2025",
+    "metric": "actual_range",
+    "n_high": 39,
+    "n_rest": 157,
+    "high_mean": 0.031634521829993247,
+    "rest_mean": 0.03423511292326521
+  },
+  {
+    "basis": "oc",
+    "year": "2026",
+    "metric": "actual_range",
+    "n_high": 18,
+    "n_rest": 131,
+    "high_mean": 0.03021668944248294,
+    "rest_mean": 0.030657411810354886
+  },
+  {
+    "basis": "oc",
+    "year": "2019",
+    "metric": "relative_excess_over_F",
+    "n_high": 45,
+    "n_rest": 168,
+    "high_mean": -0.16734763402255404,
+    "rest_mean": 0.0841308763041669
+  },
+  {
+    "basis": "oc",
+    "year": "2020",
+    "metric": "relative_excess_over_F",
+    "n_high": 49,
+    "n_rest": 216,
+    "high_mean": -0.04419528436705233,
+    "rest_mean": 0.005979703708224326
+  },
+  {
+    "basis": "oc",
+    "year": "2021",
+    "metric": "relative_excess_over_F",
+    "n_high": 36,
+    "n_rest": 201,
+    "high_mean": -0.026475991719824905,
+    "rest_mean": 0.024881698577550678
+  },
+  {
+    "basis": "oc",
+    "year": "2022",
+    "metric": "relative_excess_over_F",
+    "n_high": 31,
+    "n_rest": 162,
+    "high_mean": 0.004128386196302933,
+    "rest_mean": -0.08906935860216636
+  },
+  {
+    "basis": "oc",
+    "year": "2023",
+    "metric": "relative_excess_over_F",
+    "n_high": 31,
+    "n_rest": 156,
+    "high_mean": 0.11524723914184735,
+    "rest_mean": -0.039710899103596646
+  },
+  {
+    "basis": "oc",
+    "year": "2024",
+    "metric": "relative_excess_over_F",
+    "n_high": 32,
+    "n_rest": 156,
+    "high_mean": 0.055550018187374275,
+    "rest_mean": 0.03833893913798709
+  },
+  {
+    "basis": "oc",
+    "year": "2025",
+    "metric": "relative_excess_over_F",
+    "n_high": 39,
+    "n_rest": 157,
+    "high_mean": -0.09117664599152375,
+    "rest_mean": 0.008009791151604688
+  },
+  {
+    "basis": "oc",
+    "year": "2026",
+    "metric": "relative_excess_over_F",
+    "n_high": 18,
+    "n_rest": 131,
+    "high_mean": 0.030513194839791584,
+    "rest_mean": -0.09589708883797862
+  },
+  {
+    "basis": "cc",
+    "year": "2019",
+    "metric": "actual_range",
+    "n_high": 45,
+    "n_rest": 170,
+    "high_mean": 0.04465616085655925,
+    "rest_mean": 0.05170687823410128
+  },
+  {
+    "basis": "cc",
+    "year": "2020",
+    "metric": "actual_range",
+    "n_high": 49,
+    "n_rest": 218,
+    "high_mean": 0.046020873307090863,
+    "rest_mean": 0.04898096039348464
+  },
+  {
+    "basis": "cc",
+    "year": "2021",
+    "metric": "actual_range",
+    "n_high": 36,
+    "n_rest": 209,
+    "high_mean": 0.0701783876814011,
+    "rest_mean": 0.0721873060531543
+  },
+  {
+    "basis": "cc",
+    "year": "2022",
+    "metric": "actual_range",
+    "n_high": 34,
+    "n_rest": 174,
+    "high_mean": 0.05119605868977108,
+    "rest_mean": 0.047631301508547316
+  },
+  {
+    "basis": "cc",
+    "year": "2023",
+    "metric": "actual_range",
+    "n_high": 31,
+    "n_rest": 158,
+    "high_mean": 0.031982490053470314,
+    "rest_mean": 0.03178541595845298
+  },
+  {
+    "basis": "cc",
+    "year": "2024",
+    "metric": "actual_range",
+    "n_high": 32,
+    "n_rest": 160,
+    "high_mean": 0.04116141901765319,
+    "rest_mean": 0.042685417394402715
+  },
+  {
+    "basis": "cc",
+    "year": "2025",
+    "metric": "actual_range",
+    "n_high": 39,
+    "n_rest": 164,
+    "high_mean": 0.031634521829993247,
+    "rest_mean": 0.033822649925998795
+  },
+  {
+    "basis": "cc",
+    "year": "2026",
+    "metric": "actual_range",
+    "n_high": 19,
+    "n_rest": 136,
+    "high_mean": 0.03063176127330658,
+    "rest_mean": 0.030528780024296723
+  },
+  {
+    "basis": "cc",
+    "year": "2019",
+    "metric": "relative_excess_over_F",
+    "n_high": 45,
+    "n_rest": 170,
+    "high_mean": -0.16734763402255404,
+    "rest_mean": 0.07714417594840298
+  },
+  {
+    "basis": "cc",
+    "year": "2020",
+    "metric": "relative_excess_over_F",
+    "n_high": 49,
+    "n_rest": 218,
+    "high_mean": -0.04419528436705233,
+    "rest_mean": 0.007745838126355784
+  },
+  {
+    "basis": "cc",
+    "year": "2021",
+    "metric": "relative_excess_over_F",
+    "n_high": 36,
+    "n_rest": 209,
+    "high_mean": -0.026475991719824905,
+    "rest_mean": 0.03578429212986269
+  },
+  {
+    "basis": "cc",
+    "year": "2022",
+    "metric": "relative_excess_over_F",
+    "n_high": 34,
+    "n_rest": 174,
+    "high_mean": 0.03568483838243347,
+    "rest_mean": -0.08972301397594207
+  },
+  {
+    "basis": "cc",
+    "year": "2023",
+    "metric": "relative_excess_over_F",
+    "n_high": 31,
+    "n_rest": 158,
+    "high_mean": 0.11524723914184735,
+    "rest_mean": -0.033633102784053376
+  },
+  {
+    "basis": "cc",
+    "year": "2024",
+    "metric": "relative_excess_over_F",
+    "n_high": 32,
+    "n_rest": 160,
+    "high_mean": 0.055550018187374275,
+    "rest_mean": 0.0410387971045697
+  },
+  {
+    "basis": "cc",
+    "year": "2025",
+    "metric": "relative_excess_over_F",
+    "n_high": 39,
+    "n_rest": 164,
+    "high_mean": -0.09117664599152375,
+    "rest_mean": 0.0024706836125495497
+  },
+  {
+    "basis": "cc",
+    "year": "2026",
+    "metric": "relative_excess_over_F",
+    "n_high": 19,
+    "n_rest": 136,
+    "high_mean": 0.017021942412817508,
+    "rest_mean": -0.09442245659683232
+  }
+]

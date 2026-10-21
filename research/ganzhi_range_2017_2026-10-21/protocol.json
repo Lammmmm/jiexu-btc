@@ -1,0 +1,27 @@
+{
+  "study": "2017-origin Ganzhi range rankings and rolling >=55% filtered validation",
+  "created_utc": "2026-10-21T11:42:48.993228+00:00",
+  "scope": "Research only, no formal code/API/UI changes. Same frozen true BTCUSDT UTC+8 history ending 2026-10-20.",
+  "direction_history": "2017 actual available start; own OC/CC validity, Decimal sign, flat in denominator, exact >=55% integer comparison; past close strictly before target day starts.",
+  "primary_amplitude": "(H-L)/O; rank by median descending, mean descending tie-breaker, g ascending; separate mean ranking. Absolute OC and CC targets separate.",
+  "rank_scopes": [
+    "all valid 2017+ historical description",
+    "current >=55% pool historical description (not used for retrospective forecasting)",
+    "rolling >=55% selected-day OOS ranking, OC and CC selectors separate"
+  ],
+  "early_models": "Original 10 simple models A/B30/C7/C14/C90/C365/Cewma/D/D_raw/D_2023. Forecast only if at least30 past common-valid global labels and >=1 past common-valid same-Ganzhi label. Decision before day begins. No test-data tuning.",
+  "complex_models": "Rerun all original17 models and11 targets. First forecast only after >=180 available feature-valid closed labels; features require >=90 past labels. Date derives from timestamps, not outcomes. Same original monthly/nested-forward parameters. No fake2017 fitted forecasts.",
+  "early_small_sample_sensitivity": "Same >=55% test gate; additionally show min same-Ganzhi direction training n >=10 and >=20 as fixed sensitivity, not optimized.",
+  "group_significance": "Grouped standardized range/F prediction minus1, demeaned within calendar year for contemporaneous group comparison; yearly cluster t intervals; Holm over120 OC/CC group tests. Selected-date raw ranking is descriptive, not verified future advantage.",
+  "predictive_high_group_test": "At every day, before actual is observed, rank group risk by prior365-calendar-day mean(y/F predicted range) in that group, shrink20 toward pooled prior residual ratio; minimum5 past honest F forecasts for group. Top10 groups of60 form an ex ante warning; same-day F baseline scored. No future final ranking used. Require all60 groups to have >=5 prior F forecasts before publishing top10 classification.",
+  "predictive_high_group_evaluation": "Compare selected top-group risk vs selected non-top, and state-adjusted excess over F; bootstrap original calendar indicators and outcomes jointly, blocks60 reps20000, Holm4 for2selectors x actual/adjusted. No alternate topK or lookback search.",
+  "comparisons": "Same176 primary paired endpoints and original17 model metrics over common complex-model dates; E-C and G-F core. Calendar block60 reps20000;14/180 sensitivities10000, separate labeled families.",
+  "ranking_uncertainty": "Rank by median for robust presentation; mean, q25/q75, max, >5%/>10% range, abs-returns, year counts, leave-largest and leave2017/2020/2021/2022 diagnostics, split2017-2022 vs2023+ ranks. No arbitrary extreme deletion in primary.",
+  "no_pnl": "Range is not net directional return; no simulated trading profits.",
+  "macro": "F/G weekday and prior state only; F_retro/G_retro retrospective conditional date flags, no point-in-time macro claim.",
+  "new_confirmation": "Exploratory reuse of already examined source; not pristine confirmation. Fixed55%, no threshold or lookback optimization.",
+  "seed": 202610212017,
+  "sources": [
+    "https://otexts.com/fpp3/tscv.html"
+  ]
+}

@@ -1,0 +1,3 @@
+﻿basis,simple_start,simple_all_n,simple_selected_n,early_train_min,complex_start,complex_all_n,complex_selected_n,training_min,historical_valid_oc,historical_valid_cc,source_last,simple_rows,complex_rows
+oc,2017-10-17,3285,2054,1,2018-05-17,3075,1883,3,3348,3345,2026-10-20,361350,575025
+cc,2017-10-17,3285,2100,1,2018-05-17,3075,1932,3,3348,3345,2026-10-20,361350,575025

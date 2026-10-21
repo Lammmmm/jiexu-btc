@@ -1,0 +1,34 @@
+[
+  {
+    "basis": "oc",
+    "simple_start": "2017-10-17",
+    "simple_all_n": 3285,
+    "simple_selected_n": 2054,
+    "early_train_min": 1,
+    "complex_start": "2018-05-17",
+    "complex_all_n": 3075,
+    "complex_selected_n": 1883,
+    "training_min": 3,
+    "historical_valid_oc": 3348,
+    "historical_valid_cc": 3345,
+    "source_last": "2026-10-20",
+    "simple_rows": 361350,
+    "complex_rows": 575025
+  },
+  {
+    "basis": "cc",
+    "simple_start": "2017-10-17",
+    "simple_all_n": 3285,
+    "simple_selected_n": 2100,
+    "early_train_min": 1,
+    "complex_start": "2018-05-17",
+    "complex_all_n": 3075,
+    "complex_selected_n": 1932,
+    "training_min": 3,
+    "historical_valid_oc": 3348,
+    "historical_valid_cc": 3345,
+    "source_last": "2026-10-20",
+    "simple_rows": 361350,
+    "complex_rows": 575025
+  }
+]

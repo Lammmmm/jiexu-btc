@@ -1,0 +1,2 @@
+# Preserve exact audit bytes across platforms.
+* -text whitespace=cr-at-eol

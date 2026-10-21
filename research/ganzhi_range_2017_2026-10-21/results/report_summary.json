@@ -1,0 +1,10 @@
+{
+  "verdict": "C",
+  "positive_group_associations": 0,
+  "positive_exante_adjusted_tests": 0,
+  "positive_core_model_tests": 0,
+  "global_median_range": 0.03907428161388016,
+  "global_mean_range": 0.04871660043705009,
+  "period_rank_correlation": 0.021116976938038347,
+  "period_top10_overlap": 2
+}

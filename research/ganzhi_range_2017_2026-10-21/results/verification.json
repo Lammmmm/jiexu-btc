@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "unit_tests": 12,
+  "scalar_gate_checks": 6690,
+  "ranking_rows_checked": 547,
+  "true_target_prediction_rows": 936375,
+  "score_rows_checked": 891,
+  "all_exante_top10_lists_checked": 2775,
+  "source_sha256": "40e6cf1d0176722a9a9fbb7cf2f95e6badd06e171ad3280d13b22130bf0fcc30",
+  "production_changes": false
+}

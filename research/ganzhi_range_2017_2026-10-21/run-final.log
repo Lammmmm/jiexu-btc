@@ -1,0 +1,20 @@
+SIMPLE_DONE 2017-10-17 361350
+Forecast complete raw abs_oc
+Forecast complete raw abs_cc
+Forecast complete raw range
+Forecast complete raw oc2
+Forecast complete raw oc3
+Forecast complete raw oc5
+Forecast complete raw cc2
+Forecast complete raw cc3
+Forecast complete raw cc5
+Forecast complete raw range5
+Forecast complete raw range10
+D:\work\pythonProject\��ѧk��\research\ganzhi_range_2017_2026-10-21\study.py:212: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  x['basis']=basis;x['selected']=x.selected.fillna(False).astype(bool);x['side']=x.side.fillna(0)
+D:\work\pythonProject\��ѧk��\research\ganzhi_range_2017_2026-10-21\study.py:212: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  x['basis']=basis;x['selected']=x.selected.fillna(False).astype(bool);x['side']=x.side.fillna(0)
+PAIRED_DONE 60
+PAIRED_DONE 14
+PAIRED_DONE 180
+STUDY_DONE [{"basis": "oc", "simple_start": "2017-10-17", "simple_all_n": 3285, "simple_selected_n": 2054, "early_train_min": 1, "complex_start": "2018-05-17", "complex_all_n": 3075, "complex_selected_n": 1883, "training_min": 3, "historical_valid_oc": 3348, "historical_valid_cc": 3345, "source_last": "2026-10-20", "simple_rows": 361350, "complex_rows": 575025}, {"basis": "cc", "simple_start": "2017-10-17", "simple_all_n": 3285, "simple_selected_n": 2100, "early_train_min": 1, "complex_start": "2018-05-17", "complex_all_n": 3075, "complex_selected_n": 1932, "training_min": 3, "historical_valid_oc": 3348, "historical_valid_cc": 3345, "source_last": "2026-10-20", "simple_rows": 361350, "complex_rows": 575025}]
