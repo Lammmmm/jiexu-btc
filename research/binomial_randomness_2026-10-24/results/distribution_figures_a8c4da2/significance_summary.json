@@ -1,0 +1,98 @@
+[
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid50",
+    "histogram_p": 0.09845450772746137,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 200,
+    "dispersion_upper_p": 0.675001624991875,
+    "dispersion_two_sided_p": 0.6500067499662502,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid_actual",
+    "histogram_p": 0.832560837195814,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 200,
+    "dispersion_upper_p": 0.672481637591812,
+    "dispersion_two_sided_p": 0.6550467247663762,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid50",
+    "histogram_p": 0.2835535822320888,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 20,
+    "dispersion_upper_p": 0.6659916700416498,
+    "dispersion_two_sided_p": 0.6680266598667006,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "histogram_p": 0.43159284203578985,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 20,
+    "dispersion_upper_p": 0.8278558607206964,
+    "dispersion_two_sided_p": 0.34429827850860745,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid50",
+    "histogram_p": 0.08582457087714561,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 200,
+    "dispersion_upper_p": 0.6076719616401918,
+    "dispersion_two_sided_p": 0.7846660766696166,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid_actual",
+    "histogram_p": 0.6760216198919006,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 200,
+    "dispersion_upper_p": 0.6012169939150305,
+    "dispersion_two_sided_p": 0.7975760121199394,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid50",
+    "histogram_p": 0.20772896135519323,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 20,
+    "dispersion_upper_p": 0.6551717241413793,
+    "dispersion_two_sided_p": 0.6896665516672417,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "histogram_p": 0.308478457607712,
+    "histogram_holm": 1.0,
+    "histogram_family_size": 20,
+    "dispersion_upper_p": 0.8150809245953771,
+    "dispersion_two_sided_p": 0.3698481507592462,
+    "dispersion_holm": 1.0,
+    "note": "Reused original predeclared binning and null MC tests; no new Monte Carlo"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "base_commit": "a8c4da2e4d0045e3ac05f92a5ecdcf29f0e2fc28",
+  "source_files": {
+    "research/binomial_randomness_2026-10-24/results/ganzhi_observed.json": {
+      "sha256": "7e201491f87a34e686e8c2e5946e9dd6f16033447e2dd5091c156b996812af86",
+      "bytes": 114927
+    },
+    "research/binomial_randomness_2026-10-24/results/period_totals.json": {
+      "sha256": "c00943f791e22dd46247f7c17792e1fd7c7b808dde5695b51a86f3ba955a519e",
+      "bytes": 2099
+    },
+    "research/binomial_randomness_2026-10-24/results/theoretical_distribution_bins.json": {
+      "sha256": "dba790c9b414afd0f467eb52b0d70a1f2ce14f7aff20e9d19ad1f70117e2e4f3",
+      "bytes": 46959
+    },
+    "research/binomial_randomness_2026-10-24/results/threshold_counts_exact.json": {
+      "sha256": "88e59e15932f54a3c9a609a46038ac9a1f3719e7fa64e6a708adda6cd369c2b9",
+      "bytes": 334869
+    },
+    "research/binomial_randomness_2026-10-24/results/monte_carlo_tests.json": {
+      "sha256": "785f2dc8630acf192af9bd3a9d625faa9ed411a59d58000bf4a749b3a45a9b26",
+      "bytes": 225287
+    },
+    "research/binomial_randomness_2026-10-24/results/dominant_distribution_tests.json": {
+      "sha256": "50c68a1b439a80c7acfe51f821c99a42ec2881a284fb38c177336b5b74a75122",
+      "bytes": 9431
+    },
+    "research/binomial_randomness_2026-10-24/results/symmetric_distribution_tests.json": {
+      "sha256": "e6737e6b2a996781528327a46a53cf3f217a76a13431674b95c539dd9243b4fa",
+      "bytes": 7923
+    },
+    "research/binomial_randomness_2026-10-24/results/dominant_distribution_moments.json": {
+      "sha256": "863981c7d0f79c7fefbda3fbbe6ec473cd2263908bf6ed5b02827c7dac4af3a3",
+      "bytes": 3692
+    },
+    "research/binomial_randomness_2026-10-24/results/individual_binomial_normal.json": {
+      "sha256": "bc305f7950cd9ec218c8312e4fc3b7879d232bf1c318133add68ae8748c5a7ca",
+      "bytes": 577534
+    },
+    "research/binomial_randomness_2026-10-24/results/individual_conditional.json": {
+      "sha256": "69d2fb661f43b6812ac6c4a45a6c02a8196e43e8262c0bfe4b74e6f55061c525",
+      "bytes": 137555
+    }
+  },
+  "source_period": "2017-08-18 to 2026-10-23",
+  "produces": "3 PNGs, no production or original study modifications",
+  "normal_approximation_used": false,
+  "new_MC_runs": 0,
+  "reference_interval_rule": "Exact fixed-p quantiles; pointwise alpha=.05; simultaneous Bonferroni alpha=.05/60; not true-parameter CIs or order-statistic envelopes"
+}

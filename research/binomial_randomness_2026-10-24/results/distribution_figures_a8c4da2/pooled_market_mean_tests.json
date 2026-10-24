@@ -1,0 +1,18 @@
+[
+  {
+    "basis": "oc",
+    "pooled_up": 1755,
+    "pooled_binary_n": 3350,
+    "pooled_p": 0.5238805970149254,
+    "exact_two_sided_p_vs50": 0.006004247953583343,
+    "interpretation": "BTC pooled market upward bias, not a test of extra Ganzhi value; IID calibration"
+  },
+  {
+    "basis": "cc",
+    "pooled_up": 1753,
+    "pooled_binary_n": 3347,
+    "pooled_p": 0.523752614281446,
+    "exact_two_sided_p_vs50": 0.0063049253944290375,
+    "interpretation": "BTC pooled market upward bias, not a test of extra Ganzhi value; IID calibration"
+  }
+]

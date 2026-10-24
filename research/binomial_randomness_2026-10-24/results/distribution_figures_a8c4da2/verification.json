@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "source_commit": "a8c4da2e4d0045e3ac05f92a5ecdcf29f0e2fc28",
+  "unit_tests": 9,
+  "pngs": [
+    {
+      "file": "01_distribution_p50.png",
+      "width": 4800,
+      "height": 3000,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "02_distribution_p_actual.png",
+      "width": 4800,
+      "height": 3000,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "file": "03_rankings_exact_reference_intervals.png",
+      "width": 6600,
+      "height": 5100,
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    }
+  ],
+  "observations_verified": 240,
+  "source_json_files_checked": 10,
+  "new_backtests": 0,
+  "new_monte_carlo": 0,
+  "existing_study_and_production_changes": false,
+  "checks": [
+    "exact discrete laws vs exhaustive enumeration",
+    "same bins and expected/observed totals60",
+    "unequal-n moments",
+    "exact random interval coverage",
+    "exact threshold membership",
+    "source Git blob SHA256",
+    "desktop/mobile HTML and all images"
+  ]
+}

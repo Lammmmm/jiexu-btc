@@ -1,0 +1,322 @@
+[
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 55,
+    "observed_count": 25,
+    "expected_count": 14.785621351317072,
+    "exact_upper_tail_p": 0.002768769320381655,
+    "holm_primary68": 0.18550754446557088
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 60,
+    "observed_count": 9,
+    "expected_count": 4.331569937352878,
+    "exact_upper_tail_p": 0.027526006438231797,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 0.6894008206305055,
+    "exact_upper_tail_p": 0.9999999999999993,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.05872212198379488,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 55,
+    "observed_count": 25,
+    "expected_count": 22.290759678872366,
+    "exact_upper_tail_p": 0.2750435052486675,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 60,
+    "observed_count": 9,
+    "expected_count": 8.10362813886931,
+    "exact_upper_tail_p": 0.42275806590970644,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.6506741576991013,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.18187020526348346,
+    "exact_upper_tail_p": 0.9999999999999998,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 55,
+    "observed_count": 35,
+    "expected_count": 29.571242702634148,
+    "exact_upper_tail_p": 0.10104412141139449,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 60,
+    "observed_count": 11,
+    "expected_count": 8.663139874705756,
+    "exact_upper_tail_p": 0.24229877521456145,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.378801641261011,
+    "exact_upper_tail_p": 0.999999999999998,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.11744424396758976,
+    "exact_upper_tail_p": 0.9999999999999987,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 55,
+    "observed_count": 35,
+    "expected_count": 31.185235403246285,
+    "exact_upper_tail_p": 0.19568148503520183,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 60,
+    "observed_count": 11,
+    "expected_count": 10.179945582004267,
+    "exact_upper_tail_p": 0.4412967957638265,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.90707841560557,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "oc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.1986897960135553,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 55,
+    "observed_count": 26,
+    "expected_count": 14.738903403087724,
+    "exact_upper_tail_p": 0.0011085599375096076,
+    "holm_primary68": 0.07538207575065331
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 60,
+    "observed_count": 9,
+    "expected_count": 4.346012313821629,
+    "exact_upper_tail_p": 0.028041725903073907,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 0.6920910672276256,
+    "exact_upper_tail_p": 0.999999999999999,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid50",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.06013333132689529,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 55,
+    "observed_count": 26,
+    "expected_count": 22.186694993702844,
+    "exact_upper_tail_p": 0.18696637024276921,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 60,
+    "observed_count": 9,
+    "expected_count": 8.098899025591024,
+    "exact_upper_tail_p": 0.42204766819849165,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.6483515349466882,
+    "exact_upper_tail_p": 0.9999999999999999,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "up",
+    "null": "iid_actual",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.1845265534391257,
+    "exact_upper_tail_p": 0.9999999999999989,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 55,
+    "observed_count": 36,
+    "expected_count": 29.477806806175447,
+    "exact_upper_tail_p": 0.05936496146765885,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 60,
+    "observed_count": 12,
+    "expected_count": 8.692024627643258,
+    "exact_upper_tail_p": 0.1512392992531928,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.3841821344552512,
+    "exact_upper_tail_p": 0.999999999999998,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid50",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.12026666265379057,
+    "exact_upper_tail_p": 0.9999999999999989,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 55,
+    "observed_count": 36,
+    "expected_count": 31.076285483911477,
+    "exact_upper_tail_p": 0.12590585694585704,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 60,
+    "observed_count": 12,
+    "expected_count": 10.193046608346327,
+    "exact_upper_tail_p": 0.31583249047650436,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 65,
+    "observed_count": 0,
+    "expected_count": 1.9074828148621563,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  },
+  {
+    "basis": "cc",
+    "mode": "dominant",
+    "null": "iid_actual",
+    "threshold_pct": 70,
+    "observed_count": 0,
+    "expected_count": 0.20193993261096524,
+    "exact_upper_tail_p": 1.0,
+    "holm_primary68": 1.0
+  }
+]

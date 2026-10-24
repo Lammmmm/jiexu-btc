@@ -1,0 +1,14 @@
+test_exact_source_bytes_from_required_commit (test_figures.FigureTests.test_exact_source_bytes_from_required_commit) ... ok
+test_histograms_have_sixty_observed_and_expected_groups (test_figures.FigureTests.test_histograms_have_sixty_observed_and_expected_groups) ... ok
+test_integer_threshold_discreteness_preserved (test_figures.FigureTests.test_integer_threshold_discreteness_preserved) ... ok
+test_no_new_null_selection_or_unadjusted_success_claim (test_figures.FigureTests.test_no_new_null_selection_or_unadjusted_success_claim) ... ok
+test_raw_and_folded_laws_bruteforce (test_figures.FigureTests.test_raw_and_folded_laws_bruteforce) ... ok
+test_reference_coverage_and_nested_bands (test_figures.FigureTests.test_reference_coverage_and_nested_bands) ... ok
+test_three_high_definition_pngs (test_figures.FigureTests.test_three_high_definition_pngs) ... ok
+test_unequal_n_moments_not_average_n (test_figures.FigureTests.test_unequal_n_moments_not_average_n) ... ok
+test_unique_groups_and_exact_order (test_figures.FigureTests.test_unique_groups_and_exact_order) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.302s
+
+OK

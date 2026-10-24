@@ -1,0 +1,9 @@
+﻿basis,mode,null,histogram_p,histogram_holm,histogram_family_size,dispersion_upper_p,dispersion_two_sided_p,dispersion_holm,note
+oc,up,iid50,0.09845450772746137,1.0,200,0.675001624991875,0.6500067499662502,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+oc,up,iid_actual,0.832560837195814,1.0,200,0.672481637591812,0.6550467247663762,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+oc,dominant,iid50,0.2835535822320888,1.0,20,0.6659916700416498,0.6680266598667006,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+oc,dominant,iid_actual,0.43159284203578985,1.0,20,0.8278558607206964,0.34429827850860745,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+cc,up,iid50,0.08582457087714561,1.0,200,0.6076719616401918,0.7846660766696166,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+cc,up,iid_actual,0.6760216198919006,1.0,200,0.6012169939150305,0.7975760121199394,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+cc,dominant,iid50,0.20772896135519323,1.0,20,0.6551717241413793,0.6896665516672417,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo
+cc,dominant,iid_actual,0.308478457607712,1.0,20,0.8150809245953771,0.3698481507592462,1.0,Reused original predeclared binning and null MC tests; no new Monte Carlo

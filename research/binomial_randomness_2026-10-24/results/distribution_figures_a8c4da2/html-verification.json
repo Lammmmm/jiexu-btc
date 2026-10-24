@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "desktop": {
+    "viewport": 1440,
+    "width": 1440,
+    "tables": 8,
+    "images": [
+      {
+        "src": "01_distribution_p50.png",
+        "ok": true
+      },
+      {
+        "src": "02_distribution_p_actual.png",
+        "ok": true
+      },
+      {
+        "src": "03_rankings_exact_reference_intervals.png",
+        "ok": true
+      }
+    ],
+    "textLength": 4979
+  },
+  "mobile": {
+    "width": 390,
+    "viewport": 390
+  }
+}
