@@ -1,0 +1,14 @@
+{
+  "basis": "oc",
+  "method": "fixed_total",
+  "maps_audited": 128,
+  "exact_sample_sizes_and_flat_dates": true,
+  "preserves_stage_totals": true,
+  "preserves_year_weekday": false,
+  "retained_calendar_neighbor_links": 0.0005742082461906184,
+  "sign_lag1_original": -0.05105747283963588,
+  "sign_lag1_null": -9.703579304887324e-05,
+  "abs_return_lag1_original": 0.27405017603164916,
+  "abs_return_lag1_null": 0.04377799280246017,
+  "maps_constant_global_60phase": 0
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Descriptive distribution diagnostics in addition to the locked primary tests",
+  "timing": "Defined after primary exact/MC audit, before inspecting supplementary folded-distribution outcomes",
+  "reason": "The reader's winning rate may mean either raw upward rate or the larger of long/short rates; report both without treating the folded distribution as an ordinary binomial",
+  "raw_up_sd_and_max": "Equal-tail two-sided diagnostics for full-sample SD and maximum; 20 jointly Holm-corrected tests",
+  "folded_distribution": "Full-sample SD of max(up,down)/n with an equal-tail two-sided p, and fixed-bin histogram discrepancy with an upper-tail p; 20 jointly Holm-corrected tests",
+  "draws": "Replay the same original seeds, batch512 and complete reselection null draws; not new independent simulations or new evidence",
+  "interpretation": "Exploratory diagnostics, not additional confirmatory endpoints selected to maximize significance"
+}

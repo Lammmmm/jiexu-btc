@@ -1,0 +1,14 @@
+{
+  "basis": "cc",
+  "method": "fixed_total",
+  "maps_audited": 128,
+  "exact_sample_sizes_and_flat_dates": true,
+  "preserves_stage_totals": true,
+  "preserves_year_weekday": false,
+  "retained_calendar_neighbor_links": 0.0005607057416267943,
+  "sign_lag1_original": -0.049576850844899385,
+  "sign_lag1_null": -0.0010324977312318334,
+  "abs_return_lag1_original": 0.2757672056510223,
+  "abs_return_lag1_null": 0.048564710349776316,
+  "maps_constant_global_60phase": 0
+}

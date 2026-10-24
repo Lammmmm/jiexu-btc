@@ -1,0 +1,10 @@
+{
+  "snapshot": "776881d2c426293975df640722001aa9c23ed34a1a3573d2a79d55ceaea258f1",
+  "protocol": "59ca0aff851be10e497b9c5ff629060da54015c17de15ce6f24cd24493dda82d",
+  "core": "00917366fc12a1920da4e9350bf150f3dadede488c1eaa00aafd3a0a221ed511",
+  "simulator": "164b5b51108e8332896e91db1fb8a0e8420e6d3c175b1b14af2f2e9c62f71972",
+  "method": "year_weekday",
+  "basis": "cc",
+  "seed": 202610376055,
+  "draws": 49999
+}

@@ -1,0 +1,10 @@
+{
+  "exact_mc_comparisons": 68,
+  "all_within_prespecified_six_sigma": true,
+  "simulations": 1099994,
+  "significant_exact_primary": 0,
+  "significant_mc_primary": 0,
+  "significant_full_individual": 0,
+  "significant_conditional_individual": 0,
+  "significant_symmetric_distribution": 0
+}

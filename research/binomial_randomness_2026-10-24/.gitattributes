@@ -1,0 +1,2 @@
+# Keep hashes of source, protocols, integer fractions and simulation caches reproducible.
+* -text whitespace=cr-at-eol

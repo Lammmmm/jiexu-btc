@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unit_tests": 15,
+  "production_oracle_checks": 4796,
+  "independent_numeric_checks": 6274,
+  "seeded_MC_statistic_values_replayed": 56320,
+  "integer_aggregate_probabilities_checked": 68,
+  "integer_individual_probabilities_checked": 720,
+  "exact_vs_MC_endpoints_checked": 68,
+  "production_changes": false,
+  "databases_readonly": true
+}

@@ -1,0 +1,16 @@
+{
+  "conclusion": "No multiplicity-adjusted evidence for Ganzhi-specific predictability",
+  "main": {
+    "exact_mc_comparisons": 68,
+    "all_within_prespecified_six_sigma": true,
+    "simulations": 1099994,
+    "significant_exact_primary": 0,
+    "significant_mc_primary": 0,
+    "significant_full_individual": 0,
+    "significant_conditional_individual": 0,
+    "significant_symmetric_distribution": 0
+  },
+  "folded_significant": 0,
+  "full_ranking_rows": 120,
+  "split_rows": 120
+}

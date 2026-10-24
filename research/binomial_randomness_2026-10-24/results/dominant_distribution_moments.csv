@@ -1,0 +1,11 @@
+﻿basis,null,observed_mean,observed_sd,iid_expected_mean,iid_rms_expected_sd,caution
+oc,iid50,0.5556828202661536,0.03834951587546627,0.5530533059740311,0.04057199545319896,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+oc,iid_actual,0.5556828202661536,0.03834951587546627,0.55639886107278,0.04287987354019019,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+oc,fixed_total,0.5556828202661536,0.03834951587546627,0.55639886107278,0.04287987354019019,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+oc,year_weekday,0.5556828202661536,0.03834951587546627,0.55639886107278,0.04287987354019019,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+oc,weekly_rotation,0.5556828202661536,0.03834951587546627,0.55639886107278,0.04287987354019019,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+cc,iid50,0.5567766955266955,0.038533207548370176,0.5530854717028689,0.04058056012678696,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+cc,iid_actual,0.5567766955266955,0.038533207548370176,0.5563936480446672,0.042864880585611255,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+cc,fixed_total,0.5567766955266955,0.038533207548370176,0.5563936480446672,0.042864880585611255,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+cc,year_weekday,0.5567766955266955,0.038533207548370176,0.5563936480446672,0.042864880585611255,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws
+cc,weekly_rotation,0.5567766955266955,0.038533207548370176,0.5563936480446672,0.042864880585611255,IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws

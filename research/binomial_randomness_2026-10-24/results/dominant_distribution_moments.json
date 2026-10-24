@@ -1,0 +1,92 @@
+[
+  {
+    "basis": "oc",
+    "null": "iid50",
+    "observed_mean": 0.5556828202661536,
+    "observed_sd": 0.03834951587546627,
+    "iid_expected_mean": 0.5530533059740311,
+    "iid_rms_expected_sd": 0.04057199545319896,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "oc",
+    "null": "iid_actual",
+    "observed_mean": 0.5556828202661536,
+    "observed_sd": 0.03834951587546627,
+    "iid_expected_mean": 0.55639886107278,
+    "iid_rms_expected_sd": 0.04287987354019019,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "oc",
+    "null": "fixed_total",
+    "observed_mean": 0.5556828202661536,
+    "observed_sd": 0.03834951587546627,
+    "iid_expected_mean": 0.55639886107278,
+    "iid_rms_expected_sd": 0.04287987354019019,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "oc",
+    "null": "year_weekday",
+    "observed_mean": 0.5556828202661536,
+    "observed_sd": 0.03834951587546627,
+    "iid_expected_mean": 0.55639886107278,
+    "iid_rms_expected_sd": 0.04287987354019019,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "observed_mean": 0.5556828202661536,
+    "observed_sd": 0.03834951587546627,
+    "iid_expected_mean": 0.55639886107278,
+    "iid_rms_expected_sd": 0.04287987354019019,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "cc",
+    "null": "iid50",
+    "observed_mean": 0.5567766955266955,
+    "observed_sd": 0.038533207548370176,
+    "iid_expected_mean": 0.5530854717028689,
+    "iid_rms_expected_sd": 0.04058056012678696,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "observed_mean": 0.5567766955266955,
+    "observed_sd": 0.038533207548370176,
+    "iid_expected_mean": 0.5563936480446672,
+    "iid_rms_expected_sd": 0.042864880585611255,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "cc",
+    "null": "fixed_total",
+    "observed_mean": 0.5567766955266955,
+    "observed_sd": 0.038533207548370176,
+    "iid_expected_mean": 0.5563936480446672,
+    "iid_rms_expected_sd": 0.042864880585611255,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "cc",
+    "null": "year_weekday",
+    "observed_mean": 0.5567766955266955,
+    "observed_sd": 0.038533207548370176,
+    "iid_expected_mean": 0.5563936480446672,
+    "iid_rms_expected_sd": 0.042864880585611255,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  },
+  {
+    "basis": "cc",
+    "null": "weekly_rotation",
+    "observed_mean": 0.5567766955266955,
+    "observed_sd": 0.038533207548370176,
+    "iid_expected_mean": 0.5563936480446672,
+    "iid_rms_expected_sd": 0.042864880585611255,
+    "caution": "IID moment formula is not a moment claim for structured conditional nulls; their moments come from replayed draws"
+  }
+]

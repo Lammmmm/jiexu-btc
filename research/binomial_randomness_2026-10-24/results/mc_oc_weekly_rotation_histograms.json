@@ -1,0 +1,2214 @@
+[
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 13.0,
+    "count": 2
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 14.0,
+    "count": 9
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 15.0,
+    "count": 58
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 16.0,
+    "count": 241
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 17.0,
+    "count": 704
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 18.0,
+    "count": 1742
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 19.0,
+    "count": 3316
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 20.0,
+    "count": 5691
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 21.0,
+    "count": 7513
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 22.0,
+    "count": 8519
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 23.0,
+    "count": 8180
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 24.0,
+    "count": 6224
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 25.0,
+    "count": 4103
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 26.0,
+    "count": 2246
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 27.0,
+    "count": 931
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 28.0,
+    "count": 368
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 29.0,
+    "count": 113
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 30.0,
+    "count": 34
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up55",
+    "value": 31.0,
+    "count": 5
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 0.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 1.0,
+    "count": 15
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 2.0,
+    "count": 77
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 3.0,
+    "count": 415
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 4.0,
+    "count": 1540
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 5.0,
+    "count": 3572
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 6.0,
+    "count": 6493
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 7.0,
+    "count": 9042
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 8.0,
+    "count": 9835
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 9.0,
+    "count": 8163
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 10.0,
+    "count": 5701
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 11.0,
+    "count": 3124
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 12.0,
+    "count": 1358
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 13.0,
+    "count": 492
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 14.0,
+    "count": 141
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 15.0,
+    "count": 25
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 16.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up60",
+    "value": 17.0,
+    "count": 2
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 0.0,
+    "count": 9120
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 1.0,
+    "count": 16991
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 2.0,
+    "count": 14303
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 3.0,
+    "count": 6835
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 4.0,
+    "count": 2161
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 5.0,
+    "count": 510
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 6.0,
+    "count": 70
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up65",
+    "value": 7.0,
+    "count": 9
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up70",
+    "value": 0.0,
+    "count": 42480
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up70",
+    "value": 1.0,
+    "count": 7007
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up70",
+    "value": 2.0,
+    "count": 489
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_up70",
+    "value": 3.0,
+    "count": 23
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 1.0,
+    "count": 4
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 2.0,
+    "count": 20
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 3.0,
+    "count": 146
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 4.0,
+    "count": 657
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 5.0,
+    "count": 1878
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 6.0,
+    "count": 4285
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 7.0,
+    "count": 7043
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 8.0,
+    "count": 9215
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 9.0,
+    "count": 9416
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 10.0,
+    "count": 7708
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 11.0,
+    "count": 5209
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 12.0,
+    "count": 2713
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 13.0,
+    "count": 1145
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 14.0,
+    "count": 407
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 15.0,
+    "count": 125
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 16.0,
+    "count": 20
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down55",
+    "value": 17.0,
+    "count": 8
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 0.0,
+    "count": 5571
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 1.0,
+    "count": 14006
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 2.0,
+    "count": 15087
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 3.0,
+    "count": 9706
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 4.0,
+    "count": 4149
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 5.0,
+    "count": 1200
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 6.0,
+    "count": 247
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 7.0,
+    "count": 29
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 8.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down60",
+    "value": 9.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down65",
+    "value": 0.0,
+    "count": 39771
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down65",
+    "value": 1.0,
+    "count": 9300
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down65",
+    "value": 2.0,
+    "count": 877
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down65",
+    "value": 3.0,
+    "count": 51
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down70",
+    "value": 0.0,
+    "count": 49352
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down70",
+    "value": 1.0,
+    "count": 643
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_down70",
+    "value": 2.0,
+    "count": 4
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 17.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 18.0,
+    "count": 11
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 19.0,
+    "count": 19
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 20.0,
+    "count": 49
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 21.0,
+    "count": 124
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 22.0,
+    "count": 300
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 23.0,
+    "count": 506
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 24.0,
+    "count": 966
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 25.0,
+    "count": 1599
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 26.0,
+    "count": 2276
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 27.0,
+    "count": 3180
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 28.0,
+    "count": 3865
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 29.0,
+    "count": 4766
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 30.0,
+    "count": 5206
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 31.0,
+    "count": 5521
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 32.0,
+    "count": 5144
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 33.0,
+    "count": 4594
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 34.0,
+    "count": 3743
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 35.0,
+    "count": 2878
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 36.0,
+    "count": 2068
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 37.0,
+    "count": 1350
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 38.0,
+    "count": 855
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 39.0,
+    "count": 471
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 40.0,
+    "count": 280
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 41.0,
+    "count": 133
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 42.0,
+    "count": 55
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 43.0,
+    "count": 26
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 44.0,
+    "count": 7
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 45.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either55",
+    "value": 46.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 1.0,
+    "count": 6
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 2.0,
+    "count": 25
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 3.0,
+    "count": 151
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 4.0,
+    "count": 492
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 5.0,
+    "count": 1286
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 6.0,
+    "count": 2751
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 7.0,
+    "count": 4587
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 8.0,
+    "count": 6196
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 9.0,
+    "count": 7401
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 10.0,
+    "count": 7408
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 11.0,
+    "count": 6613
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 12.0,
+    "count": 5102
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 13.0,
+    "count": 3522
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 14.0,
+    "count": 2175
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 15.0,
+    "count": 1248
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 16.0,
+    "count": 587
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 17.0,
+    "count": 300
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 18.0,
+    "count": 102
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 19.0,
+    "count": 33
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 20.0,
+    "count": 10
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 21.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either60",
+    "value": 22.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 0.0,
+    "count": 7515
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 1.0,
+    "count": 15183
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 2.0,
+    "count": 14455
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 3.0,
+    "count": 8176
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 4.0,
+    "count": 3340
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 5.0,
+    "count": 1039
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 6.0,
+    "count": 239
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 7.0,
+    "count": 40
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either65",
+    "value": 8.0,
+    "count": 12
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either70",
+    "value": 0.0,
+    "count": 41945
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either70",
+    "value": 1.0,
+    "count": 7429
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either70",
+    "value": 2.0,
+    "count": 600
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either70",
+    "value": 3.0,
+    "count": 24
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "full_either70",
+    "value": 4.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 15.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 16.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 17.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 18.0,
+    "count": 9
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 19.0,
+    "count": 20
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 20.0,
+    "count": 41
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 21.0,
+    "count": 103
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 22.0,
+    "count": 238
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 23.0,
+    "count": 419
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 24.0,
+    "count": 727
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 25.0,
+    "count": 1248
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 26.0,
+    "count": 1890
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 27.0,
+    "count": 2774
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 28.0,
+    "count": 3619
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 29.0,
+    "count": 4488
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 30.0,
+    "count": 5044
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 31.0,
+    "count": 5332
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 32.0,
+    "count": 5203
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 33.0,
+    "count": 4786
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 34.0,
+    "count": 4095
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 35.0,
+    "count": 3339
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 36.0,
+    "count": 2435
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 37.0,
+    "count": 1730
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 38.0,
+    "count": 1109
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 39.0,
+    "count": 657
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 40.0,
+    "count": 341
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 41.0,
+    "count": 198
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 42.0,
+    "count": 87
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 43.0,
+    "count": 38
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 44.0,
+    "count": 12
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 45.0,
+    "count": 8
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 46.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected55",
+    "value": 48.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 1.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 2.0,
+    "count": 11
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 3.0,
+    "count": 53
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 4.0,
+    "count": 193
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 5.0,
+    "count": 583
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 6.0,
+    "count": 1301
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 7.0,
+    "count": 2453
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 8.0,
+    "count": 3918
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 9.0,
+    "count": 5617
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 10.0,
+    "count": 6553
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 11.0,
+    "count": 7032
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 12.0,
+    "count": 6457
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 13.0,
+    "count": 5419
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 14.0,
+    "count": 4054
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 15.0,
+    "count": 2756
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 16.0,
+    "count": 1724
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 17.0,
+    "count": 971
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 18.0,
+    "count": 524
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 19.0,
+    "count": 211
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 20.0,
+    "count": 103
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 21.0,
+    "count": 48
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 22.0,
+    "count": 13
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 23.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint55",
+    "value": 26.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 4.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 5.0,
+    "count": 7
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 6.0,
+    "count": 19
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 7.0,
+    "count": 73
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 8.0,
+    "count": 190
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 9.0,
+    "count": 424
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 10.0,
+    "count": 882
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 11.0,
+    "count": 1668
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 12.0,
+    "count": 2615
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 13.0,
+    "count": 3931
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 14.0,
+    "count": 5047
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 15.0,
+    "count": 5806
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 16.0,
+    "count": 6078
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 17.0,
+    "count": 5784
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 18.0,
+    "count": 5201
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 19.0,
+    "count": 4214
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 20.0,
+    "count": 3058
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 21.0,
+    "count": 2093
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 22.0,
+    "count": 1339
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 23.0,
+    "count": 800
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 24.0,
+    "count": 415
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 25.0,
+    "count": 183
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 26.0,
+    "count": 103
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 27.0,
+    "count": 47
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 28.0,
+    "count": 16
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected60",
+    "value": 29.0,
+    "count": 5
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 0.0,
+    "count": 785
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 1.0,
+    "count": 3698
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 2.0,
+    "count": 8003
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 3.0,
+    "count": 10637
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 4.0,
+    "count": 10640
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 5.0,
+    "count": 8040
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 6.0,
+    "count": 4641
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 7.0,
+    "count": 2180
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 8.0,
+    "count": 897
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 9.0,
+    "count": 350
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 10.0,
+    "count": 94
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 11.0,
+    "count": 24
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 12.0,
+    "count": 9
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint60",
+    "value": 13.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 0.0,
+    "count": 120
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 1.0,
+    "count": 807
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 2.0,
+    "count": 2765
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 3.0,
+    "count": 5573
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 4.0,
+    "count": 8348
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 5.0,
+    "count": 9498
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 6.0,
+    "count": 8657
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 7.0,
+    "count": 6484
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 8.0,
+    "count": 4054
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 9.0,
+    "count": 2122
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 10.0,
+    "count": 943
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 11.0,
+    "count": 411
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 12.0,
+    "count": 154
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 13.0,
+    "count": 49
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 14.0,
+    "count": 8
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 15.0,
+    "count": 4
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected65",
+    "value": 16.0,
+    "count": 2
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 0.0,
+    "count": 24451
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 1.0,
+    "count": 17914
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 2.0,
+    "count": 6186
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 3.0,
+    "count": 1232
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 4.0,
+    "count": 191
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 5.0,
+    "count": 24
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint65",
+    "value": 6.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 0.0,
+    "count": 18773
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 1.0,
+    "count": 19075
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 2.0,
+    "count": 8999
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 3.0,
+    "count": 2561
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 4.0,
+    "count": 509
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 5.0,
+    "count": 73
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 6.0,
+    "count": 8
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "train_selected70",
+    "value": 8.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint70",
+    "value": 0.0,
+    "count": 48503
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint70",
+    "value": 1.0,
+    "count": 1478
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "joint70",
+    "value": 2.0,
+    "count": 18
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 0.0,
+    "count": 4411
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 1.0,
+    "count": 14105
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 2.0,
+    "count": 17617
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 3.0,
+    "count": 10423
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 4.0,
+    "count": 3121
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top5_continued55",
+    "value": 5.0,
+    "count": 322
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 0.0,
+    "count": 394
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 1.0,
+    "count": 2594
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 2.0,
+    "count": 7354
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 3.0,
+    "count": 12054
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 4.0,
+    "count": 12724
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 5.0,
+    "count": 8885
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 6.0,
+    "count": 4299
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 7.0,
+    "count": 1349
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 8.0,
+    "count": 309
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 9.0,
+    "count": 34
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top10_continued55",
+    "value": 10.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 0.0,
+    "count": 1
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 1.0,
+    "count": 41
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 2.0,
+    "count": 275
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 3.0,
+    "count": 1060
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 4.0,
+    "count": 2889
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 5.0,
+    "count": 5384
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 6.0,
+    "count": 8066
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 7.0,
+    "count": 9582
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 8.0,
+    "count": 8859
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 9.0,
+    "count": 6593
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 10.0,
+    "count": 4025
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 11.0,
+    "count": 2032
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 12.0,
+    "count": 797
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 13.0,
+    "count": 312
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 14.0,
+    "count": 68
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 15.0,
+    "count": 11
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 16.0,
+    "count": 3
+  },
+  {
+    "basis": "oc",
+    "null": "weekly_rotation",
+    "statistic": "top20_continued55",
+    "value": 17.0,
+    "count": 1
+  }
+]

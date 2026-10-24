@@ -1,0 +1,20 @@
+test_all_structural_mappings_valid_and_reproducible (test_math.DataTests.test_all_structural_mappings_valid_and_reproducible) ... ok
+test_data_boundaries_and_previous_close (test_math.DataTests.test_data_boundaries_and_previous_close) ... ok
+test_disjoint_stages_reconcile (test_math.DataTests.test_disjoint_stages_reconcile) ... ok
+test_tied_train_direction_not_a_fake_zero_validation_rate (test_math.DataTests.test_tied_train_direction_not_a_fake_zero_validation_rate) ... ok
+test_train_reselection_uses_no_validation (test_math.DataTests.test_train_reselection_uses_no_validation) ... ok
+test_binomial_against_rational_enumeration (test_math.ExactTests.test_binomial_against_rational_enumeration) ... ok
+test_conditional_maximum_enumeration (test_math.ExactTests.test_conditional_maximum_enumeration) ... ok
+test_expected_sd_formula (test_math.ExactTests.test_expected_sd_formula) ... ok
+test_global_phase_only_relabels (test_math.ExactTests.test_global_phase_only_relabels) ... ok
+test_integer_poisson_binomial (test_math.ExactTests.test_integer_poisson_binomial) ... ok
+test_maximum_with_flats_bruteforce (test_math.ExactTests.test_maximum_with_flats_bruteforce) ... ok
+test_normal_cc_correct_tail_boundary (test_math.ExactTests.test_normal_cc_correct_tail_boundary) ... ok
+test_poisson_binomial_bruteforce (test_math.ExactTests.test_poisson_binomial_bruteforce) ... ok
+test_same_direction_joint_not_rechoosing_validation (test_math.ExactTests.test_same_direction_joint_not_rechoosing_validation) ... ok
+test_threshold_discreteness (test_math.ExactTests.test_threshold_discreteness) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.157s
+
+OK

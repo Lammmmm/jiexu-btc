@@ -1,0 +1,134 @@
+[
+  {
+    "basis": "oc",
+    "null": "iid50",
+    "period": "full",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.0592679156219629,
+    "mean_absolute_error_cc": 0.0003210088263389879,
+    "max_absolute_error_cc": 0.0009743349003878687,
+    "max_absolute_error_uncorrected": 0.10458506870074058,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "oc",
+    "null": "iid50",
+    "period": "train",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.08620871145450315,
+    "mean_absolute_error_cc": 0.000532396372715019,
+    "max_absolute_error_cc": 0.001631822993013926,
+    "max_absolute_error_uncorrected": 0.13637645607681803,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "oc",
+    "null": "iid50",
+    "period": "validation",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.07816843113856892,
+    "mean_absolute_error_cc": 0.0006043183821118017,
+    "max_absolute_error_cc": 0.002153189585956519,
+    "max_absolute_error_uncorrected": 0.15572834389315093,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "oc",
+    "null": "iid_actual",
+    "period": "full",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.07067256561921925,
+    "mean_absolute_error_cc": 0.00037029134650868115,
+    "max_absolute_error_cc": 0.0009647603607219474,
+    "max_absolute_error_uncorrected": 0.10434748716634945,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "oc",
+    "null": "iid_actual",
+    "period": "train",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.08951038740356589,
+    "mean_absolute_error_cc": 0.0004519008911237794,
+    "max_absolute_error_cc": 0.0017056086798943326,
+    "max_absolute_error_uncorrected": 0.13597609209146777,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "oc",
+    "null": "iid_actual",
+    "period": "validation",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.09545037604661494,
+    "mean_absolute_error_cc": 0.0005994356921068696,
+    "max_absolute_error_cc": 0.0021192767788283454,
+    "max_absolute_error_uncorrected": 0.15893774885776701,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid50",
+    "period": "full",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.058479280266596836,
+    "mean_absolute_error_cc": 0.0003242840111931142,
+    "max_absolute_error_cc": 0.0009743349003878687,
+    "max_absolute_error_uncorrected": 0.10458506870074058,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid50",
+    "period": "train",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.0871606919130887,
+    "mean_absolute_error_cc": 0.0005226527687939474,
+    "max_absolute_error_cc": 0.001631822993013926,
+    "max_absolute_error_uncorrected": 0.13637645607681803,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid50",
+    "period": "validation",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.07816843113856892,
+    "mean_absolute_error_cc": 0.0006043183821118017,
+    "max_absolute_error_cc": 0.002153189585956519,
+    "max_absolute_error_uncorrected": 0.15572834389315093,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "period": "full",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.07016438695150098,
+    "mean_absolute_error_cc": 0.000380692180739329,
+    "max_absolute_error_cc": 0.0009640038070284351,
+    "max_absolute_error_uncorrected": 0.10543434265004226,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "period": "train",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.08807919045957997,
+    "mean_absolute_error_cc": 0.000461979472735133,
+    "max_absolute_error_cc": 0.0017052585300120701,
+    "max_absolute_error_uncorrected": 0.13595767052602892,
+    "normal_cc_changes_raw_005_decision": 0
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "period": "validation",
+    "rows": 60,
+    "mean_absolute_error_uncorrected": 0.09544577713222761,
+    "mean_absolute_error_cc": 0.0005983219511635935,
+    "max_absolute_error_cc": 0.002117935677088262,
+    "max_absolute_error_uncorrected": 0.15893746618877247,
+    "normal_cc_changes_raw_005_decision": 0
+  }
+]

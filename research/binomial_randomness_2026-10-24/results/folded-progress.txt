@@ -1,0 +1,10 @@
+FOLDED_REPLAY_DONE oc iid50
+FOLDED_REPLAY_DONE oc iid_actual
+FOLDED_REPLAY_DONE oc fixed_total
+FOLDED_REPLAY_DONE oc year_weekday
+FOLDED_REPLAY_DONE oc weekly_rotation
+FOLDED_REPLAY_DONE cc iid50
+FOLDED_REPLAY_DONE cc iid_actual
+FOLDED_REPLAY_DONE cc fixed_total
+FOLDED_REPLAY_DONE cc year_weekday
+FOLDED_REPLAY_DONE cc weekly_rotation

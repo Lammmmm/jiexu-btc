@@ -1,0 +1,21 @@
+﻿basis,null,statistic,observed,p_lower,p_upper,p,family,note,holm,bh,family_size
+oc,iid50,full_max,0.6428571428571429,0.2439237803810981,0.9242553787231064,0.4878475607621962,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+oc,iid50,full_sd,0.06375978923845158,0.3250033749831251,0.675001624991875,0.6500067499662502,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+oc,iid_actual,full_max,0.6428571428571429,0.1394443027784861,0.9673051634741826,0.2788886055569722,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+oc,iid_actual,full_sd,0.06375978923845158,0.3275233623831881,0.672481637591812,0.6550467247663762,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+oc,fixed_total,full_max,0.6428571428571429,0.14088,0.97004,0.28176,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+oc,fixed_total,full_sd,0.06375978923845158,0.32844,0.67158,0.65688,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+oc,year_weekday,full_max,0.6428571428571429,0.14174,0.9692,0.28348,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+oc,year_weekday,full_sd,0.06375978923845158,0.32392,0.6761,0.64784,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+oc,weekly_rotation,full_max,0.6428571428571429,0.14532,0.96834,0.29064,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+oc,weekly_rotation,full_sd,0.06375978923845158,0.34528,0.65474,0.69056,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,iid50,full_max,0.6428571428571429,0.23691381543092285,0.9231003844980775,0.4738276308618457,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,iid50,full_sd,0.0649149755911145,0.3923330383348083,0.6076719616401918,0.7846660766696166,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,iid_actual,full_max,0.6428571428571429,0.13751931240343798,0.9655451722741386,0.27503862480687596,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+cc,iid_actual,full_sd,0.0649149755911145,0.3987880060599697,0.6012169939150305,0.7975760121199394,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,fixed_total,full_max,0.6428571428571429,0.13488,0.9686,0.26976,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+cc,fixed_total,full_sd,0.0649149755911145,0.39568,0.60434,0.79136,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,year_weekday,full_max,0.6428571428571429,0.1343,0.96932,0.2686,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+cc,year_weekday,full_sd,0.0649149755911145,0.39572,0.6043,0.79144,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20
+cc,weekly_rotation,full_max,0.6428571428571429,0.13692,0.96896,0.27384,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.7266,20
+cc,weekly_rotation,full_sd,0.0649149755911145,0.41448,0.58554,0.82896,symmetric_distribution20,"Equal-tail two-sided diagnostic, no post-hoc choice of low/high tail",1.0,0.82896,20

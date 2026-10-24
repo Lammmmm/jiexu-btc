@@ -1,0 +1,2641 @@
+[
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 8.0,
+    "count": 6
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 9.0,
+    "count": 19
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 10.0,
+    "count": 63
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 11.0,
+    "count": 191
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 12.0,
+    "count": 424
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 13.0,
+    "count": 942
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 14.0,
+    "count": 1877
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 15.0,
+    "count": 3298
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 16.0,
+    "count": 5513
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 17.0,
+    "count": 8378
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 18.0,
+    "count": 11700
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 19.0,
+    "count": 15131
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 20.0,
+    "count": 18540
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 21.0,
+    "count": 20746
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 22.0,
+    "count": 21097
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 23.0,
+    "count": 20573
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 24.0,
+    "count": 18631
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 25.0,
+    "count": 15686
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 26.0,
+    "count": 12421
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 27.0,
+    "count": 9136
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 28.0,
+    "count": 6167
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 29.0,
+    "count": 4092
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 30.0,
+    "count": 2451
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 31.0,
+    "count": 1413
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 32.0,
+    "count": 774
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 33.0,
+    "count": 401
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 34.0,
+    "count": 192
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 35.0,
+    "count": 78
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 36.0,
+    "count": 36
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 37.0,
+    "count": 18
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 38.0,
+    "count": 4
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 39.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up55",
+    "value": 40.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 0.0,
+    "count": 31
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 1.0,
+    "count": 285
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 2.0,
+    "count": 1484
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 3.0,
+    "count": 4215
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 4.0,
+    "count": 9742
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 5.0,
+    "count": 16847
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 6.0,
+    "count": 24191
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 7.0,
+    "count": 28930
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 8.0,
+    "count": 29934
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 9.0,
+    "count": 26848
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 10.0,
+    "count": 21630
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 11.0,
+    "count": 15317
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 12.0,
+    "count": 9552
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 13.0,
+    "count": 5611
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 14.0,
+    "count": 2946
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 15.0,
+    "count": 1363
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 16.0,
+    "count": 634
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 17.0,
+    "count": 287
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 18.0,
+    "count": 100
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 19.0,
+    "count": 38
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 20.0,
+    "count": 7
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 21.0,
+    "count": 7
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up60",
+    "value": 23.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 0.0,
+    "count": 37615
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 1.0,
+    "count": 63508
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 2.0,
+    "count": 53086
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 3.0,
+    "count": 29393
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 4.0,
+    "count": 11573
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 5.0,
+    "count": 3656
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 6.0,
+    "count": 914
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 7.0,
+    "count": 202
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 8.0,
+    "count": 41
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 9.0,
+    "count": 11
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up65",
+    "value": 10.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up70",
+    "value": 0.0,
+    "count": 166373
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up70",
+    "value": 1.0,
+    "count": 30747
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up70",
+    "value": 2.0,
+    "count": 2699
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up70",
+    "value": 3.0,
+    "count": 173
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_up70",
+    "value": 4.0,
+    "count": 8
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 0.0,
+    "count": 16
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 1.0,
+    "count": 137
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 2.0,
+    "count": 683
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 3.0,
+    "count": 2459
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 4.0,
+    "count": 6056
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 5.0,
+    "count": 11654
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 6.0,
+    "count": 18496
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 7.0,
+    "count": 24466
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 8.0,
+    "count": 28339
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 9.0,
+    "count": 28306
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 10.0,
+    "count": 25387
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 11.0,
+    "count": 20164
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 12.0,
+    "count": 14194
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 13.0,
+    "count": 9119
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 14.0,
+    "count": 5290
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 15.0,
+    "count": 2800
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 16.0,
+    "count": 1432
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 17.0,
+    "count": 628
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 18.0,
+    "count": 232
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 19.0,
+    "count": 91
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 20.0,
+    "count": 34
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 21.0,
+    "count": 9
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 22.0,
+    "count": 4
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down55",
+    "value": 23.0,
+    "count": 4
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 0.0,
+    "count": 23829
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 1.0,
+    "count": 51682
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 2.0,
+    "count": 55113
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 3.0,
+    "count": 37932
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 4.0,
+    "count": 19915
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 5.0,
+    "count": 7843
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 6.0,
+    "count": 2690
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 7.0,
+    "count": 762
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 8.0,
+    "count": 186
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 9.0,
+    "count": 30
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 10.0,
+    "count": 14
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down60",
+    "value": 11.0,
+    "count": 4
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 0.0,
+    "count": 154442
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 1.0,
+    "count": 40028
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 2.0,
+    "count": 5056
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 3.0,
+    "count": 455
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 4.0,
+    "count": 17
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down65",
+    "value": 5.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down70",
+    "value": 0.0,
+    "count": 196499
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down70",
+    "value": 1.0,
+    "count": 3464
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_down70",
+    "value": 2.0,
+    "count": 37
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 14.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 15.0,
+    "count": 4
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 16.0,
+    "count": 11
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 17.0,
+    "count": 25
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 18.0,
+    "count": 55
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 19.0,
+    "count": 153
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 20.0,
+    "count": 346
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 21.0,
+    "count": 713
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 22.0,
+    "count": 1323
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 23.0,
+    "count": 2403
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 24.0,
+    "count": 3887
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 25.0,
+    "count": 6025
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 26.0,
+    "count": 8719
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 27.0,
+    "count": 11962
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 28.0,
+    "count": 15167
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 29.0,
+    "count": 17774
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 30.0,
+    "count": 19870
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 31.0,
+    "count": 20398
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 32.0,
+    "count": 20263
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 33.0,
+    "count": 18156
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 34.0,
+    "count": 15528
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 35.0,
+    "count": 12194
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 36.0,
+    "count": 9289
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 37.0,
+    "count": 6327
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 38.0,
+    "count": 4148
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 39.0,
+    "count": 2467
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 40.0,
+    "count": 1406
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 41.0,
+    "count": 734
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 42.0,
+    "count": 386
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 43.0,
+    "count": 144
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 44.0,
+    "count": 73
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 45.0,
+    "count": 34
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 46.0,
+    "count": 10
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 47.0,
+    "count": 3
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either55",
+    "value": 48.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 0.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 1.0,
+    "count": 27
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 2.0,
+    "count": 211
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 3.0,
+    "count": 825
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 4.0,
+    "count": 2434
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 5.0,
+    "count": 5553
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 6.0,
+    "count": 10302
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 7.0,
+    "count": 16414
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 8.0,
+    "count": 22210
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 9.0,
+    "count": 26340
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 10.0,
+    "count": 27016
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 11.0,
+    "count": 25569
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 12.0,
+    "count": 21194
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 13.0,
+    "count": 16051
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 14.0,
+    "count": 11140
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 15.0,
+    "count": 6827
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 16.0,
+    "count": 4039
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 17.0,
+    "count": 2097
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 18.0,
+    "count": 967
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 19.0,
+    "count": 446
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 20.0,
+    "count": 211
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 21.0,
+    "count": 74
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 22.0,
+    "count": 28
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 23.0,
+    "count": 17
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 24.0,
+    "count": 5
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either60",
+    "value": 25.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 0.0,
+    "count": 28941
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 1.0,
+    "count": 56409
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 2.0,
+    "count": 54914
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 3.0,
+    "count": 35191
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 4.0,
+    "count": 16335
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 5.0,
+    "count": 5805
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 6.0,
+    "count": 1814
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 7.0,
+    "count": 471
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 8.0,
+    "count": 90
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 9.0,
+    "count": 27
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either65",
+    "value": 10.0,
+    "count": 3
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either70",
+    "value": 0.0,
+    "count": 163464
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either70",
+    "value": 1.0,
+    "count": 33089
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either70",
+    "value": 2.0,
+    "count": 3211
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either70",
+    "value": 3.0,
+    "count": 221
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "full_either70",
+    "value": 4.0,
+    "count": 15
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 16.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 17.0,
+    "count": 8
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 18.0,
+    "count": 14
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 19.0,
+    "count": 55
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 20.0,
+    "count": 125
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 21.0,
+    "count": 303
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 22.0,
+    "count": 656
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 23.0,
+    "count": 1249
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 24.0,
+    "count": 2117
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 25.0,
+    "count": 3757
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 26.0,
+    "count": 5804
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 27.0,
+    "count": 8460
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 28.0,
+    "count": 11540
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 29.0,
+    "count": 14561
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 30.0,
+    "count": 17730
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 31.0,
+    "count": 19541
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 32.0,
+    "count": 20519
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 33.0,
+    "count": 20207
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 34.0,
+    "count": 18671
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 35.0,
+    "count": 16113
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 36.0,
+    "count": 12712
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 37.0,
+    "count": 9542
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 38.0,
+    "count": 6697
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 39.0,
+    "count": 4222
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 40.0,
+    "count": 2538
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 41.0,
+    "count": 1473
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 42.0,
+    "count": 762
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 43.0,
+    "count": 360
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 44.0,
+    "count": 155
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 45.0,
+    "count": 78
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 46.0,
+    "count": 17
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 47.0,
+    "count": 6
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 48.0,
+    "count": 5
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected55",
+    "value": 50.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 1.0,
+    "count": 6
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 2.0,
+    "count": 50
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 3.0,
+    "count": 280
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 4.0,
+    "count": 952
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 5.0,
+    "count": 2528
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 6.0,
+    "count": 5470
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 7.0,
+    "count": 9701
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 8.0,
+    "count": 14999
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 9.0,
+    "count": 20561
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 10.0,
+    "count": 24626
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 11.0,
+    "count": 26127
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 12.0,
+    "count": 25066
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 13.0,
+    "count": 21909
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 14.0,
+    "count": 17031
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 15.0,
+    "count": 12230
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 16.0,
+    "count": 8168
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 17.0,
+    "count": 4841
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 18.0,
+    "count": 2823
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 19.0,
+    "count": 1427
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 20.0,
+    "count": 717
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 21.0,
+    "count": 302
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 22.0,
+    "count": 110
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 23.0,
+    "count": 51
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 24.0,
+    "count": 18
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 25.0,
+    "count": 6
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint55",
+    "value": 27.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 3.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 4.0,
+    "count": 3
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 5.0,
+    "count": 21
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 6.0,
+    "count": 68
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 7.0,
+    "count": 213
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 8.0,
+    "count": 577
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 9.0,
+    "count": 1384
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 10.0,
+    "count": 2742
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 11.0,
+    "count": 5128
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 12.0,
+    "count": 8209
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 13.0,
+    "count": 11952
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 14.0,
+    "count": 15849
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 15.0,
+    "count": 19718
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 16.0,
+    "count": 22302
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 17.0,
+    "count": 23106
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 18.0,
+    "count": 21803
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 19.0,
+    "count": 18865
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 20.0,
+    "count": 15523
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 21.0,
+    "count": 11810
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 22.0,
+    "count": 8160
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 23.0,
+    "count": 5491
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 24.0,
+    "count": 3266
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 25.0,
+    "count": 1942
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 26.0,
+    "count": 969
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 27.0,
+    "count": 503
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 28.0,
+    "count": 229
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 29.0,
+    "count": 103
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 30.0,
+    "count": 44
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 31.0,
+    "count": 9
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 32.0,
+    "count": 7
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 33.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected60",
+    "value": 34.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 0.0,
+    "count": 3660
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 1.0,
+    "count": 14959
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 2.0,
+    "count": 30652
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 3.0,
+    "count": 40930
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 4.0,
+    "count": 40403
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 5.0,
+    "count": 31539
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 6.0,
+    "count": 19854
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 7.0,
+    "count": 10467
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 8.0,
+    "count": 4691
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 9.0,
+    "count": 1855
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 10.0,
+    "count": 671
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 11.0,
+    "count": 239
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 12.0,
+    "count": 62
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 13.0,
+    "count": 15
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 14.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint60",
+    "value": 15.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 0.0,
+    "count": 325
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 1.0,
+    "count": 2280
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 2.0,
+    "count": 7538
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 3.0,
+    "count": 16431
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 4.0,
+    "count": 26159
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 5.0,
+    "count": 33033
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 6.0,
+    "count": 33950
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 7.0,
+    "count": 29479
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 8.0,
+    "count": 21456
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 9.0,
+    "count": 14017
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 10.0,
+    "count": 8198
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 11.0,
+    "count": 4044
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 12.0,
+    "count": 1835
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 13.0,
+    "count": 809
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 14.0,
+    "count": 306
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 15.0,
+    "count": 99
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 16.0,
+    "count": 30
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 17.0,
+    "count": 9
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected65",
+    "value": 18.0,
+    "count": 2
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 0.0,
+    "count": 94049
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 1.0,
+    "count": 71232
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 2.0,
+    "count": 26843
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 3.0,
+    "count": 6516
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 4.0,
+    "count": 1147
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 5.0,
+    "count": 190
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 6.0,
+    "count": 18
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint65",
+    "value": 7.0,
+    "count": 5
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 0.0,
+    "count": 59629
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 1.0,
+    "count": 72588
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 2.0,
+    "count": 44228
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 3.0,
+    "count": 17157
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 4.0,
+    "count": 5001
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 5.0,
+    "count": 1139
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 6.0,
+    "count": 214
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 7.0,
+    "count": 42
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 8.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "train_selected70",
+    "value": 9.0,
+    "count": 1
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint70",
+    "value": 0.0,
+    "count": 192752
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint70",
+    "value": 1.0,
+    "count": 7131
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "joint70",
+    "value": 2.0,
+    "count": 117
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 0.0,
+    "count": 19362
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 1.0,
+    "count": 58093
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 2.0,
+    "count": 68541
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 3.0,
+    "count": 40489
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 4.0,
+    "count": 12053
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top5_continued55",
+    "value": 5.0,
+    "count": 1462
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 0.0,
+    "count": 2097
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 1.0,
+    "count": 11779
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 2.0,
+    "count": 31121
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 3.0,
+    "count": 48201
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 4.0,
+    "count": 48915
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 5.0,
+    "count": 34366
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 6.0,
+    "count": 16605
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 7.0,
+    "count": 5581
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 8.0,
+    "count": 1153
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 9.0,
+    "count": 170
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top10_continued55",
+    "value": 10.0,
+    "count": 12
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 0.0,
+    "count": 21
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 1.0,
+    "count": 298
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 2.0,
+    "count": 1530
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 3.0,
+    "count": 5270
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 4.0,
+    "count": 12649
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 5.0,
+    "count": 23101
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 6.0,
+    "count": 32217
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 7.0,
+    "count": 36721
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 8.0,
+    "count": 33738
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 9.0,
+    "count": 25440
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 10.0,
+    "count": 15861
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 11.0,
+    "count": 8097
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 12.0,
+    "count": 3446
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 13.0,
+    "count": 1169
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 14.0,
+    "count": 347
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 15.0,
+    "count": 71
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 16.0,
+    "count": 22
+  },
+  {
+    "basis": "cc",
+    "null": "iid_actual",
+    "statistic": "top20_continued55",
+    "value": 17.0,
+    "count": 2
+  }
+]
